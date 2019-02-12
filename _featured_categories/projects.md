@@ -1,7 +1,7 @@
 ---
 layout: list
 title: Projects*
-slug: project
+slug: projects
 menu: true
 order: 1
 description: >
