@@ -56,11 +56,11 @@ author:
   # Comment/uncommet to show/hide
   # Icons appear in order, can be rearranged:
   social:
-    facebook:      <username>
-    twitter:       <username>
-    google:        <number>
-    vk:            <username>
-    youtube:       <string>_<string>_<string>
+    facebook:      pushdown99
+    # twitter:       <username>
+    # google:        <number>
+    # vk:            <username>
+    # youtube:       <string>_<string>_<string>
     # vimeo:         <username>
     # vine:          <username>
     # spotify:       user/<number>
