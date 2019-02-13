@@ -9,8 +9,6 @@ permalink: /search/
 
 # Search
 
-{% include algolia.html %}
 <div id="search-searchbar"></div>
 <div class="post-list" id="search-hits"></div>
-
-<p class="rss-subscribe">subscribe <a href="{{ '/feed.xml' | relative_url }}">via RSS</a></p>
+{% include algolia.html %}
