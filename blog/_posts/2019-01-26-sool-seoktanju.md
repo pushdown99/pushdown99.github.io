@@ -6,7 +6,8 @@ description: >
 author: hwang-hae-yeon
 canonical_url: http://hyde.getpoole.com/2012/02/06/whats-jekyll/
 ---
-### 정의 및 내용
+
+정의 및 내용
 멥쌀로 술밑을 만든 것에 찹쌀로 다시 덧술하여 만든 술. (출처: [한국민족문화대백과사전](http://encykorea.aks.ac.kr/Contents/Item/E0028556))  
  
 그 맛이 달아 입에 머금고 차마 삼키기가 아깝다고 하여 붙여진 이름으로 ‘석탄향(惜呑香)’이라고도 한다. 『임원경제지』·『양주방』·『음식방문』·『술방문』 등에 기록되어 있다.

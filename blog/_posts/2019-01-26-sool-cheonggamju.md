@@ -7,7 +7,7 @@ author: hwang-hae-yeon
 canonical_url: http://hyde.getpoole.com/2012/02/06/whats-jekyll/
 ---
 
-### 정의 및 내용  
+정의 및 내용  
 물을 섞지 않고 찹쌀을 밥으로 쪄서 누룩을 섞어 빚는 술. (출처: [한국민족문화대백과사전](http://encykorea.aks.ac.kr/Contents/SearchNavi?keyword=%EC%B2%AD%EA%B0%90%EC%A3%BC&ridx=0&tot=1051))  
 
 『고사촬요 攷事撮要』·『치생요람 治生要覽』·『산림경제』·『민천집설 民天集說』·『임원경제지』·『시의전서 是議全書』 등의 문헌에 빈번하게 나온다.
