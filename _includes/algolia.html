@@ -1,54 +1,8 @@
-<script src="/assets/js/instantsearch.min.js"></script>
-<script src="/assets/js/moment.min.js"></script>
-<link rel="stylesheet" type="text/css" href="/assets/css/instantsearch.min.css">
-<link rel="stylesheet" type="text/css" href="/assets/css/instantsearch-theme-algolia.min.css">
-
-<script>
-var search = instantsearch({
-  appId: '{{ site.algolia.application_id }}',
-  apiKey: '{{ site.algolia.search_only_api_key }}',
-  indexName: '{{ site.algolia.index_name }}'
-});
-
-var hitTemplate = function(hit) {
-  let date = '';
-  if (hit.date) {
-    date = moment.unix(hit.date).format('YYYY-MM-DD');
-  }
-
-  let url = `{{ site.baseurl }}${hit.url}#${hit.anchor}`;
-
-  const title = hit._highlightResult.title.value;
-  const content = hit._highlightResult.html.value;
-
-  return `
-    <div class="post-item">
-      <a class="post-link" href="${url}">${title}</a>&nbsp;(${date})</br>
-      <div class="post-snippet">${content}</div>
-    </div>
-  `;
-}
-
-
-search.addWidget(
-  instantsearch.widgets.searchBox({
-    container: '#search-searchbar',
-    placeholder: 'Search into posts...',
-    poweredBy: false // This is required if you're on the free Community plan
-  })
-);
-
-search.addWidget(
-  instantsearch.widgets.hits({
-    container: '#search-hits',
-    templates: {
-      item: hitTemplate
-    }
-  })
-);
-
-search.start();
-</script>
+<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch-theme-algolia.min.css">
+<base href="{{ site.baseurl }}">
 
 <style>
 .ais-search-box {
@@ -84,3 +38,54 @@ search.start();
   display: none;
 }
 </style>
+
+<script src="http://code.jquery.com/jquery-1.4.4.min.js"></script>
+<script>
+  $(document).ready(function() {  
+    console.log("load");
+    var search = instantsearch({
+      appId: '{{ site.algolia.application_id }}',
+      apiKey: '{{ site.algolia.search_only_api_key }}',
+      indexName: '{{ site.algolia.index_name }}'
+    });
+    
+    var hitTemplate = function(hit) {
+      let date = '';
+      if (hit.date) {
+        date = moment.unix(hit.date).format('YYYY-MM-DD');
+      }
+    
+      let url = `{{ site.baseurl }}${hit.url}#${hit.anchor}`;
+    
+      const title = hit._highlightResult.title.value;
+      const content = hit._highlightResult.html.value;
+    
+      return `
+        <div class="post-item">
+          <a class="post-link" href="${url}">${title}</a>&nbsp;(${date})</br>
+          <div class="post-snippet">${content}</div>
+        </div>
+      `;
+    }
+    
+    
+    search.addWidget(
+      instantsearch.widgets.searchBox({
+        container: '#search-searchbar',
+        placeholder: 'Search into posts...',
+        poweredBy: false // This is required if you're on the free Community plan
+      })
+    );
+    
+    search.addWidget(
+      instantsearch.widgets.hits({
+        container: '#search-hits',
+        templates: {
+          item: hitTemplate
+        }
+      })
+    );
+    
+    search.start();
+  }); 
+</script>
