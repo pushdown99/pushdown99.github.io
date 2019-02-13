@@ -73,18 +73,19 @@ author1:
     # download:        <url>
 
 # Another author (optional)
-author2:
-  name: <firtname> <lastname>
-  email: <mail@domain.tld>
+hwang-hae-yeon:
+  name: haeyeon hyhwang
+  email: haeyun@gmail.com
   about: |
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    황해연(黃海淵)  
 
-    Open `_data/authors.yml` to edit this text.
-  picture: https://placehold.it/128x128
-  twitter: <username>
-  github: <username>
+    감떨어짐/前014xy.pdsn.ggsn개발자;xy=10,11,12/  
+    40대평범남/폰개발자남편/두아들아빠/  
+    내회사를꿈꾸는자/혼이담긴구라/황해분식/천재성=미혼/  
+    절대동안x/극소심B형/저질체력
+  picture: /assets/img/pictures/hwang-hae-yeon.png
+  twitter: pushdown99
+  github: pushdown99
   accent_color: "#268bd2"
   accent_image:
     background: "#202020"

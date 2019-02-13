@@ -7,7 +7,7 @@ author: author2
 canonical_url: http://hyde.getpoole.com/2012/02/06/whats-jekyll/
 ---
 
-### 정의 및 내용
+정의! 및 내용  
 경기도 화성시 지역에서 전통적으로 빚어온 찹쌀로 만든 술. (출처: [한국민족문화대백과사전](http://encykorea.aks.ac.kr/Contents/SearchNavi?keyword=%EB%B6%80%EC%9D%98%EC%A3%BC&ridx=0&tot=1683))  
 
 경기도 무형문화재 제2호. 부의주라는 이름은 술이 익으면 밥알이 동동 떠 있는게 마치 개미가 떠있는 것과 비슷하다는 데서 유래하였다. 부의주는 이 밖에도 밥알이 동동 떠 있다고 하여 동동주, 나방이 떠 있는 것 같다고 하여 부아주(浮蛾酒), 녹아주(綠蛾酒) 등으로도 불린다.
