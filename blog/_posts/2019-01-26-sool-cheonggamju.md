@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "청감주(淸甘酒)"
+title: 청감주(淸甘酒)
 description: >
   Jekyll is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes.
 author: author2
