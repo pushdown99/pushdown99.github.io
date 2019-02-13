@@ -49,7 +49,7 @@
       indexName: '{{ site.algolia.index_name }}'
     });
     console.log(search);
-    console.log({{ site.algolia.search_only_api_key }});
+    console.log('{{ site.algolia.search_only_api_key }}');
     var hitTemplate = function(hit) {
       let date = '';
       if (hit.date) {
