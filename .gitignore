@@ -2,7 +2,6 @@
 _gh_pages
 _site*
 .ruby-version
-_algolia_api_key
 
 # Numerous always-ignore extensions
 *.diff
