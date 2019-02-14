@@ -2,7 +2,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.css">
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch-theme-algolia.min.css">
-<base href="{{ site.baseurl }}">
 
 <style>
 .ais-search-box {
@@ -39,9 +38,7 @@
 }
 </style>
 
-<script src="https://code.jquery.com/jquery-1.4.4.min.js"></script>
 <script>
-  $(document).ready(function() {  
     console.log("load");
     var search = instantsearch({
       appId: '{{ site.algolia.application_id }}',
@@ -86,7 +83,6 @@
         }
       })
     );
-    
     search.start();
-  }); 
+
 </script>
