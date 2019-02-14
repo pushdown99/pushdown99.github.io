@@ -9,6 +9,8 @@ permalink: /search/
 
 # Search
 
+<script>console.log("before");</script>
 <div id="search-searchbar"></div>
 <div class="post-list" id="search-hits"></div>
+<script>console.log("after");</script>
 {% include algolia.html %}
