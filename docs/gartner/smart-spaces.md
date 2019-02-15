@@ -5,7 +5,7 @@ hide_description: true
 ---
 
 # 스마트 공간(Smart Spaces)
-This chapter shows how to upgrade Hydejack to a newer version. The method depends on how you've installed Hydejack.
+스마트 홈, 스마트 시티를 포함한 자동화된 공간을 말한다. 위에서 언급한 블록체인, 엣지 컴퓨팅, IoT 등이 모두 발전해야 이룰 수 있는 단계다. 자율주행, 업무 자동화 등을 위해 스마트 시티, 디지털 작업 공간(몰입형 경험), 스마트 홈, 커넥티드 공장 등이 발달하고, 또 이 요소들끼리 융합해 자동화를 이루는 것을 말한다. 예를 들어, 직원은 가장 가까운 주차 공간으로 안내하기 위해 앱을 사용할 수 있으며, 건물에 들어가면 작업 공간과 회의실을 할당받을 수 있다. 동시에 그의 ‘스마트 배지’는 안전을 위해 자신의 위치를 ​​추적할 수 있도록 한다. 생활편의 외에도 SaaS, 인력관리, IT 서비스 괸리, 금융, 세일즈, 마케팅 부문 자동화 등을 통합해 언급하는 개념이다.
 
 ## Table of Contents
 {:.no_toc}

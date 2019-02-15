@@ -5,7 +5,9 @@ hide_description: true
 ---
 
 # 확장된 분석 기술(Augmented Analytics)
-This chapter covers the basics of content creation with Hydejack.
+확장된 분석 기술 혹은 증강 분석이란 데이터를 딥 러닝으로 처리하는 것을 넘어선다는 것이다. 가트너는 2023년까지 AI와 딥 러닝이 데이터 과학에서 가장 일반적으로 쓰일 것으로 예측했다. 현재도 딥 러닝은 활발하게 사용되는 방법인 느낌인데 그 이유는 여러분이 한국에 살기 때문이다 추후 딥 러닝을 통해 데이터를 학습하는 것까지도 학습해 이를 자연어 형태로 출력해줄 것으로 가트너는 예측했다. 딥 러닝을 위한 딥 러닝인 셈이다. 따라서 데이터 과학자가 아닌 일반 직장인도 이 결과를 해석하고 사용할 수 있게 됨을 의미한다. 가트너는 2021년 즈음 현재 사람이나 기계가 만들어내고 있는 보고서의 75%가 자동화에 의해 대체될 것으로 내다봤다(Gartner believes that by 2021, 75% of prebuilt reports will be replaced or augmented with automated insights).
+
+따라서 기업은 분석 기술을 직관적인 인터페이스로 구현하는 것에 초점을 맞춰야 한다. 가트너는 대화식 인터페이스를 추천했다. 그렇다. 챗봇이다.
 
 ## Table of Contents
 {:.no_toc}

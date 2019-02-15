@@ -5,7 +5,9 @@ hide_description: true
 ---
 
 # 블록체인(Blockchain)
-This chapters shows how to prepare your Hydejack site for a production build and deployment on 3rd party hosting providers.
+블록체인은 분산원장(distributed ledger)의 일종이다. 정보전달을 블록을 생성해 하고, 뒤의 블록이 앞의 블록의 정보가 맞는지 끊임없이 검증하는 모델이므로 신뢰 구축, 투명성 제공, 비용 절감, 거래 합의 시간 단축, 현금 흐름 개선 등의 효과가 있다.
+
+그러나 현재의 블록체인 기업들은 블록체인의 이념적 특성(탈중앙화)을 구현하기엔 기술이 부족하다. 블록체인이 등장한 지 시간이 얼마 되지 않아 기술 고도화가 덜 이뤄진 탓이다. 이 기술이 점차 고도화되면 기업 간 계약이나 정부의 신뢰성 검증, 탈중앙화의 이념에 가까워질 것이다. 이미 블록체인을 성공적으로 도입한 정부도 있으며, (코인을 제외하고)블록체인을 사업화하고 있는 사례도 있다. 미래에 대한 다양한 시나리오도 준비돼 있다.
 
 ## Table of Contents
 {:.no_toc}

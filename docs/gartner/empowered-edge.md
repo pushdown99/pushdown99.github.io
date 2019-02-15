@@ -5,9 +5,9 @@ hide_description: true
 ---
 
 # 자율권을 가진 엣지(Empowered Edge)
-This documents shows how to upgrade Hydejack from previous versions (v5) in a step-by-step manner.
-
-Unfortunately, upgrading form v5 and earlier is not straightforward. A lot of patterns and names have changed, motivated by a variety of reasons, including better integration with the rest of the Jekyll ecosystem and simplified workflows enabled by Jekyll Collections.
+가트너가 엣지라고 표현하는 것은 사용자 근처에 있는 기기들을 말한다. 이 엣지들이 컴퓨팅하는 것을 엣지 컴퓨팅이라고 말한다. 클라우드 컴퓨팅과 일부 상충하는 개념이다. 기기 근처에서 처리되므로 온디바이스 컴퓨팅과 유사하나 그 기기 안에서가 아니라 그 근처에서 처리돼도 되므로 범위가 조금 다르다. 대표적인 엣지 컴퓨팅 기기는 자율주행차다. 자율주행차는 실제 도로 주행 시 클라우드에 정보를 보내지 않아도 응급 상황 시 스스로 대처해야 한다. 따라서 통신을 통해 모든 것을 처리하면 안 된다. 물론 클라우드 컴퓨팅 스타일의 자율주행차도 있다. 경기도의 자율주행 버스 제로 셔틀이 서버에서 오는 신호를 활용한다.
+ 
+가트너가 엣지 컴퓨팅을 주장하는 이유는 IoT 제품 때문이다. 사람의 행동, 날씨 등에 민감하게 대응해야 하는 IoT 제품류는 트래픽이나 지연 시간을 줄이기 위해 프로세싱을 로컬에서 처리하려고 하는 것이다. 클라우드와 완전히 상충된 개념은 아닌데, 중앙화된 클라우드는 아니지만 엣지를 클라우드로 생각할 수도 있기 때문. 가트너는 5G 상용화가 이뤄지면 클라우드-엣지 컴퓨팅이 서로 보완하는 모델이 등장할 것으로 내다봤다. 엣지 컴퓨팅은 향후 5년간 다양한 AI 칩이 등장하며 활성화될 것이다.
 
 ## Table of Contents
 {:.no_toc}
