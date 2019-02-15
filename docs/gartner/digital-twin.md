@@ -4,7 +4,7 @@ description: >
 hide_description: true
 ---
 
-# Deep Learning
+# 디지털 쌍둥이(Digital Twins)
 There are multiple ways of installing Hydejack.
 The easiest and cleanest way is [via the Starter Kit](#via-starter-kit).
 Alternatively, you can use the [Ruby gem](#via-gem).

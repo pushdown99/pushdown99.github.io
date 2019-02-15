@@ -4,7 +4,7 @@ description: >
 hide_description: true
 ---
 
-# Basics
+# 확장된 분석 기술(Augmented Analytics)
 This chapter covers the basics of content creation with Hydejack.
 
 ## Table of Contents

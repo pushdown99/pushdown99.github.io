@@ -4,7 +4,7 @@ description: >
 hide_description: true
 ---
 
-# Advanced
+# 자율주행 사물(Autonomous Things)
 This chapter covers advanced topics, such as offline support and custom JS builds. Codings skills are recommended.
 
 ## Table of Contents

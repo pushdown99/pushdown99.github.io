@@ -4,7 +4,7 @@ description: >
 hide_description: true
 ---
 
-# Upgrade
+# 스마트 공간(Smart Spaces)
 This chapter shows how to upgrade Hydejack to a newer version. The method depends on how you've installed Hydejack.
 
 ## Table of Contents

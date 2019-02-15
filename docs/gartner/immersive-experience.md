@@ -5,7 +5,7 @@ description: >
 hide_description: true
 ---
 
-# Scripts
+# 몰입 경험(Immersive Experience)
 There are two ways of adding third party scripts.
 [Embedding](#embedding) is ideal for one-off scripts, e.g. `widgets.js` that is part of embedded tweets (see below).
 Adding [global scripts](#global-scripts) is for scripts that should be loaded on every page.

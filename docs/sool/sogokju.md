@@ -1,11 +1,10 @@
 ---
-layout: post
-title: 소곡주(素麯酒)
 description: >
-  Jekyll is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes.
-author: hwang-hae-yeon
-canonical_url: http://hyde.getpoole.com/2012/02/06/whats-jekyll/
+  This chapter shows how to upgrade Hydejack to a newer version. The method depends on how you've installed Hydejack.
+hide_description: true
 ---
+
+# 소곡주(素麯酒)
 
 정의 및 내용  
 전통 민속주의 하나. (출처: [한국민족문화대백과사전](http://encykorea.aks.ac.kr/Contents/SearchNavi?keyword=%ED%95%9C%EC%82%B0%20%EC%86%8C%EA%B3%A1%EC%A3%BC&ridx=13&tot=1573))  

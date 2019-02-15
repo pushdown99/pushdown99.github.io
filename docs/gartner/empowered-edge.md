@@ -4,7 +4,7 @@ description: >
 hide_description: true
 ---
 
-# Migration
+# 자율권을 가진 엣지(Empowered Edge)
 This documents shows how to upgrade Hydejack from previous versions (v5) in a step-by-step manner.
 
 Unfortunately, upgrading form v5 and earlier is not straightforward. A lot of patterns and names have changed, motivated by a variety of reasons, including better integration with the rest of the Jekyll ecosystem and simplified workflows enabled by Jekyll Collections.
