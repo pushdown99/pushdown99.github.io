@@ -4,7 +4,7 @@ description: >
 hide_description: true
 ---
 
-# Install
+# Deep Learning
 There are multiple ways of installing Hydejack.
 The easiest and cleanest way is [via the Starter Kit](#via-starter-kit).
 Alternatively, you can use the [Ruby gem](#via-gem).

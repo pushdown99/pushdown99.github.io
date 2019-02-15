@@ -19,7 +19,7 @@ Buyers of the PRO version can jump straight to [installation for PRO buyers](ins
 or [upgrades for PRO buyers](upgrade.md#pro-version).
 
 ## Getting started
-* [Install]{:.heading.flip-title} --- How to install and run Hydejack.
+* [DeepLearning]{:.heading.flip-title} --- How to install and run Hydejack.
 * [Upgrade]{:.heading.flip-title} --- You can skip this if you haven't used Hydejack before.
 * [Config]{:.heading.flip-title} --- Once Jekyll is running you can start editing your config file.
 {:.related-posts.faded}
@@ -38,7 +38,7 @@ or [upgrades for PRO buyers](upgrade.md#pro-version).
 * [CHANGELOG]{:.heading.flip-title} --- Version history of Hydejack.
 {:.related-posts.faded}
 
-[install]: install.md
+[deeplearning]: deeplearning.md
 [upgrade]: upgrade.md
 [config]: config.md
 [basics]: basics.md
