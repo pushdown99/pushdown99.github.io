@@ -33,9 +33,8 @@ Example:
   <a href="https://twitter.com/qwtel/status/871098943505039362">June 3, 2017</a>
 </blockquote>
 ~~~
-
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">The next version of Hydejack (v6.3.0) will allow embedding 3rd party scripts, like the one that comes with this tweet for example.</p>&mdash; Florian Klampfer (@qwtel) <a href="https://twitter.com/qwtel/status/871098943505039362">June 3, 2017</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="ko" dir="ltr">제로페이 vs. 카카오페이<br><br>CAT/POS를 배제하니깐 구현을 쉬웠을낀데..<br>업자들의 수익모델이 없어서 이게 돌아갈까 싶긴하네 <a href="https://t.co/zpExyalhCq">https://t.co/zpExyalhCq</a></p>&mdash; hae-yeon, hwang (@pushdown99) <a href="https://twitter.com/pushdown99/status/1051972079627595777?ref_src=twsrc%5Etfw">October 15, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## Global scripts
 If you have scripts that should be included on every page you can add them globally by
