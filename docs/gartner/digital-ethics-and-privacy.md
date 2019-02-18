@@ -4,8 +4,10 @@ description: >
 hide_description: true
 ---
 
-# Config
-Once Jekyll is running, you can start with basic configuration by adding various entries to `_config.yml`. Besides these descriptions, you can also read the [annotated config file](https://github.com/qwtel/hydejack/blob/v8/_config.yml).
+# 디지털 윤리와 개인정보보호(Digital Ethics and Privacy)
+2018년 GDPR 의무 도입, 페이스북과 구글의 데이터 유출 등으로 인해 2019년은 데이터 윤리와 보안에 더 많은 노력을 기울여야 하는 한 해가 될 것이다.
+
+가트너는 디지털 윤리를 기업에 접합하지 말고 아예 처음부터 내장할 것을 권한다. 데이비드 설리 부사장은 “개인정보보호와 보안이 신뢰 구축의 기본 요소지만, 신뢰는 사실상 이러한 요소들 이상의 의미를 가진다”며 디지털 윤리의 중요성을 강조했다. 또한 디지털 윤리 준수의 개념을 ‘준수하고 있는가’보다 ‘옳은 일을 하고 있는가’ 수준의 적극적인 태도를 갖출 것을 권했다.
 
 **NOTE**: When making changes to `_config.yml`, it is necessary to restart the Jekyll process for changes to take effect.
 {:.message}

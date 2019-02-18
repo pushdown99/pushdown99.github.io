@@ -1,11 +1,10 @@
 ---
-layout: post
-title: 과하주(過夏酒)
 description: >
-  Jekyll is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes.
-author: hwang-hae-yeon
-canonical_url: http://hyde.getpoole.com/2012/02/06/whats-jekyll/
+  This chapter shows how to upgrade Hydejack to a newer version. The method depends on how you've installed Hydejack.
+hide_description: true
 ---
+
+# 과하주(過夏酒)
 
 정의 및 내용
 약주에 소주를 섞어 빚는 혼양주(混釀酒). (출처: [한국민족문화대백과사전](http://encykorea.aks.ac.kr/Contents/SearchNavi?keyword=%EA%B3%BC%ED%95%98%EC%A3%BC&ridx=0&tot=5548))  

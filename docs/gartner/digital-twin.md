@@ -4,12 +4,8 @@ description: >
 hide_description: true
 ---
 
-# Install
-There are multiple ways of installing Hydejack.
-The easiest and cleanest way is [via the Starter Kit](#via-starter-kit).
-Alternatively, you can use the [Ruby gem](#via-gem).
-If you don't mind a cluttered source directory, you can use [the zip file](#via-zip).
-Finally, If you know what you are doing, you can [fork the git repository](#via-git).
+# 디지털 쌍둥이(Digital Twins)
+디지털 쌍둥이는 현존하는 것들의 디지털 복제품을 말한다. 건축물의 CAD 도면이라고 생각하면 쉽다. 디지털 쌍둥이가 필요한 이유는 IoT(Internet of Things) 효율성 때문이다. 디지털 쌍둥이를 구현해놓고 이 위에서 시뮬레이션을 진행하면 효과적인 결과를 내놓는다는 것이다. 가트너 예측에 따르면 2020년까지 200억 개 이상의 IoT 센서 및 제품이 등장할 것이다. 이를 효율적으로 통제하기 위해 디지털 쌍둥이를 구현해야 하며, 그 구현을 더욱 쉽게 하는 소프트웨어들이 등장해야 한다고 본다. 따라서 3D 모델링의 표준화 및 단순화, 교육 강화 등이 필요하다는 주장이다.
 
 Buyers of the PRO version should [follow these steps](#pro-version).
 

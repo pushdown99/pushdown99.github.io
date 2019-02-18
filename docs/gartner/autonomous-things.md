@@ -4,8 +4,10 @@ description: >
 hide_description: true
 ---
 
-# Advanced
-This chapter covers advanced topics, such as offline support and custom JS builds. Codings skills are recommended.
+# 자율주행 사물(Autonomous Things)
+이미 개념적으로 친숙한 로봇, 드론, 자율주행차 등을 통칭하는 의미다. 수술용 로봇이나 창고용 로봇 등도 포함한다. 현재 형태의 자율주행 외에도 자동화 프로그래밍 모델을 통해 로봇들끼리 소통하고, 주변 환경이나 사람들과 자연스럽게 상호작용하는 것을 고급 행동으로 정의하고 이러한 로봇들이 더 많이 등장해야 한다는 의미다. 예를 들어 배달의민족에서 선보인 서빙 로봇‘딜리’의 경우 시험 운행에서 사람이나 장애물을 정확하게 피해 가는 모습을 보인 바 있다.
+
+또한, 로봇들끼리 정보를 주고받아 교통 정보를 알려주거나 하는 행동들도 있다. 가트너는 또다른 예로 드론이 논이나 밭을 조사해 수확할 시기가 됐다고 판단하면, 수확용 자율주행 기기가 이 신호를 받아 자동으로 추수하는 것을 들었다. 또한, 배송 시장에서 자율주행 차량들이 서로 정보를 주고받아 최상의 경로로 화물을 주고받는 것도 예로 들었다.
 
 ## Table of Contents
 {:.no_toc}

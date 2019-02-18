@@ -1,11 +1,10 @@
 ---
-layout: post
-title: 부의주(浮蟻酒; 동동주)
 description: >
-  Jekyll is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes.
-author: hwang-hae-yeon
-canonical_url: http://hyde.getpoole.com/2012/02/06/whats-jekyll/
+  This chapter shows how to upgrade Hydejack to a newer version. The method depends on how you've installed Hydejack.
+hide_description: true
 ---
+
+# 부의주(浮蟻酒)
 
 정의! 및 내용  
 경기도 화성시 지역에서 전통적으로 빚어온 찹쌀로 만든 술. (출처: [한국민족문화대백과사전](http://encykorea.aks.ac.kr/Contents/SearchNavi?keyword=%EB%B6%80%EC%9D%98%EC%A3%BC&ridx=0&tot=1683))  

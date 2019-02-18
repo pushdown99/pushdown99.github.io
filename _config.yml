@@ -122,7 +122,7 @@ plugins:
 
 blame: https://github.com/pushdown99/pushdown99.github.io/blame/master/_wiki 
 
-remote_theme: qwtel/hydejack@gem
+# remote_theme: qwtel/hydejack@gem
 
 # Other Plugins
 # ---------------------------------------------------------------------------------------
