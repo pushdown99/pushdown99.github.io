@@ -162,6 +162,4 @@ algolia:
   application_id: ULCVVAH9L3
   index_name:     wb9lab 
   search_only_api_key: b7a2397d9e29ab1fc96d6e0f2ea5eae9
-  files_to_exclude: 
-    - index.html
-    - index.md
+  files_to_exclude: []

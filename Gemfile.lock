@@ -270,7 +270,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
-  jekyll-algolia
+  jekyll-algolia (~> 1.0)
   jekyll-default-layout
   jekyll-feed
   jekyll-optional-front-matter
