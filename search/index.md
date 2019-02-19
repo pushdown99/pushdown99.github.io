@@ -13,3 +13,4 @@ permalink: /search/
 <div class="post-list" id="search-hits"></div>
 <script>console.log("after");</script>
 {% include algolia.html %}
+s
