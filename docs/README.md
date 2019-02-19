@@ -37,14 +37,14 @@ Should you discover a mistake in the docs (or a bug in general) feel free to [op
 * [Why use NETCONF/YANG when you can use SNMP and CLI?]{:.heading.flip-title}
 * *[Cisco/Tail-f Confd-Basic](https://www.tail-f.com/confd-basic/)
 
-[양자 컴퓨팅(Quantum Computing)]: /docs/gartner/quantum-computing.md
-[자율주행 사물(Autonomous Things)]: /docs/gartner/autonomous-things.md
-[확장된 분석 기술(Augmented Analytics)]: /docs/gartner/augmented-analytics.md
-[인공지능 주도 개발(AI-Driven Development)]: /docs/gartner/ai-driven-development.md
-[자율권을 가진 엣지(Empowered Edge)]: /docs/gartner/empowered-edge.md
-[디지털 쌍둥이(Digital Twins)]: gartner/digital-twin.md
-[블록체인(Blockchain)]: blockchain.md
-[몰입 경험(Immersive Experience)]: gartner/immersive-experience.md
-[스마트 공간(Smart Spaces)]: gartner/smart-spaces.md
-[디지털 윤리와 개인정보보호(Digital Ethics and Privacy)]: gartner/digital-ethics-and-privacy.md
-[Why use NETCONF/YANG when you can use SNMP and CLI?]: tech/why-use-netconf-yang-when-you-use-snmp-and-cli.md
+[양자 컴퓨팅(Quantum Computing)]: /docs/gartner/quantum-computing/
+[자율주행 사물(Autonomous Things)]: /docs/gartner/autonomous-things/
+[확장된 분석 기술(Augmented Analytics)]: /docs/gartner/augmented-analytics/
+[인공지능 주도 개발(AI-Driven Development)]: /docs/gartner/ai-driven-development/
+[자율권을 가진 엣지(Empowered Edge)]: /docs/gartner/empowered-edge/
+[디지털 쌍둥이(Digital Twins)]: gartner/digital-twin/
+[블록체인(Blockchain)]: blockchain/
+[몰입 경험(Immersive Experience)]: gartner/immersive-experience/
+[스마트 공간(Smart Spaces)]: gartner/smart-spaces/
+[디지털 윤리와 개인정보보호(Digital Ethics and Privacy)]: gartner/digital-ethics-and-privacy/
+[Why use NETCONF/YANG when you can use SNMP and CLI?]: tech/why-use-netconf-yang-when-you-use-snmp-and-cli/
