@@ -7,7 +7,7 @@ hide_description: true
 # Mbed
 Mbed is a platform and operating system for internet-connected devices based on 32-bit ARM Cortex-M microcontrollers. Such devices are also known as Internet of Things devices. The project is collaboratively developed by Arm and its technology partners. [`mbed OS`](https://os.mbed.com/) [`wiki`](https://en.wikipedia.org/wiki/Mbed)  
 
-![mbed.png](/../../_site/assets/img/docs/mbed.pngassets/mbed.png)
+![mbed.png](mbed.png)
 
 
 
