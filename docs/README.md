@@ -8,14 +8,25 @@ permalink: /docs/
 ---
 
 # Documentation
-Here you should be able to find everything you need to know to accomplish the most common tasks when blogging with Hydejack.
-Should you think something is missing, [please let me know](mailto:mail@qwtel.com).
-Should you discover a mistake in the docs (or a bug in general) feel free to [open an issue](https://github.com/qwtel/hydejack/issues) on GitHub.
+알다가도 모를것들을 한번 주욱 살펴보는걸로
 
 ## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
+
+## 프로그래밍언어/개발관련
+* [Mbed]{:.heading.flip-title}
+* [Deep Learning]{:.heading.flip-title}
+* [Blockchain]{:.heading.flip-title}
+* [Python]{:.heading.flip-title}
+* [C/C++]{:.heading.flip-title}
+* [Go]{:.heading.flip-title}
+* [PHP]{:.heading.flip-title}
+* [Ruby]{:.heading.flip-title}
+* [Lua]{:.heading.flip-title}
+{:.related-posts.faded}
+
 
 ## 가트너 2019년 10대 전략 기술 트렌드
 * [양자 컴퓨팅(Quantum Computing)]{:.heading.flip-title}
@@ -36,6 +47,19 @@ Should you discover a mistake in the docs (or a bug in general) feel free to [op
 ## 기타
 * [Why use NETCONF/YANG when you can use SNMP and CLI?]{:.heading.flip-title}
 * *[Cisco/Tail-f Confd-Basic](https://www.tail-f.com/confd-basic/)
+
+[Mbed]: /docs/programming/mbed/
+[Deep Learning]: /docs/programming/deep-learning/
+[Blockchain]: /docs/programming/deep-learning/
+[C/C++]: /docs/programming/c/
+[Python]: /docs/programming/python/
+[Go]: /docs/programming/go/
+[PHP]: /docs/programming/php/
+[Ruby]: /docs/programming/ruby/
+[Lua]: /docs/programming/lua/
+
+[Deep Learning]: /docs/hot/blockchain/
+[Blockchain]: /docs/hot/blockchain/
 
 [양자 컴퓨팅(Quantum Computing)]: /docs/gartner/quantum-computing/
 [자율주행 사물(Autonomous Things)]: /docs/gartner/autonomous-things/
