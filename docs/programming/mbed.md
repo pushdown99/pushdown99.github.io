@@ -5,15 +5,23 @@ hide_description: true
 ---
 
 # Mbed
+Mbed is a platform and operating system for internet-connected devices based on 32-bit ARM Cortex-M microcontrollers. Such devices are also known as Internet of Things devices. The project is collaboratively developed by Arm and its technology partners. [`mbed OS`](https://os.mbed.com/) [`wiki`](https://en.wikipedia.org/wiki/Mbed)  
 
-## Mbed 가입하기
+![mbed.png](/../../_site/assets/img/docs/mbed.pngassets/mbed.png)
+
+
+
+### Table of Contents
+{:.no_toc}
+1. this unordered seed list will be replaced by toc as unordered list
+{:toc}
+
+### Mbed 가입하기
 
 Mbed 사이트 접속
 ```bash
 https://os.mbed.com/
 ```
-
-![os.mbed.com](os.mbed.com.png)
 
 1. install git 
 ```console
