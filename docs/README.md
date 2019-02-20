@@ -58,8 +58,8 @@ permalink: /docs/
 [Ruby]: /docs/programming/ruby/
 [Lua]: /docs/programming/lua/
 
-[Deep Learning]: /docs/hot/blockchain/
-[Blockchain]: /docs/hot/blockchain/
+[Deep Learning]: /docs/programming/blockchain/
+[Blockchain]: /docs/programming/blockchain/
 
 [양자 컴퓨팅(Quantum Computing)]: /docs/gartner/quantum-computing/
 [자율주행 사물(Autonomous Things)]: /docs/gartner/autonomous-things/
