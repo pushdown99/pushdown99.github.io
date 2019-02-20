@@ -17,24 +17,23 @@ Mbed[`mbed`](https://os.mbed.com/) is a platform and operating system for intern
 ### [Login to the online tools](https://ide.mbed.com/compiler/)
 "Instant access to your lightweight C/C++ microcontroller development environment"
 
-The mbed Compiler provides a lightweight online C/C++ IDE that is pre-configured to let you quickly write programs, compile and download them to run on your mbed Microcontroller. In fact, you don't have to install or set up anything to get running with mbed. Because it is a web app, you can log in from anywhere and carry on where you left off, and you are free to work on Windows, Mac, iOS, Android, Linux, or all of them.  
+The mbed Compiler provides a lightweight online C/C++ IDE that is pre-configured to let you quickly write programs, compile and download them to run on your mbed Microcontroller. 
 
 [Open the Online Mbed Compiler](https://ide.mbed.com/compiler/)
 
 ![mbed-compiler](https://os.mbed.com/media/uploads/screamer/compiler-overview.png)
 
 ### Explore the SDK and Handbook
-The mbed Software Development Kit (SDK) is a C/C++ microcontroller software platform relied upon by tens of thousands of developers to build projects fast. We've worried about creating and testing startup code, C runtime, libraries and peripheral APIs, so you can worry about coding the smarts of your next product.
+The mbed Software Development Kit (SDK) is a C/C++ microcontroller software platform relied upon by tens of thousands of developers to build projects fast. 
 
 The SDK is licensed under the permissive Apache 2.0 licence, so you can use it in both commercial and personal projects with confidence.
 
 The mbed SDK has been designed to provide enough hardware abstraction to be intuitive and concise, yet powerful enough to build complex projects. It is built on the low-level ARM CMSIS APIs, allowing you to code down to the metal if needed. In addition to RTOS, USB and Networking libraries, a cookbook of hundreds of reusable peripheral and module libraries have been built on top of the SDK by the mbed Developer Community. [`mbed-sdk`](https://os.mbed.com/handbook/mbed-SDK) [`handbook`](https://os.mbed.com/handbook/Homepage)
 
-### Mbed CLI: Seutp a Development Environment in Windows
-As some of you are aware, we provide a command line tool called mbed CLI for mbed OS. mbed CLI allows you to carry out actions such as creating, importing, publishing, and building projects. Typically, you might want to use this if you're looking for a lightweight way of working with mbed OS outside of a GUI.
+### Mbed CLI
+A command line tool called mbed CLI for mbed OS. mbed CLI allows you to carry out actions such as creating, importing, publishing, and building projects. Typically, you might want to use this if you're looking for a lightweight way of working with mbed OS outside of a GUI.
 
-To make life easier for Windows users we've just released an installer, which handles the dependencies necessary for using mbed CLI, such as Python, GCC, Mercurial, Git, and the mbed Serial Driver.
-
+#### Windows
 ```console
 # install Mbed CLI
 https://os.mbed.com/blog/entry/windows-installer-for-mbed-cli/
@@ -60,6 +59,9 @@ cmd> copy mbed-os-example-blinky\BUILD\NUCLEO_F429ZI\GCC_ARM\mbed-os-example-bli
 # Support list
 cmd>mbed compile –S 
 ```
+
+#### Ubuntu
+https://forums.mbed.com/t/installed-toolchain-and-mbed-cli-on-linux-tutorial-mbed-compile-failes/2809
 
 ## Introducing the Mbed Simulator
 ![mbed-silumator](https://os.mbed.com/media/uploads/janjongboom/simulator2.png)  
