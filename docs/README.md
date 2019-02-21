@@ -19,6 +19,10 @@ permalink: /docs/
 * [Mbed]{:.heading.flip-title}
 * [SSH]{:.heading.flip-title}
 * [Markdown]{:.heading.flip-title}
+* [Node MCU]{:.heading.flip-title}
+* [ESP8266]{:.heading.flip-title}
+* [Arduino]{:.heading.flip-title}
+* [Fritzing]{:.heading.flip-title}
 * [Deep Learning]{:.heading.flip-title}
 * [Blockchain]{:.heading.flip-title}
 * [Python]{:.heading.flip-title}
@@ -61,6 +65,10 @@ permalink: /docs/
 [Lua]: /docs/programming/lua/
 [SSH]: /docs/programming/ssh/
 [Markdown]: /docs/programming/markdown/
+[Node MCU]: /docs/programming/nodemcu/
+[ESP8266]: /docs/programming/esp8266/
+[Arduino]: /docs/programming/arduino/
+[Fritzing]: /docs/programming/fritzing/ 
 
 [Deep Learning]: /docs/programming/blockchain/
 [Blockchain]: /docs/programming/blockchain/
