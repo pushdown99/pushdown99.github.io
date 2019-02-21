@@ -17,6 +17,8 @@ permalink: /docs/
 
 ## 프로그래밍언어/개발관련
 * [Mbed]{:.heading.flip-title}
+* [SSH]{:.heading.flip-title}
+* [Markdown]{:.heading.flip-title}
 * [Deep Learning]{:.heading.flip-title}
 * [Blockchain]{:.heading.flip-title}
 * [Python]{:.heading.flip-title}
@@ -57,6 +59,8 @@ permalink: /docs/
 [PHP]: /docs/programming/php/
 [Ruby]: /docs/programming/ruby/
 [Lua]: /docs/programming/lua/
+[SSH]: /docs/programming/ssh/
+[Markdown]: /docs/programming/markdown/
 
 [Deep Learning]: /docs/programming/blockchain/
 [Blockchain]: /docs/programming/blockchain/

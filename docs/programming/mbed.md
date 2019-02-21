@@ -8,7 +8,7 @@ hide_description: true
 Mbed[`mbed`](https://os.mbed.com/) is a platform and operating system for internet-connected devices based on 32-bit ARM Cortex-M microcontrollers. Such devices are also known as Internet of Things devices. The project is collaboratively developed by Arm and its technology partners.  [`wiki`](https://en.wikipedia.org/wiki/Mbed)  
 
 {:.no_toc}
-1. this unordered seed list will be replaced by toc as unordered list
+0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 ![Screenshot](/assets/img/docs/mbed.png)
 
@@ -69,7 +69,7 @@ https://forums.mbed.com/t/installed-toolchain-and-mbed-cli-on-linux-tutorial-mbe
 
 The simulator shows the code editor on the left. You can change the code here, and click Compile to run it in the simulator. There is a wide range of demos available, from peripheral demos (like the popular C12832 LCD display) to network demos. Yes, that's right; you can use the full Mbed networking stack directly from the simulator. Select the demo in the dropdown menu and click Load. The demo loads automatically.
 
-You can also add new components. For example, to blink an external LED:  
+You can also add new components. For example, to blink an external LED:    
 1. Load 'Blinky'.
 2. Click Add component.
 3. Select the Red LED.
