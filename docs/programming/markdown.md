@@ -17,6 +17,7 @@ Markdown is a [lightweight markup language](https://en.wikipedia.org/wiki/Lightw
 
 #### Overview
 Nearly all Markdown applications support the basic syntax outlined in John Gruber’s original design document. There are minor variations and discrepancies between Markdown processors — those are noted inline wherever possible.
+
 **NOTE**: Using Markdown doesn't mean that you can't also use HTML. You can add HTML tags to any Markdown file. This is helpful if you prefer certain HTML tags to Markdown syntax. For example, some people find that it's easier to use HTML tags for images.
 {:.message}
 
@@ -292,7 +293,7 @@ This means the following example formats are all roughly equivalent for the firs
 [hobbit-hole][A]
 ```
 ---  
-**- Formatting the Second Part of the Link**
+**- Formatting the Second Part of the Link**  
 The second part of a reference-style link is formatted with the following attributes:
 
 The label, in brackets, followed immediately by a colon and at least one space (e.g., `[label]:` ).
@@ -309,7 +310,7 @@ This means the following example formats are all roughly equivalent for the seco
 [hobbit-hole]: <https://en.wikipedia.org/wiki/Hobbit#Lifestyle> (Hobbit lifestyles)
 ```
 ---  
-**- An Example Putting the Parts Together**
+**- An Example Putting the Parts Together**  
 Say you add a URL as a [standard URL link](#link) to a paragraph and it looks like this in Markdown: 
 ```markdown
 In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, filled with the ends
@@ -335,7 +336,7 @@ To add an image, add an `exclamation mark (!)`, followed by alt text in brackets
 ![Philadelphia's Magic Gardens. This place was so cool!](/assets/img/docs/philly-magic-garden.jpg "Philadelphia's Magic Gardens")
 
 ---  
-**- Linking Images**
+**- Linking Images**  
 To add a link to an image, enclose the Markdown for the image in brackets, and then add the link in parentheses.
 ```markdown
 [![An old rock in the desert](/assets/img/docs/shiprock.jpg "Shiprock, New Mexico by Beau Rogers")](https://www.flickr.com/photos/beaurogers/31833779864/in/photolist-Qv3rFw-34mt9F-a9Cmfy-5Ha3Zi-9msKdv-o3hgjr-hWpUte-4WMsJ1-KUQ8N-deshUb-vssBD-6CQci6-8AFCiD-zsJWT-nNfsgB-dPDwZJ-bn9JGn-5HtSXY-6CUhAL-a4UTXB-ugPum-KUPSo-fBLNm-6CUmpy-4WMsc9-8a7D3T-83KJev-6CQ2bK-nNusHJ-a78rQH-nw3NvT-7aq2qf-8wwBso-3nNceh-ugSKP-4mh4kh-bbeeqH-a7biME-q3PtTf-brFpgb-cg38zw-bXMZc-nJPELD-f58Lmo-bXMYG-bz8AAi-bxNtNT-bXMYi-bXMY6-bXMYv)
@@ -352,12 +353,12 @@ To display a literal character that would otherwise be used to format text in a 
 \* Without the backslash, this would be a bullet in an unordered list.
 
 ---  
-**- Characters You Can Escape**
+**- Characters You Can Escape**  
 You can use a backslash to escape the following characters.
 
 |Character|Name|
 |---|---|
-|\|backslash|
+|'\\'|backslash|
 |`|tick mark|
 |*|asterisk|
 |_|underscore|
