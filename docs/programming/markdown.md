@@ -371,5 +371,7 @@ You can use a backslash to escape the following characters.
 |.|dot|
 |!|exclamation mark|
 
+### [Extended Syntax](https://www.markdownguide.org/extended-syntax)
+
 
 [^1]: "Markdown". 2013-12-04. Archived from the original on 2004-04-02.
