@@ -17,11 +17,10 @@ Deep learning models are vaguely inspired by information processing and communic
 ![Screenshot](/assets/img/docs/deep_learning.png){: width="300"}
 
 ## Installation
-### Python Installation
 1. 파이썬 설치: 3.6.8 버전(64비트)  
-  https://www.python.org/ftp/python/3.6.8/python-3.6.8-amd64.exe
+  <https://www.python.org/ftp/python/3.6.8/python-3.6.8-amd64.exe>
 2. 파이썬/텐서플로우 설치  
-  https://www.tensorflow.org/install/pip 
+  <https://www.tensorflow.org/install/pip> 
 ```console
 C:\> pip install -U pip virtualenv
 C:\> virtualenv --system-site-packages -p python ./venv
