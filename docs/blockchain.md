@@ -22,6 +22,7 @@ Blockchain was invented by a person using the name **Satoshi Nakamoto** in 2008 
 ![Screenshot](/assets/img/docs/blockchain.png)
 
 ## Blockchain
+https://d2fault.github.io/categories/IT/Blockchain/page/3/
 
 [^1]: "Blockchains: The great chain of being sure about things". The Economist. 31 October 2015. Archived from the original on 3 July 2016. Retrieved 18 June 2016. The technology behind bitcoin lets people who do not know or trust each other build a dependable ledger. This has implications far beyond the crypto currency.
 [^2]: Morris, David Z. (15 May 2016). "Leaderless, Blockchain-Based Venture Capital Fund Raises $100 Million, And Counting". Fortune. Archived from the original on 21 May 2016. Retrieved 23 May 2016.
