@@ -42,6 +42,14 @@ Pulse width modulation
 https://tttapa.github.io/ESP8266/Chap04%20-%20Microcontroller.html
 
 pull-up - Low에서 동작
+LM35
+CDS->ASC양 측정
+온도 -> ADC -> 공식적용
+        V -> 공식적용
+
+센서구입방법
+-  데이터시트
+- 정밀도/오차범위
 
 ## Exmaples
 
@@ -91,6 +99,271 @@ void loop() {
   analogWrite(D0,Adc);
 }
 ```
+
+
+### LM35
+
+![Screenshot](/assets/img/docs/lm35.png)
+Analog Output
+```c
+void setup() {
+  Serial.begin(9600);
+}
+
+// the loop function runs over and over again forever
+void loop() {
+  float adc = analogRead(A0);
+  float temp = (adc*3.3*100.0)/1024.0; 
+  Serial.println(temp);
+  delay(500);
+}
+```
+
+<https://library.io/>
+<https://github.com/adafruit/Adafruit_Sensor>
+<https://github.com/adafruit/DHT-sensor-library>
+
+<https://github.com/adafruit/DHT-sensor-library/blob/master/examples/DHT_Unified_Sensor/DHT_Unified_Sensor.ino>
+### DHT11
+```c
+#include <Adafruit_Sensor.h>
+#include <DHT.h>
+#include <DHT_U.h>
+
+#define DHTPIN D3     // Digital pin connected to the DHT sensor 
+#define DHTTYPE    DHT11     // DHT 11
+DHT_Unified dht(DHTPIN, DHTTYPE);
+
+uint32_t delayMS;
+
+void setup() {
+  Serial.begin(9600);
+  dht.begin();
+  Serial.println(F("DHTxx Unified Sensor Example"));
+  sensor_t sensor;
+  dht.temperature().getSensor(&sensor);
+  Serial.println(F("------------------------------------"));
+  Serial.println(F("Temperature Sensor"));
+  Serial.print  (F("Sensor Type: ")); Serial.println(sensor.name);
+  Serial.print  (F("Driver Ver:  ")); Serial.println(sensor.version);
+  Serial.print  (F("Unique ID:   ")); Serial.println(sensor.sensor_id);
+  Serial.print  (F("Max Value:   ")); Serial.print(sensor.max_value); Serial.println(F("°C"));
+  Serial.print  (F("Min Value:   ")); Serial.print(sensor.min_value); Serial.println(F("°C"));
+  Serial.print  (F("Resolution:  ")); Serial.print(sensor.resolution); Serial.println(F("°C"));
+  Serial.println(F("------------------------------------"));
+
+  dht.humidity().getSensor(&sensor);
+  Serial.println(F("Humidity Sensor"));
+  Serial.print  (F("Sensor Type: ")); Serial.println(sensor.name);
+  Serial.print  (F("Driver Ver:  ")); Serial.println(sensor.version);
+  Serial.print  (F("Unique ID:   ")); Serial.println(sensor.sensor_id);
+  Serial.print  (F("Max Value:   ")); Serial.print(sensor.max_value); Serial.println(F("%"));
+  Serial.print  (F("Min Value:   ")); Serial.print(sensor.min_value); Serial.println(F("%"));
+  Serial.print  (F("Resolution:  ")); Serial.print(sensor.resolution); Serial.println(F("%"));
+  Serial.println(F("------------------------------------"));
+  delayMS = sensor.min_delay / 1000;
+}
+
+void loop() {
+  delay(delayMS);
+  sensors_event_t event;
+  dht.temperature().getEvent(&event);
+  if (isnan(event.temperature)) {
+    Serial.println(F("Error reading temperature!"));
+  }
+  else {
+    Serial.print(F("Temperature: "));
+    Serial.print(event.temperature);
+    Serial.println(F("°C"));
+  }
+  dht.humidity().getEvent(&event);
+  if (isnan(event.relative_humidity)) {
+    Serial.println(F("Error reading humidity!"));
+  }
+  else {
+    Serial.print(F("Humidity: "));
+    Serial.print(event.relative_humidity);
+    Serial.println(F("%"));
+  }
+}
+```
+
+직렬
+- 동기 (clk) - SPI, I2C (SDA/SCK/MISO/MOSI) ,1:n 통신
+  ic2/twi는 번지를 지정 device에 번지가 있음
+
+- 비동기 (nck) - uart
+
+1:n
+. miso
+. mosi
+. ck
+. cs
+
+병렬
+
+<https://www.hackster.io/tarantula3/i2c-oled-display-using-arduino-nodemcu-7682e8>
+
+jpg->bmp
+
+adafruit
+GFX
+SSD1306
+
+### I2C[^7] OLED
+
+```c
+```
+### I2C OLED TEXT
+```c
+#include <Wire.h>
+#include <Adafruit_GFX.h>
+#include <Adafruit_SSD1306.h>
+
+#define SCREEN_WIDTH 128 // OLED display width, in pixels
+#define SCREEN_HEIGHT 32 // OLED display height, in pixels
+
+#define OLED_RESET     0  // Reset pin # (or -1 if sharing Arduino reset pin)
+Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
+
+void setup() {
+  Serial.begin(9600);
+  if(!display.begin(SSD1306_SWITCHCAPVCC, 0x3C)) { // Address 0x3C for 128x32
+    Serial.println(F("SSD1306 allocation failed"));
+    for(;;); // Don't proceed, loop forever
+  }
+  display.clearDisplay();
+}
+
+void loop() {
+  display.setTextSize(1);
+  display.setTextColor(WHITE);
+  //display.setCursor(0,0);
+  display.print("HEllo World");
+  display.display();
+}
+```
+```c
+#include <Wire.h>
+#include <Adafruit_GFX.h>
+#include <Adafruit_SSD1306.h>
+
+#define SCREEN_WIDTH 128 // OLED display width, in pixels
+#define SCREEN_HEIGHT 32 // OLED display height, in pixels
+
+#define OLED_RESET     0  // Reset pin # (or -1 if sharing Arduino reset pin)
+Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
+
+void setup() {
+  Serial.begin(9600);
+  if(!display.begin(SSD1306_SWITCHCAPVCC, 0x3C)) { // Address 0x3C for 128x32
+    Serial.println(F("SSD1306 allocation failed"));
+    for(;;); // Don't proceed, loop forever
+  }
+  display.clearDisplay();
+}
+
+void loop() {
+  float adc = analogRead(A0);
+  float temp = (adc*3.3*100.0)/1024.0; 
+  Serial.println(temp);
+  display.clearDisplay();
+  display.setTextSize(1);
+  display.setTextColor(WHITE);
+  display.setCursor(0,0);
+  display.print(temp);
+  display.display();
+
+  delay(500);
+}
+```
+
+<https://m.blog.naver.com/PostView.nhn?blogId=zeta0807&logNo=221320404934&proxyReferer=https%3A%2F%2Fwww.google.co.kr%2F>
+
+### blynk
+https://www.blynk.cc/getting-started/
+
+```c
+#define BLYNK_PRINT Serial
+
+#include <ESP8266WiFi.h>
+#include <BlynkSimpleEsp8266.h>
+
+char auth[] = "2d61f23e1856428986c0f8b7ab2c137d";
+char ssid[] = "GCAMP";
+char pass[] = "12345678a";
+
+float Temp;
+
+BLYNK_WRITE(V1)
+{
+  int pinValue = param.asInt(); // assigning incoming value from pin V1 to a variable
+  Serial.println(pinValue);
+}
+void setup()
+{
+  Serial.begin(9600);
+  Blynk.begin(auth, ssid, pass);
+}
+
+void loop()
+{
+  Blynk.run();
+  
+  float val = analogRead(A0);
+  Temp = ((val*3.3*100)/1024.0); 
+  Serial.println(Temp);
+  Blynk.virtualWrite(V0, Temp);
+  delay(100);
+}
+
+```
+
+### air quality monitor
+
+<https://github.com/DrDiettrich/AltSoftSerial>
+<https://ourairquality.org/index.php/build-an-air-quality-monitor/>
+```c
+#include <pms.h>
+
+Pmsx003 pms(D1,D2);
+
+void setup(void) {
+  Serial.begin(9600);
+  
+  pms.begin();
+  pms.waitForData(pmsx003:wakeupTime);
+  pms.write(Pmsx003::cmdModeActive);
+}
+
+auto lastRead = mills();
+
+void loop(void) {
+  const auto n = Pmsx003::Reserved;
+  Pmsx003::pmsData data[n];
+
+  Pmsx003::PmsStatus status = pms.read(data, n);
+  
+  switch (status) {
+    case Pmsx003::OK:
+    {
+      auto newRead = millis();
+      lastRead = newRead;
+
+      for(size_t i = Pmsx003::PM1dot0; i< n; ++i) {
+        Serial.println(data[i]);
+        Serial.println(Pmsx003::dataNames[i]);
+      }
+      break;
+    }
+    case Pmsx003::noData:
+      break;
+    default:
+      Serial.println(Pmsx003::errorMsg[status]);
+  }
+}
+```
+
 ### Lua Programming
 https://github.com/nodemcu/nodemcu-firmware
 
@@ -243,3 +516,4 @@ package.loaded["ds18b20"]=nil
 [^4]: Brian Benchoff. "A DEV BOARD FOR THE ESP LUA INTERPRETER". Hackaday. Retrieved 2 April 2015.
 [^5]: Mpx. "Lua CJSON is a fast JSON encoding/parsing module for Lua". Github. Retrieved 2 April 2015.
 [^6]: Pellepl. "Wear-leveled SPI flash file system for embedded devices". GitHub. Retrieved 2 April 2015.
+[^7]: I²C(아이스퀘어드시, Inter-Integrated Circuit)는 필립스에서 개발한 직렬 버스이다. 마더보드, 임베디드 시스템, 휴대 전화 등에 저속의 주변 기기를 연결하기 위해 사용된다.
