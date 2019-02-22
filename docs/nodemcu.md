@@ -43,12 +43,11 @@ https://tttapa.github.io/ESP8266/Chap04%20-%20Microcontroller.html
 
 pull-up - Low에서 동작
 
-## Programing
+## Exmaples
 
 ### Bink LED
 ```c
 void setup() {
-  // initialize digital pin LED_BUILTIN as an output.
   pinMode(D0, OUTPUT);
 }
 
@@ -92,6 +91,151 @@ void loop() {
   analogWrite(D0,Adc);
 }
 ```
+### Lua Programming
+https://github.com/nodemcu/nodemcu-firmware
+
+Connect to the wireless network
+```lua
+print(wifi.sta.getip())
+--nil
+wifi.setmode(wifi.STATION)
+wifi.sta.config("SSID","password")
+print(wifi.sta.getip())
+--192.168.18.110
+```
+
+Arduino like IO access
+```lua
+pin = 1
+gpio.mode(pin,gpio.OUTPUT)
+gpio.write(pin,gpio.HIGH)
+gpio.mode(pin,gpio.INPUT)
+print(gpio.read(pin))
+`
+
+HTTP Client
+```lua
+-- A simple http client
+conn=net.createConnection(net.TCP, false) 
+conn:on("receive", function(conn, pl) print(pl) end)
+conn:connect(80,"121.41.33.127")
+conn:send("GET / HTTP/1.1\r\nHost: www.nodemcu.com\r\n"
+    .."Connection: keep-alive\r\nAccept: */*\r\n\r\n")
+```
+
+HTTP Server
+```lua
+-- a simple http server
+srv=net.createServer(net.TCP) 
+srv:listen(80,function(conn) 
+    conn:on("receive",function(conn,payload) 
+    print(payload) 
+    conn:send("<h1> Hello, NodeMcu.</h1>")
+    end) 
+end)
+`
+
+PWM
+```lua
+function led(r,g,b) 
+    pwm.setduty(1,r) 
+    pwm.setduty(2,g) 
+    pwm.setduty(3,b) 
+end
+pwm.setup(1,500,512) 
+pwm.setup(2,500,512) 
+pwm.setup(3,500,512)
+pwm.start(1) 
+pwm.start(2) 
+pwm.start(3)
+led(512,0,0) -- red
+led(0,0,512) -- blue
+```
+
+Blinking Led
+```lua
+lighton=0
+tmr.alarm(0,1000,1,function()
+if lighton==0 then 
+    lighton=1 
+    led(512,512,512) 
+    -- 512/1024, 50% duty cycle
+else 
+    lighton=0 
+    led(0,0,0) 
+end 
+end)
+```
+
+Bootstrap
+```lua
+--init.lua will be excuted
+file.open("init.lua","w")
+file.writeline([[print("Hello World!")]])
+file.close()
+node.restart()  -- this will restart the module.
+```
+
+Use timer to repeat
+```c
+tmr.alarm(1,5000,1,function() print("alarm 1") end)
+tmr.alarm(0,1000,1,function() print("alarm 0") end)
+tmr.alarm(2,2000,1,function() print("alarm 2") end)
+-- after sometime
+tmr.stop(0)
+```
+
+A pure lua telnet server
+```lua
+-- a simple telnet server
+s=net.createServer(net.TCP,180) 
+s:listen(2323,function(c) 
+    function s_output(str) 
+      if(c~=nil) 
+        then c:send(str) 
+      end 
+    end 
+    node.output(s_output, 0)   
+    -- re-direct output to function s_ouput.
+    c:on("receive",function(c,l) 
+      node.input(l)           
+      --like pcall(loadstring(l)), support multiple separate lines
+    end) 
+    c:on("disconnection",function(c) 
+      node.output(nil)        
+      --unregist redirect output function, output goes to serial
+    end) 
+    print("Welcome to NodeMcu world.")
+end)
+```
+
+Interfacing with sensor
+```lua
+-- read temperature with DS18B20
+t=require("ds18b20")
+t.setup(9)
+addrs=t.addrs()
+-- Total DS18B20 numbers, assume it is 2
+print(table.getn(addrs))
+-- The first DS18B20
+print(t.read(addrs[1],t.C))
+print(t.read(addrs[1],t.F))
+print(t.read(addrs[1],t.K))
+-- The second DS18B20
+print(t.read(addrs[2],t.C))
+print(t.read(addrs[2],t.F))
+print(t.read(addrs[2],t.K))
+-- Just read
+print(t.read())
+-- Just read as centigrade
+print(t.read(nil,t.C))
+-- Don't forget to release it after use
+t = nil
+ds18b20 = nil
+package.loaded["ds18b20"]=nil
+```
+
+
 
 [^1]: Zeroday. "A lua based firmware for wifi-soc esp8266". Github. Retrieved 2 April 2015.
 [^2]: Hari Wiguna. "NodeMCU LUA Firmware". Hackaday. Retrieved 2 April 2015.

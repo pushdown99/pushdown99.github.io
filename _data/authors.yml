@@ -77,15 +77,12 @@ hwang-hae-yeon:
   name: haeyeon hyhwang
   email: haeyun@gmail.com
   about: |
-    황해연(黃海淵)  
-
-    감떨어짐/前014xy.pdsn.ggsn개발자;xy=10,11,12/  
-    40대평범남/폰개발자남편/두아들아빠/  
-    내회사를꿈꾸는자/혼이담긴구라/황해분식/천재성=미혼/  
-    절대동안x/극소심B형/저질체력
+    Haeyeon, Hwang  
+    혼이 담긴 구라(晦;くら)
   picture: /assets/img/pictures/hwang-hae-yeon.png
-  twitter: pushdown99
-  github: pushdown99
+  #twitter: pushdown99
+  github:  pushdown99
+  #facebook: pushdown99
   accent_color: "#268bd2"
   accent_image:
     background: "#202020"

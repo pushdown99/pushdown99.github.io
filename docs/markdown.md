@@ -7,6 +7,9 @@ hide_description: true
 # Markdown
 Markdown is a [lightweight markup language](https://en.wikipedia.org/wiki/Lightweight_markup_language) with plain text formatting syntax. Its design allows it to be converted to many output formats, but the original tool by the same name only supports HTML.[^1]  [`wiki`](https://en.wikipedia.org/wiki/Markdown)  
 
+마크다운 (Markdown)은 마크업 언어의 일종으로, 존 그루버(John Gruber)[^2]와 아론 스워츠(Aaron Swartz)[^3]가 만들었다. 읽기도 쓰기도 쉽다는 장점이 있다. 그루버는 마크다운으로 작성한 문서를 HTML로 변환하는 펄 스크립트도 만들었다. 확장자는 .md를 쓴다.
+{:.message}
+
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
@@ -222,7 +225,8 @@ If the word or phrase you want to denote as code includes one or more tick marks
 ``Use `code` in your Markdown file.``
 
 #### Code Blocks  
-To create code blocks, indent every line of the block by at least four spaces or one tab.   
+To create code blocks, indent every line of the block by at least four spaces or one tab. 
+
 ```html
     <html>
       <head>
@@ -378,5 +382,11 @@ You can use a backslash to escape the following characters.
 * [Pandao](https://pandao.github.io/editor.md/en.html)
 https://www.webfx.com/blog/web-design/online-markdown-editors/
 
+## References
+1. [John Gruber Markdown](https://daringfireball.net/projects/markdown/) ([한글번역](https://nolboo.kim/blog/2013/09/07/john-gruber-markdown/))
+2. [GitHub Flavored Markdown](https://github.github.com/gfm/)([한글번역](https://nolboo.kim/blog/2014/03/25/github-flavored-markdown/))
+
 
 [^1]: "Markdown". 2013-12-04. Archived from the original on 2004-04-02.
+[^2]: 유명한 애플 관련 블로거 아마 제일 유명한 애플빠로 Daring Fireball의 운영자다. 애플이 아이폰의 성공으로 초메이저 회사가 되기 전에는 존 그루버 같은 유명 애플 블로거의 글들을 번역해 돌려 읽는 것이 국내 맥 유저들의 주 일과 중 하나였다.
+[^3]: RSS를 고안하고 정보자유를 중점적으로 주장한 인터넷 활동가이자 프로그래머. [게릴라 오픈 액세스 매니페스토 선언](https://openaccessmanifesto.wordpress.com/%EC%98%A4%ED%94%88-%EC%95%A1%EC%84%B8%EC%8A%A4-%EA%B2%8C%EB%A6%B4%EB%9D%BC-%EC%84%A0%EC%96%B8/)에서 천명한 것처럼 재판기록 같은 각종 공공정보를 무료로 대중에게 공개해야한다는 신념으로 활동하던 중 유료 저널 검색엔진 및 저장소인 JSTOR의 논문들을 다운받아 공개하려한 건으로 FBI 수사로 기소되어 재판과정 중에 자살로 생을 마감했다.

@@ -10,21 +10,35 @@ permalink: /docs/
 # Documentation
 알다가도 모를것들을 한번 주욱 살펴보는걸로
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
-## 프로그래밍언어/개발관련
+## 술
+* [술(酒) / Liquor, Alcoholic Drink]{:.heading.flip-title}
+
+## Designing Your Environment
+### IoT
+The Internet of things (IoT) is the network of devices such as vehicles, and home appliances that contain electronics, software, sensors, actuators, and connectivity which allows these things to connect, interact and exchange data.[^1][^2][^3][^4]  
+The IoT involves extending Internet connectivity beyond standard devices, such as desktops, laptops, smartphones and tablets, to any range of traditionally dumb or non-internet-enabled physical devices and everyday objects. Embedded with technology, these devices can communicate and interact over the Internet, and they can be remotely monitored and controlled. [`wiki`](https://en.wikipedia.org/wiki/Internet_of_things)
+
 * [Mbed]{:.heading.flip-title}
-* [SSH]{:.heading.flip-title}
-* [Markdown]{:.heading.flip-title}
 * [Node MCU]{:.heading.flip-title}
 * [ESP8266]{:.heading.flip-title}
 * [Arduino]{:.heading.flip-title}
 * [Fritzing]{:.heading.flip-title}
-* [Deep Learning]{:.heading.flip-title}
-* [Blockchain]{:.heading.flip-title}
+* [Resistor]{:.heading.flip-title}
+* [Analog vs. Digital]{:.heading.flip-title}
+{:.related-posts.faded}
+
+### Programming Language
+A programming language is a formal language, which comprises a set of instructions used to produce various kinds of output. Programming languages are used in computer programming to create programs that implement specific algorithms.
+
+Most programming languages consist of instructions for computers, although there are programmable machines that use a limited set of specific instructions, rather than the general programming languages of modern computers. Early ones preceded the invention of the digital computer, the first probably being the automatic flute player described in the 9th century by the brothers Musa in Baghdad, during the Islamic Golden Age.[^5] From the early 1800s, programs were used to direct the behavior of machines such as Jacquard looms, music boxes and player pianos.[^6] However, their programs (such as a player piano's scrolls) could not produce different behavior in response to some input or condition.
+
+Thousands of different programming languages have been created, mainly in the computer field, and many more still are being created every year. Many programming languages require computation to be specified in an imperative form (i.e., as a sequence of operations to perform) while other languages use other forms of program specification such as the declarative form (i.e. the desired result is specified, not how to achieve it).
+
+The description of a programming language is usually split into the two components of syntax (form) and semantics (meaning). Some languages are defined by a specification document (for example, the C programming language is specified by an ISO Standard) while other languages (such as Perl) have a dominant implementation that is treated as a reference. Some languages have both, with the basic language defined by a standard and extensions taken from the dominant implementation being common.
 * [Python]{:.heading.flip-title}
 * [C/C++]{:.heading.flip-title}
 * [Go]{:.heading.flip-title}
@@ -33,54 +47,46 @@ permalink: /docs/
 * [Lua]{:.heading.flip-title}
 {:.related-posts.faded}
 
-
-## 가트너 2019년 10대 전략 기술 트렌드
-* [양자 컴퓨팅(Quantum Computing)]{:.heading.flip-title}
-* [자율주행 사물(Autonomous Things)]{:.heading.flip-title}
-* [확장된 분석 기술(Augmented Analytics)]{:.heading.flip-title}
-* [인공지능 주도 개발(AI-Driven Development)]{:.heading.flip-title}
-* [자율권을 가진 엣지(Empowered Edge)]{:.heading.flip-title}
-* [디지털 쌍둥이(Digital Twins)]{:.heading.flip-title}
-* [블록체인(Blockchain)]{:.heading.flip-title}
-* [몰입 경험(Immersive Experience)]{:.heading.flip-title}
-* [스마트 공간(Smart Spaces)]{:.heading.flip-title}
-* [디지털 윤리와 개인정보보호(Digital Ethics and Privacy)]{:.heading.flip-title}
+### Technologies
+* [Deep Learning]{:.heading.flip-title}
+* [Blockchain]{:.heading.flip-title}
+* [SSH]{:.heading.flip-title}
 {:.related-posts.faded}
 
-**NOTE**: 가트너가 선정한 전략 기술 트렌드는 혁신적인 잠재력을 갖고 있는 기술들로 이뤄져 있다. 초기 상태에서 벗어나 보다 폭넓은 영향력과 활용 사례를 보이는 신기술과 급성장세를 보이며 향후 5년 내 정점에 달할 것으로 예상되는 기술들이 이에 해당된다고 업체 측은 설명했다.
-{:.message}
+### static websites and blogs
+* [Markdown]{:.heading.flip-title}
+{:.related-posts.faded}
+
+
+
 
 ## 기타
 * [Why use NETCONF/YANG when you can use SNMP and CLI?]{:.heading.flip-title}
 * *[Cisco/Tail-f Confd-Basic](https://www.tail-f.com/confd-basic/)
 
-[Mbed]: /docs/programming/mbed/
-[Deep Learning]: /docs/programming/deep-learning/
-[Blockchain]: /docs/programming/deep-learning/
-[C/C++]: /docs/programming/c/
-[Python]: /docs/programming/python/
-[Go]: /docs/programming/go/
-[PHP]: /docs/programming/php/
-[Ruby]: /docs/programming/ruby/
-[Lua]: /docs/programming/lua/
-[SSH]: /docs/programming/ssh/
-[Markdown]: /docs/programming/markdown/
-[Node MCU]: /docs/programming/nodemcu/
-[ESP8266]: /docs/programming/esp8266/
-[Arduino]: /docs/programming/arduino/
-[Fritzing]: /docs/programming/fritzing/ 
+[술(酒) / Liquor, Alcoholic Drink]: /docs/liquor/
+[Mbed]: /docs/mbed/
+[Deep Learning]: /docs/deep-learning/
+[Blockchain]: /docs/blockchain/
+[C/C++]: /docs/c/
+[Python]: /docs/python/
+[Go]: /docs/go/
+[PHP]: /docs/php/
+[Ruby]: /docs/ruby/
+[Lua]: /docs/lua/
+[SSH]: /docs/ssh/
+[Markdown]: /docs/markdown/
+[Node MCU]: /docs/nodemcu/
+[ESP8266]: /docs/esp8266/
+[Arduino]: /docs/arduino/
+[Fritzing]: /docs/fritzing/ 
+[Resistor]: /docs/resistor/
+[Analog vs. Digital]: /docs/analog_vs_digital/
+[Why use NETCONF/YANG when you can use SNMP and CLI?]: /docs/why-use-netconf-yang-when-you-use-snmp-and-cli/
 
-[Deep Learning]: /docs/programming/blockchain/
-[Blockchain]: /docs/programming/blockchain/
-
-[양자 컴퓨팅(Quantum Computing)]: /docs/gartner/quantum-computing/
-[자율주행 사물(Autonomous Things)]: /docs/gartner/autonomous-things/
-[확장된 분석 기술(Augmented Analytics)]: /docs/gartner/augmented-analytics/
-[인공지능 주도 개발(AI-Driven Development)]: /docs/gartner/ai-driven-development/
-[자율권을 가진 엣지(Empowered Edge)]: /docs/gartner/empowered-edge/
-[디지털 쌍둥이(Digital Twins)]: gartner/digital-twin/
-[블록체인(Blockchain)]: blockchain/
-[몰입 경험(Immersive Experience)]: gartner/immersive-experience/
-[스마트 공간(Smart Spaces)]: gartner/smart-spaces/
-[디지털 윤리와 개인정보보호(Digital Ethics and Privacy)]: gartner/digital-ethics-and-privacy/
-[Why use NETCONF/YANG when you can use SNMP and CLI?]: tech/why-use-netconf-yang-when-you-use-snmp-and-cli/
+[^1]: Brown, Eric (13 September 2016). "Who Needs the Internet of Things?". Linux.com. Retrieved 23 October 2016.
+[^2]: Brown, Eric (20 September 2016). "21 Open Source Projects for IoT". Linux.com. Retrieved 23 October 2016.
+[^3]: "Internet of Things Global Standards Initiative". ITU. Retrieved 26 June 2015.
+[^4]: Hendricks, Drew. "The Trouble with the Internet of Things". London Datastore. Greater London Authority. Retrieved 10 August 2015.
+[^5]: Koetsier, Teun (2001). On the prehistory of programmable machines; musical automata, looms, calculators. PERGAMON, Mechanism and Machine Theory 36. pp. 589–603.
+[^6]: Ettinger, James (2004) Jacquard's Web, Oxford University Press
