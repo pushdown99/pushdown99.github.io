@@ -14,7 +14,7 @@ Deep learning models are vaguely inspired by information processing and communic
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
-![Screenshot](/assets/img/docs/deep_learning.png){: width="100" height="100"}
+![Screenshot](/assets/img/docs/deep_learning.png){: width="300"}
 
 ## Installation
 ### Python Installation
