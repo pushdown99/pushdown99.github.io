@@ -4,7 +4,7 @@ description: >
 hide_description: true
 ---
 
-# Mbed
+# Arm Mbed CLI
 Mbed[`mbed`](https://os.mbed.com/) is a platform and operating system for internet-connected devices based on 32-bit ARM Cortex-M microcontrollers. Such devices are also known as Internet of Things devices. The project is collaboratively developed by Arm and its technology partners.  [`wiki`](https://en.wikipedia.org/wiki/Mbed)  
 
 {:.no_toc}
