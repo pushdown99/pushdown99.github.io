@@ -15,6 +15,6 @@ permalink: /docs/
 {:toc}
 
 ## IoT
-* [Arm Mbed CLI]{:.heading.flip-title}
+* [Arm Mbed]{:.heading.flip-title}
   
-[Arm Mbed CLI]: /docs/mbed_cli/
+[Arm Mbed]: /docs/mbed/
