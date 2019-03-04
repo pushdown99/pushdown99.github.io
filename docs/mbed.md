@@ -10,9 +10,11 @@ hide_description: true
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
-## 온라인 Mbed Compiler
-## Mbed CLI 설치하기
-* [mbed-cli-windows-installer](https://github.com/ARMmbed/mbed-cli-windows-installer/releases/latest) 설치파일을 다운로드 후 설치  
+## Online Mbed Compiler  
+* https://os.mbed.com/
+
+## Offline Mbed Compiler - Mbed CLI
+### [mbed-cli-windows-installer](https://github.com/ARMmbed/mbed-cli-windows-installer/releases/latest) 다운로드 후 설치  
    `https://github.com/ARMmbed/mbed-cli-windows-installer/releases/latest`
 
   * `mbed-cli-windows-installer` 에 포함된 컴포넌트  
@@ -26,7 +28,7 @@ hide_description: true
   5|[GNU Arm Embedded Toolchain](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads)||
   6|[Mbed Windows serial port driver](https://os.mbed.com/docs/v5.9/tutorials/windows-serial-driver.html)||
 
-* `mbed-cli-windows-installer` 정상 설치여부 확인
+### `mbed-cli-windows-installer` 정상 설치여부 확인
    
 ```shell
 C:\> arm-none-eabi-gcc --version
