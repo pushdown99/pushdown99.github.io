@@ -12,7 +12,7 @@ hide_description: true
 
 ## 온라인 Mbed Compiler
 ## Mbed CLI 설치하기
-* [mbed-cli-windows-installer](https://github.com/ARMmbed/mbed-cli-windows-installer/releases/latest)[^1] 설치파일을 다운로드 후 설치
+* [mbed-cli-windows-installer](https://github.com/ARMmbed/mbed-cli-windows-installer/releases/latest) 설치파일을 다운로드 후 설치
    ```console
    https://github.com/ARMmbed/mbed-cli-windows-installer/releases/latest
    http://bit.ly/2XCROZt
