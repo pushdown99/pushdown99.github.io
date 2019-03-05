@@ -1,13 +1,12 @@
-title: kakao 기술 블로그
-email: opensource@kakaocorp.com
+title: Just-ho-it
+email: haeyun@gmail.com
 description: |
-  Connect Everything 새로운 연결, 새로운 세상.
-  연결의 혁신으로 세상은 더욱 가깝고 새로워진다고 카카오는 믿습니다.
+  A long way to go
 baseurl: ''
-url: 'http://tech.kakao.com'
+url: https://pushdown99.github.io
 timezone: Asia/Seoul 
 
-repository: kakao/kakao.github.io
+repository: pushdown99/pushdown99.github.io
 
 permalink: /:year/:month/:day/:title/
 
@@ -50,11 +49,9 @@ exclude: [README.md, Gemfile, Gemfile.lock]
 keep_files: [assets, files]
 github: [metadata]
 # iolo's custom
-author: opensource@kakaocorp.com
+author: haeyun@gmail.com
 image: '/assets/images/default_blog_cover.jpg'
 asset_url: /assets
-#asset_url: //meta-kage.kakaocdn.net/dn/osa/blog/assets
-#asset_url: //t1.daumcdn.net/osa/blog/assets
 google_analytics:
   ua: 'UA-72007721-1'
 facebook:
@@ -65,4 +62,4 @@ twitter:
 google_plus:
   username: kakaodev
 github_url:
-  username: kakao
+  username: pushdown99
