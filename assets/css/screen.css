@@ -1387,7 +1387,7 @@ body.page-template {
 
     #post-list .post-excerpt {
         margin-top: 20px;
-        font-size: 13px;
+        font-size: 14px; /* hyhwang */
         line-height: 21px; /* 21px = 13(font-size) + 8(line-spacing) */
         max-height: 84px; /* 4 lines */
         display: -webkit-box; /* multi-line ellipsis */
