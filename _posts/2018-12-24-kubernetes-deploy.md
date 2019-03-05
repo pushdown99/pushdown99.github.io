@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'kubernetes를 이용한 서비스 무중단 배포'
+title: 'kubernetes를 이용한 서비스 무중단 배포 - fork from kakao' 
 author: haeyeon.hwang
 date: 2018-12-24 10:00
 tags: [kubernetes]
