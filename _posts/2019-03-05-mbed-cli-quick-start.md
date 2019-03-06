@@ -8,9 +8,11 @@ image: /files/covers/mbed-cli.png
 ---
 
 Mbed CLI 개발 환경 만들기
+---
 
-Mbec CLI는 블라블라이다.
-그냥 그러하다.
+Mbed CLI는 블라블라이다.
+그냥 그러하다.  
+
 
 * [mbed-cli-windows-installer](https://github.com/ARMmbed/mbed-cli-windows-installer/releases/latest) 다운로드 후 설치  
    `https://github.com/ARMmbed/mbed-cli-windows-installer/releases/latest`  

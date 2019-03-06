@@ -46,7 +46,8 @@ b, strong, optgroup {
 }
 
 a, a:link, a:visited, a:active, a:hover {
-    color: #505050;
+    color: #4fb1ba;
+    border-color: rgba(79,177,186,0.2);
     text-decoration: none;
 }
 
@@ -938,8 +939,11 @@ body.tag-template #navbar {
 }
 
 #post-content a {
+    text-decoration: none;
+/*
     text-decoration: underline;
     text-decoration-color: #e6e6e6;
+*/
 }
 
 #post-content > *:first-child {
@@ -1758,4 +1762,18 @@ body.page-template {
     #cover-author-image {
         background-image: url(../images/mo/default_pic_l@3x.png);
     }
+}
+
+.after {
+    content: " \2192";
+    font-family: "icomoon" !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    font-size: smaller;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
