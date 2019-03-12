@@ -196,15 +196,15 @@ for small screen(<720px):
     z-index: 99;
     top: 0;
     right: 30px;
-    height: 40px;
+    height: 60px;
     margin: 0;
-    padding: 0;
-    line-height: 40px;
+    padding: 0;1
+    line-height: 60px;
 }
 
 #search > input {
     margin: 0;
-    width: 115px; /* 115px = 160(width) - 15(padding-left) - 30(padding-right) */
+    width: 215px; /* 115px = 160(width) - 15(padding-left) - 30(padding-right) */
     height: 33px;
     border-radius: 17px;
     border: 1px solid #e6e6e6;
@@ -213,7 +213,7 @@ for small screen(<720px):
     color: #505050;
     background: url(/assets/img/pc/icon_search.png) no-repeat right;
     background-size: 13px 13px;
-    background-position-x: 135px; /* 135px = 160 - 15(right-padding) + 10(icon-width) */
+    background-position-x: 185px; /* 135px = 160 - 15(right-padding) + 10(icon-width) */
 }
 
 #search > input:focus {
