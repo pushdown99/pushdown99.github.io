@@ -1,9 +1,9 @@
 ---
 layout: list
-title: Hydejack
-slug: hydejack
+title: Résumé*
+slug: resume
 menu: true
-order: 1
+order: 4
 description: >
   Hydejack is a pretentious two-column [Jekyll](http://jekyllrb.com/) theme, stolen by
   [@qwtel](https://twitter.com/qwtel) from [Hyde](http://hyde.getpoole.com).

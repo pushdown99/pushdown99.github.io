@@ -1,36 +1,17 @@
 # Config
 # ========================================================================================
-
-# IMPORTANT: Set the URL of your site.
-# Set to https://<username>.github.io when hosting on GitHub Pages
-# (unless you are using a custom domain).
-url:                   https://domain.tld
-
-# IMPORTANT: Set The "base URL" of your site.
-# When your site sits in a subdirectory, set to /<name of directory>
-# (with leading /, but without the < >).
-# Use the empty string '' otherwise.
-# For GitHub project sites, this is usually the name of the project,
-# e.g. `/hydejack`.
+url:                   https://pushdown99.github.io
 baseurl:               ''
-
-# Language of your content in 2-letter code, e.g.: en, de.
-# You may also provide a location, e.g.: en-us, de_AT.
 lang:                  en
-
-# The title of your blog. Used in the sidebar and the browser tab.
-title:                 Hydejack
-
-# A short description (~150 chars) of the page used for the meta description tag.
-# Can use markdown, but no more than one paragraph (enforced by `>`)
+title:                 Just-ho-it
 description:           >
-  "Best Jekyll Theme by a Mile".
+  "A long way to go".
   **Hydejack** is your presence on the web, featuring a blog, portfolio, and resume.
 
 # A shorter description for the sidebar.
 tagline:               >
-  "Best Jekyll Theme by a Mile".
-  Open `_config.yml` to edit this text.
+  "A long way to go". 
+  Why is everything in life not easy?
 
 # A list of keywords for your blog
 keywords:              []
@@ -42,19 +23,21 @@ logo:                  /assets/icons/icon.png
 
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
-  name:                <firstname> <lastname>
-  email:               <mail@domain.tld>
+  name:                haeyeon hwang
+  email:               haeyun@gmail.com
   # Used by `jekyll-seo-tag`:
   # twitter:             <username>
 
 # Add links to the sidebar.
 menu:
-  - title:             Hydejack
-    url:               /hydejack/
-  - title:             Hyde
-    url:               /hyde/
+  - title:             Blog
+    url:               /blog/
+  - title:             Projects
+    url:               /projects/
   - title:             Documentation
     url:               /docs/
+  - title:             Résumé*
+    url:               /resume/
   - title:             About
     url:               /about/
 
@@ -148,68 +131,26 @@ defaults:
 # These settings are specific to Hydejack.
 
 hydejack:
-  # Configure the order of complementary content on blog posts
   post_addons:         [about, newsletter, related, random]
-
-  # Configure the order of complementary content on project pages
   project_addons:      [about, newsletter, other]
-
-  # If you do not use Google Fonts, set to `true`.
   no_google_fonts:     false
-
-  # Set to `true` if you don't want to show an icon indicating external links
   no_mark_external:    true
-
-  # Set to `true` if third party plugins fail to work with dynamically loaded pages
   no_push_state:       false
-
-  # Set to `true` if you want to disable the drawer
   no_drawer:           false
-
-  # Set to `true` to prevent usage of `hy-img` (lazy-loading images).
   no_img:              false
-
-  # Set to `true` if you do not want parts of the css inlined in <head/>
-  # This will increase site build speed dramatically!
   no_inline_css:       false
-
-  # Set to `true` if you don't intend on changing the accent color on a per-page basis.
-  # This will increase site build speed!
   no_page_style:       false
-
-  # Code blocks and tables "break" the layout by spanning the full available width.
-  # Set this to true if you want them to be the same width as other content.
   no_break_layout:     false
-
-  # Set to `true` if you do not want to expose your resume and projects
-  # in machine-readable formats.
   no_structured_data:  false
-
-  # You can set this to `true` if you don't want to set the `theme-color` meta tag,
-  # This only affects the meta tag, not the color specified in the app manifest.
   no_theme_color:      false
-
-  # Set to `true` when building with the `--lsi` option
   use_lsi:             false
-
-  # When using Google Analytics, set to `true` to display a cookie notice banner.
-  # When enabled, no user-related data will be stored until the user gives consent.
   cookies_banner:      false
-
-  # Set to `true` if you would like to add a "Powered by Hydejack" link in the footer.
   advertise:           false
-
-  # Note that dark mode only works in the PRO version of Hydejack.
   dark_mode:
-    # Set to `true` to always use the dark theme.
     always:            false
-
-    # Set to `true` to use the dark theme based on visitors' local time.
     dynamic:           true
     sunrise:           6
     sunset:            18
-
-    # Set to `true` to allow visitors to switch between light and dark mode.
     icon:              true
 
   # ⚡️ DANGER ZONE ⚡️
@@ -276,7 +217,7 @@ plugins:
 # ---------------------------------------------------------------------------------------
 
 # theme: jekyll-theme-hydejack
-# remote_theme: qwtel/hydejack@gem
+remote_theme: qwtel/hydejack@gem
 
 # SEO Tag
 # ---------------------------------------------------------------------------------------
