@@ -204,16 +204,16 @@ for small screen(<720px):
 
 #search > input {
     margin: 0;
-    width: 215px; /* 115px = 160(width) - 15(padding-left) - 30(padding-right) */
+    width: 255px; /* 115px = 160(width) - 15(padding-left) - 30(padding-right) */
     height: 33px;
-    border-radius: 17px;
+    border-radius: 12px;
     border: 1px solid #e6e6e6;
     padding: 0 30px 0 15px; /* 30px(right-padding) = 15(right-padding) + 10(icon-width) + 5(@@iolo) */
-    font-size: 14px;
+    font-size: 16px;
     color: #505050;
     background: url(/assets/img/pc/icon_search.png) no-repeat right;
     background-size: 13px 13px;
-    background-position-x: 185px; /* 135px = 160 - 15(right-padding) + 10(icon-width) */
+    background-position-x: 225px; /* 135px = 160 - 15(right-padding) + 10(icon-width) */
 }
 
 #search > input:focus {
