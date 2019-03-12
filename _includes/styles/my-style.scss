@@ -196,10 +196,10 @@ for small screen(<720px):
     z-index: 99;
     top: 0;
     right: 30px;
-    height: 60px;
+    height: 40px;
     margin: 0;
     padding: 0;
-    line-height: 60px;
+    line-height: 40px;
 }
 
 #search > input {
@@ -493,13 +493,6 @@ for small screen(<720px):
 #share-google {
     background: url(/assets/img/pc/share_goo.png) no-repeat;
     background-size: 20px 20px;
-}
-
-#header,
-#cover,
-#navbar,
-#footer {
-    font-family: 'Kakao', sans-serif !important;
 }
 
 /* list(loop) */
@@ -1105,6 +1098,7 @@ body.page-template {
         display: none !important;
     }
 
+    #_menu,
     #menu-toggle {
         display: none;
     }
@@ -1124,6 +1118,7 @@ body.page-template {
         height: 50px;
     }
 
+    #_menu,
     #menu-toggle,
     #search-toggle {
         position: absolute;
@@ -1136,6 +1131,7 @@ body.page-template {
         outline: none;
     }
 
+    #_menu,
     #menu-toggle {
         left: 0;
         background: url(/assets/img/mo/icon_menu.png) no-repeat center;
@@ -1545,6 +1541,7 @@ body.page-template {
         background-size: 33px 33px;
     }
 
+    #_menu,
     #menu-toggle {
         background-image: url(/assets/img/mo/icon_menu@2x.png);
     }
@@ -1636,6 +1633,7 @@ body.page-template {
         background-size: 49px 49px;
     }
 
+    #_menu,
     #menu-toggle {
         background-image: url(/assets/img/mo/icon_menu@3x.png);
     }
