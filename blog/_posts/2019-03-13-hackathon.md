@@ -7,6 +7,44 @@ tags: [hackathon]
 
 hackathon
 
+Mbed cloud client 
+[https://github.com/ARMmbed/simple-mbed-cloud-client](https://github.com/ARMmbed/simple-mbed-cloud-client){:target="_blank"}
+
+[https://github.com/DanielDmlee/mbed-cloud-client-example/wiki](https://github.com/DanielDmlee/mbed-cloud-client-example/wiki){:target="_blank"}
+
+
+https://mermaidjs.github.io/usage.html
+
+item|cost|units|unit cost
+---|---|---|---
+cushion sensor||1|
+
+
+https://github.com/Simpleyyt/jekyll-editor/tree/master/editor.md
+https://support.typora.io/Draw-Diagrams-With-Markdown/
+
+arduino + bluetooth
+(zs-40)
+http://www.martyncurrey.com/arduino-with-hc-05-bluetooth-module-at-mode/
+
+
+```flow
+st=>start: Start
+op=>operation: Your Operation
+cond=>condition: Yes or No?
+e=>end
+
+st->op->cond
+cond(yes)->e
+cond(no)->op
+​```
+
+```sequence
+Alice->Bob: Hello Bob, how are you?
+Note right of Bob: Bob thinks
+Bob-->Alice: I am good thanks!
+```
+
 ## Parts
 * MDXS-16-5610
 ![sensor](https://www.eleparts.co.kr/data/EPX/J3M/FJ/170721103701db27131ae089c12fa702.jpg)
