@@ -14,6 +14,10 @@ hide_image: true
 https://www.youtube.com/watch?v=QUQta4f_87E
 https://www.instructables.com/id/Upgrade-Your-3-Bluetooth-Module-to-Have-HID-Firmwa/
 https://eggelectricunicycle.bitbucket.io/Flash_and_Debug_STM32--Flash_firmware_using_Bluetooth--ZS-040_Bluetooth_module.html
+https://m.blog.naver.com/PostView.nhn?blogId=gauya&logNo=221223134228&proxyReferer=https%3A%2F%2Fwww.google.com%2F
+http://blog.naver.com/PostView.nhn?blogId=rlrkcka&logNo=220602311579&parentCategoryNo=&categoryNo=18&viewDate=&isShowPopularPosts=true&from=search
+http://blog.naver.com/PostView.nhn?blogId=zeta0807&logNo=221179614788
+
 
 ```c
 SoftwareSerial BTserial(8, 9); // RX | TX
