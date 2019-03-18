@@ -42,32 +42,6 @@
             $('#back-to-top').show();
 
             if(viewportTop == 0) $('#back-to-top').hide();
-            /*
-            if (viewportTop) {
-                var viewportBottom = viewportTop + $(window).height();
-                var footerTop = $('#my-footer').offset().top;
-
-                console.log("add: " + viewportTop + ", " + viewportBottom + ", " + footerTop)
-                $('#back-to-top').show();
-                
-                var viewportBottom = viewportTop + $(window).height();
-                var footerTop = $('#my-footer').offset().top;
-                if ((footerTop <= viewportBottom) && (footerTop >= viewportTop)) {
-                    // footer is visible: static above footer
-                    console.log("add: " + viewportTop + ", " + viewportBottom + ", " + footerTop)
-                    $('#back-to-top').addClass('static').show();
-                } else {
-                    // footer is invisible: fixed on bottom-right of viewport
-                    console.log("remove: " + viewportTop + ", " + viewportBottom + ", " + footerTop)
-                    $('#back-to-top').removeClass('static').show();
-                }
-                
-            } else {
-                // already top: hide
-                console.log("hide: " + viewportTop + ", " + viewportBottom + ", " + footerTop)
-                $('#back-to-top').hide();
-            }
-            */
         });
 
         // show/hide cover videos by browser

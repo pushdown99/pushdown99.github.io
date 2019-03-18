@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Arduino' 
+title: 'Getting Started with Arduino' 
 author: haeyeon.hwang
 tags: [iot, hackathon]
 description: >
