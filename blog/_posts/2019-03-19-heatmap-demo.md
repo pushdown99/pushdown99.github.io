@@ -14,7 +14,7 @@ hide_image: true
 
 ## **Heatmap Demo**
 
-1. Reference [code](https://www.patrick-wied.at/static/heatmapjs/example-minimal-config.html)
+1. Reference [code](https://www.patrick-wied.at/static/heatmapjs/example-minimal-config.html) - heatmap.js
 
   * <a href="https://github.com/pushdown99/heatmap.git">source download <span class="icon-github"></span></a>
   <div class="demo-block">
@@ -22,3 +22,12 @@ hide_image: true
   </div>
   <button class="demo-btn">re-generate data</button>
 
+  * run
+  
+  ~~~bash
+  $ git clone https://github.com/pushdown99/heatmap.git
+  $ cd heatmap
+  $ python -m SimpleHTTPServer 1337 &
+  ~~~
+
+  * visit [http://localhost:1337/](http://localhost:1337/){: target="_blank" }
