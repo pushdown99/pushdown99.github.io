@@ -1,6 +1,6 @@
 ---
 layout: list
-title: Blog
+title: blog
 slug: blog
 menu: true
 order: 1

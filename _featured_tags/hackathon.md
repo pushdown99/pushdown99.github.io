@@ -1,6 +1,6 @@
 ---
 layout: list
-title: Hackathon
+title: hackathon
 slug: hackathon
 menu: false
 description: >

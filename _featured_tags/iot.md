@@ -1,6 +1,6 @@
 ---
 layout: list
-title: IoT
+title: iot
 slug: iot
 menu: false
 description: >

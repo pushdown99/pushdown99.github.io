@@ -1,6 +1,6 @@
 ---
 layout: list
-title: Kubernetes
+title: kubernetes
 slug: kubernetes
 menu: false
 description: >

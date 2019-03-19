@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Résumé
+title: résumé
 slug: resume
 menu: true
 order: 4
