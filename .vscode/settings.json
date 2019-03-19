@@ -1,3 +1,4 @@
 {
-    "editor.fontFamily": "'나눔고딕코딩', Consolas, 'Courier New', monospace"
+    "editor.fontFamily": "'나눔고딕코딩', Consolas, 'Courier New', monospace",
+    "markdown.preview.fontFamily": "'나눔고딕코딩', -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'Ubuntu', 'Droid Sans', sans-serif"
 }
