@@ -31,3 +31,6 @@ hide_image: true
     ~~~
 
 3. [Running the notebook](https://jupyter.readthedocs.io/en/latest/running.html#running)
+
+## **References**
+* [Jupyter/IPython notebook quick start guide](https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/index.html)
