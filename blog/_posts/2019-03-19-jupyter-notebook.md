@@ -39,5 +39,6 @@ hide_image: true
 * [Cocalc](https://cocalc.com/)
 
 ## **References**
+* [Jupyter Documentation](https://jupyter.readthedocs.io/en/latest/install.html)
 * [Jupyter/IPython notebook quick start guide](https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/index.html)
 * [Top 5 : Online Notebook (ipynb) and other cloud services](https://medium.com/@siddesh.001/top-5-online-free-notebook-ipynb-and-other-cloud-services-dbf9580d99e3)
