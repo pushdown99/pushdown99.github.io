@@ -30,15 +30,15 @@ author:
 
 # Add links to the sidebar.
 menu:
-  - title:             Blog
+  - title:             blog
     url:               /blog/
-  - title:             Projects
+  - title:             projects
     url:               /projects/
-  - title:             Documentation
+  - title:             documentation
     url:               /docs/
-  - title:             Résumé
+  - title:             résumé
     url:               /resume/
-  - title:             About
+  - title:             about
     url:               /about/
 
 # Add links to the footer.
