@@ -19,14 +19,14 @@ https://mermaidjs.github.io/usage.html
 
 1. Main parts
 
-part|model|cost|units|unit cost
----|---|---:|:---:|---:
-cushion sensor|[mdxs-16-5610](http://mechasolution.com/shop/goods/goods_view.php?goodsno=577041&category=)|69,300|2|138,600
-ble module|[hm-10](http://mechasolution.com/shop/goods/goods_view.php?goodsno=330423&category=)|15,400|1|15,400
-bluetooth module|[hc-05](http://mechasolution.com/shop/goods/goods_view.php?goodsno=330592&category=)|4,840|2|9,680
-AI speaker|[amazon echo dot 3rd](http://shopping.interpark.com/product/productInfo.do?prdNo=6312843869&dispNo=016001&bizCd=P01415&utm_medium=affiliate&utm_source=danawa&utm_campaign=shop_p11736_p01415&utm_content=main)|47,530|1|47,530
-Dev kit|[nrf52-dk](https://kr.mouser.com/ProductDetail/949-NRF52-DK)|47,190|1|47,190
-Total cost||||211,210
+    part|model|cost|units|unit cost
+    ---|---|---:|:---:|---:
+    cushion sensor|[mdxs-16-5610](http://mechasolution.com/shop/goods/goods_view.php?goodsno=577041&category=)|69,300|2|138,600
+    ble module|[hm-10](http://mechasolution.com/shop/goods/goods_view.php?goodsno=330423&category=)|15,400|1|15,400
+    bluetooth module|[hc-05](http://mechasolution.com/shop/goods/goods_view.php?goodsno=330592&category=)|4,840|2|9,680
+    AI speaker|[amazon echo dot 3rd](http://shopping.interpark.com/product/productInfo.do?prdNo=6312843869&dispNo=016001&bizCd=P01415&utm_medium=affiliate&utm_source=danawa&utm_campaign=shop_p11736_p01415&utm_content=main)|47,530|1|47,530
+    Dev kit|[nrf52-dk](https://kr.mouser.com/ProductDetail/949-NRF52-DK)|47,190|1|47,190
+    Total cost||||211,210
 
 
 

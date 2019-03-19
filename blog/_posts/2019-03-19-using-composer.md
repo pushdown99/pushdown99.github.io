@@ -4,7 +4,7 @@ title: 'How to install and use composer'
 author: haeyeon.hwang
 tags: [php]
 description: >
-  Enter Composer – a sleek and simple dependency manager for PHP. Some of you might already be familiar with similar dependency managers like PIP for Python or NPM for Node.js. Simply put, Composer will streamline all of your project’s dependencies in a single place.
+  A sleek and simple dependency manager for PHP. Some of you might already be familiar with similar dependency managers like pip, npm
 image: /assets/img/blog/node.js.png
 hide_image: true
 ---

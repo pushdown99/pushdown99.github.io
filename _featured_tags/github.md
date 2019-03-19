@@ -1,6 +1,6 @@
 ---
 layout: list
-title: Github
+title: github
 slug: github
 menu: false
 description: >
