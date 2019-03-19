@@ -32,7 +32,7 @@ hide_image: true
 
 3. [Running the notebook](https://jupyter.readthedocs.io/en/latest/running.html#running)
 
-## **Jupyter notebook in cloud
+## **Jupyter notebook in cloud**
 * [MS Azure](https://notebooks.azure.com/)
 * [Google Colaboratory](https://colab.research.google.com/)
 * [Paize](https://paiza.cloud/en/)
