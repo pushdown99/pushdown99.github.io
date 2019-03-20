@@ -9,10 +9,10 @@ hide_image: true
 
 ## **Flickr json demo**
 
-<div class='flickr-json-demo-block container'>
-  <div class='flickr-json-demo'></div>
+<div id='flickr-json-demo-block' class='container'>
+  <div id='flickr-json-demo'></div>
 </div>
-<button class="flickr-json-demo-btn">speech recognition start</button>
+<button class="flickr-json-demo-btn">Search</button>
 
 ~~~bash
 $ git clone https://github.com/pushdown99/annyang.git
