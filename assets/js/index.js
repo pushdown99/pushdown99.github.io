@@ -134,8 +134,8 @@
             }
     
             function jsonFlickrApi (data) {
-                var info = document.getElementByClassName('annyang-demo-info');
-                var h = '<div id="annyang-demo-info">';
+                var info = document.getElementByClassName('annyang-demo');
+                var h = '<div class="annyang-demo">';
     
                 $.each(data.photos.photo, function(i, t) {
                     console.log(t);

@@ -19,7 +19,7 @@ hide_image: true
   * <a href="https://github.com/pushdown99/annyang.git">source download <span class="icon-github"></span></a>
   
   <div class='annyang-demo-block container'>
-    <div class='annyang-demo-info'></div>
+    <div class='annyang-demo'></div>
   </div>
   <button class="annyang-demo-btn">speech recognition</button>
 
