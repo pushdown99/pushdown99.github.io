@@ -1733,6 +1733,10 @@ body.page-template {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.demo-block { height:400px; background:rgba(0,0,0,.03); border:3px solid black; }
-.demo-heatmap { width:100%; height:100%; }
-.demo-btn { margin-top:10px; }
+.heatmap-demo-block { height:400px; background:rgba(0,0,0,.03); border:3px solid black; }
+.heatmap-demo { width:100%; height:100%; }
+.heatmap-demo-btn { margin-top:10px; }
+
+.annyang-demo-block { height:400px; background:rgba(0,0,0,.03); border:3px solid black; }
+.annyang-demo { width:100%; height:100%; }
+.annyang-demo-btn { margin-top:10px; }

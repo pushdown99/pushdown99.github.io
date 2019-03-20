@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 'Heatmap Demo' 
+title: 'Heatmap demo' 
 author: haeyeon.hwang
-tags: [iot, hackathon]
+tags: [iot, hackathon, javascript]
 description: >
   A heat map (or heatmap) is a graphical representation of data where the individual values contained in a matrix are represented as colors. "Heat map" is a newer term but shading matrices have existed for over a century. `wiki`
 image: /assets/img/blog/heatmap.png
@@ -17,10 +17,10 @@ hide_image: true
 1. Reference [code](https://www.patrick-wied.at/static/heatmapjs/example-minimal-config.html) - heatmap.js
 
   * <a href="https://github.com/pushdown99/heatmap.git">source download <span class="icon-github"></span></a>
-  <div class="demo-block">
-  <div class="demo-heatmap"></div>
+  <div class="heatmap-demo-block">
+  <div class="heatmap-demo"></div>
   </div>
-  <button class="demo-btn">re-generate data</button>
+  <button class="heatmap-demo-btn">re-generate data</button>
 
   * run
   

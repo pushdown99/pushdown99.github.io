@@ -5,6 +5,9 @@
     $(function () {
         // by default, blog menu is active unless page
         var activeMenu = $('#menu > li.active');
+
+        console.log(activeMenu);
+
         if (activeMenu.length === 0) {
             activeMenu.removeClass('active');
             if ($(document.body).hasClass('page')) {
@@ -75,39 +78,106 @@
             closeOnContentClick: true
         });
 
+        console.log($('.heatmap-demo-block'));
+        if ($('.heatmap-demo-block').length > 0) {
+            var heatmap_element_num      = 500;
 
-        var heatmap_element_num      = 500;
-
-        function generateRandomData(len) {
-          var points = [];
-          var max    = 0;
-          var width  = 840;
-          var height = 400;
-          var len    = 200;
+            function generateRandomData(len) {
+                var points = [];
+                var max    = 0;
+                var width  = 840;
+                var height = 400;
+                var len    = 200;
   
-          while(len--) {
-            var val = Math.floor(Math.random()*100);
-            max = Math.max(max, val);
-            var point = {
-              x: Math.floor(Math.random()*width),
-              y: Math.floor(Math.random()*height),
-              value: val
+                while(len--) {
+                    var val = Math.floor(Math.random()*100);
+                    max = Math.max(max, val);
+                    var point = {
+                        x: Math.floor(Math.random()*width),
+                        y: Math.floor(Math.random()*height),
+                        value: val
+                    };
+                    points.push(point);
+                }
+                var data = {max:max, data: points};
+                return data;
+            }
+  
+            var heatmapInstance = h337.create({
+                container: document.querySelector('.heatmap-demo')
+            });
+
+            var data = generateRandomData(heatmap_element_num);
+            heatmapInstance.setData(data);
+
+            document.querySelector('.heatmap-demo-btn').onclick = function() {
+                heatmapInstance.setData(generateRandomData(heatmap_element_num));
             };
-            points.push(point);
-          }
-          var data = {max:max, data: points};
-          return data;
         }
-  
-        var heatmapInstance = h337.create({
-          container: document.querySelector('.demo-heatmap')
-        });
-        var data = generateRandomData(heatmap_element_num);
-  
-        heatmapInstance.setData(data);
-  
-        document.querySelector('.demo-btn').onclick = function() {
-          heatmapInstance.setData(generateRandomData(heatmap_element_num));
-        };
+
+        console.log($('.annyang-demo-block'));
+        if ($('.annyang-demo-block').length > 0) {
+            var readyText  = 'Say "show me cute kittens"';
+            var findText   = 'Finding... ';
+    
+            function showFlickr (tag) {
+                SpeechKITT.setInstructionsText(findText+tag);
+                var url = '//api.flickr.com/services/rest/?method=flickr.photos.search&api_key=a828a6571bb4f0ff8890f7a386d61975&sort=interestingness-desc&per_page=30&format=json&callback=jsonFlickrApi&tags='+tag;
+                $.ajax({
+                    type: 'GET',
+                    url: url,
+                    async: false,
+                    jsonpCallback: 'jsonFlickrApi',
+                    contentType: "application/json",
+                    dataType: 'jsonp'
+                });
+            }
+    
+            function jsonFlickrApi (data) {
+                var info = document.getElementByClassName('annyang-demo-info');
+                var h = '<div id="annyang-demo-info">';
+    
+                $.each(data.photos.photo, function(i, t) {
+                    console.log(t);
+                    var image = '//farm'+t.farm+'.staticflickr.com/'+t.server+'/'+t.id+'_'+t.secret+'_n.jpg';
+                    h += '<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">';
+                    h += '  <a href="' + image + '" target=_blank">';
+                    h += '      <img src="' + image + '" class="img-responsive" alt="">';
+                    h += '  </a>';
+                    h += t.title;
+                    h += '<br><br><br>';
+                    h += '</div>';
+                });
+                info.innerHTML = h;
+                SpeechKITT.setInstructionsText(readyText);
+            }
+    
+            function doSpeechRecognition() {
+                console.log("annyang");
+                console.log(annyang);
+       
+                var commands = {
+                    'show me *search':      showFlickr
+                }
+                annyang.addCommands(commands);
+                SpeechKITT.annyang();
+                SpeechKITT.setAbortCommand(annyang.abort);
+                SpeechKITT.setStylesheet('/assets/css/flat.css');
+                SpeechKITT.setInstructionsText(readyText);
+                //SpeechKITT.setSampleCommands(['show me cute kittens', 'show me *']);
+                SpeechKITT.vroom();
+                SpeechKITT.show();
+            }
+
+            document.querySelector('.annyang-demo-btn').onclick =  function() {
+                doSpeechRecognition();
+            };
+        }
+        else {
+            if(SpeechKITT.isListening()) {
+                SpeechKITT.abortRecognition();
+            }
+            SpeechKITT.hide();
+        }
     });
 }(window, window.document, window.jQuery));
