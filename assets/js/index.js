@@ -180,4 +180,28 @@
             SpeechKITT.hide();
         }
     });
+
+    console.log($('.flickr-json-demo-block'));
+    if ($('.flickr-json-demo-block').length > 0) {
+        var tag = "boy"
+        var url = 'https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=a828a6571bb4f0ff8890f7a386d61975&sort=interestingness-desc&per_page=30&format=json&callback=jsonFlickrApi&tags='+tag;
+        $.getJSON(url, function(data) {
+            var info = document.getElementById('flickr-json-demo');
+            var h = '<div id="flickr-json-demo">';
+
+            $.each(data.photos.photo, function(i, t) {
+                console.log(t);
+                var image = 'https://farm'+t.farm+'.staticflickr.com/'+t.server+'/'+t.id+'_'+t.secret+'_n.jpg';
+                h += '<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">';
+                h += '  <a href="' + image + '" target=_blank">';
+                h += '      <img src="' + image + '" class="img-responsive" alt="">';
+                h += '  </a>';
+                h += t.title;
+                h += '<br><br><br>';
+                h += '</div>';
+            });
+            info.innerHTML = h;
+        });
+    }
+
 }(window, window.document, window.jQuery));

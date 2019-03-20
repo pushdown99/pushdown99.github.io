@@ -1,18 +1,18 @@
 ---
 layout: post
-title: 'Speech recognition demo' 
+title: 'Flickr json demo' 
 author: haeyeon.hwang
 tags: [speech-recognition, annyang, javascript]
 image: /assets/img/blog/annyang.png
 hide_image: true
 ---
 
-## **Speech recognition demo**
+## **Flickr json demo**
 
-<div class='annyang-demo-block container'>
-  <div class='annyang-demo'></div>
+<div class='flickr-json-demo-block container'>
+  <div class='flickr-json-demo'></div>
 </div>
-<button class="annyang-demo-btn">speech recognition start</button>
+<button class="flickr-json-demo-btn">speech recognition start</button>
 
 ~~~bash
 $ git clone https://github.com/pushdown99/annyang.git
