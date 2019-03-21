@@ -182,28 +182,23 @@
         }
     });
 
-    function doCORSRequest(method, url) {
+    function doCORSRequest(method, url, getResult) {
         var cors_api_url = 'https://cors-anywhere.herokuapp.com/';
         var x = new XMLHttpRequest();
         console.log(x);
         x.open(method, cors_api_url + url);
         x.onload = x.onerror = function () {
             console.log(x.responseText); //
-            return x.responseText;
+            getResult(x.responseText);
         };
         x.send();
-        console.log("errorr? occurred!");
     }
 
     console.log($('#flickr-json-demo-block'));
     if ($('#flickr-json-demo-block').length > 0) {
         var tag = "boy"
         var url = 'https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=a828a6571bb4f0ff8890f7a386d61975&sort=interestingness-desc&per_page=30&format=json&callback=jsonFlickrApi&tags='+tag;
-        console.log(url);
-        console.log(doCORSRequest("GET", url))
-    /*
-        $(function() {
-            $.getJSON(url, function(data) {
+        doCORSRequest("GET", url, function getResult(data) {
             var info = document.getElementById('flickr-json-demo');
             var h = '<div id="flickr-json-demo">';
 
@@ -221,7 +216,6 @@
             info.innerHTML = h;
             });
         });
-    */
     }
 
 }(window, window.document, window.jQuery));
