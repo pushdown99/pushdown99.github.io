@@ -183,13 +183,17 @@
     });
 
     
-    var cors_api_url = 'https://cors-anywhere.herokuapp.com/';
+  
     function doCORSRequest(method, url) {
+        var cors_api_url = 'https://cors-anywhere.herokuapp.com/';
         var x = new XMLHttpRequest();
-        x.open(method, cors_api_url + url);
+        console.log(x);
+        x.open(method, cors_api_url, url);
         x.onload = x.onerror = function () {
-            return x;
+            console.log(x.responseText); //
+            return x.responseText;
         };
+        console.log("errorr? occurred!");
     }
 
     console.log($('#flickr-json-demo-block'));
