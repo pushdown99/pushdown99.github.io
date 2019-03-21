@@ -192,11 +192,12 @@
         };
     }
 
-    console.log($('.flickr-json-demo-block'));
+    console.log($('#flickr-json-demo-block'));
     if ($('#flickr-json-demo-block').length > 0) {
         var tag = "boy"
-        var url = '/assets/cors/?https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=a828a6571bb4f0ff8890f7a386d61975&sort=interestingness-desc&per_page=30&format=json&callback=jsonFlickrApi&tags='+tag;
-        console.log(doCORSRequest("GET",url))
+        var url = 'https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=a828a6571bb4f0ff8890f7a386d61975&sort=interestingness-desc&per_page=30&format=json&callback=jsonFlickrApi&tags='+tag;
+        console.log(url);
+        console.log(doCORSRequest("GET", url))
     /*
         $(function() {
             $.getJSON(url, function(data) {
