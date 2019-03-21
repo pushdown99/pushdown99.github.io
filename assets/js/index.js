@@ -189,24 +189,22 @@
         x.open(method, cors_api_url + url);
         x.onload = x.onerror = function () {
             console.log(x.responseText); //
-            getResult(x.responseText);
+            getResult(JSON.parse(x.responseText));
         };
         x.send();
     }
 
     console.log($('#flickr-json-demo-block'));
     if ($('#flickr-json-demo-block').length > 0) {
-        var tag = "boy"
+        var tag = 'boy';
         var key = 'a828a6571bb4f0ff8890f7a386d61975';
-        var url = 'http://api.flickr.com/services/rest/?method=flickr.photos.search&api_key='+key+'&tags='+tag+'&safe_search=1&per_page=20'
+        var url = 'https://api.flickr.com/services/rest/?method=flickr.photos.search&format=json&nojsoncallback=1&api_key='+key+'&tags='+tag+'&safe_search=1&per_page=20'
         doCORSRequest("GET", url, function getResult(data) {
             var info = document.getElementById('flickr-json-demo');
             var h = '<div id="flickr-json-demo">';
 
             console.log(data);
-            console.log(data.photos);
-
-            $.each(data.photos, function(i, t) {
+            $.each(data.photos.photo, function(i, t) {
                 console.log(t);
                 var image = 'https://farm'+t.farm+'.staticflickr.com/'+t.server+'/'+t.id+'_'+t.secret+'_n.jpg';
                 h += '<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">';
