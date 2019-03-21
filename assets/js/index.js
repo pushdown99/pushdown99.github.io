@@ -124,7 +124,7 @@
 
         console.log($('.annyang-demo-block'));
         if ($('.annyang-demo-block').length > 0) {
-            var readyText  = 'Say "show me cute kittens"';
+            var readyText  = 'Say "show me *"';
             var findText   = 'Finding... ';
     
             function showFlickr (tag) {
