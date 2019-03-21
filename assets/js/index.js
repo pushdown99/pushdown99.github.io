@@ -129,7 +129,7 @@
     
             function showFlickr (tag) {
                 SpeechKITT.setInstructionsText(findText+tag);
-                var url = 'https://cors.io/?https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=a828a6571bb4f0ff8890f7a386d61975&sort=interestingness-desc&per_page=30&format=json&nojsoncallback=1&tags='+tag;
+                var url = 'https://cors.io/?https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=a828a6571bb4f0ff8890f7a386d61975&sort=interestingness-desc&per_page=30&format=json&callback=jsonFlickrApi&tags='+tag;
                 $.ajax({
                     type: 'GET',
                     url: url,
@@ -197,7 +197,7 @@
     console.log($('#flickr-json-demo-block'));
     if ($('#flickr-json-demo-block').length > 0) {
         var tag = "boy"
-        var url = 'https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=a828a6571bb4f0ff8890f7a386d61975&sort=interestingness-desc&per_page=30&format=json&callback=jsonFlickrApi&tags='+tag;
+        var url = 'https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=a828a6571bb4f0ff8890f7a386d61975&sort=interestingness-desc&per_page=30&format=json&nojsoncallback=1&tags='+tag;
         doCORSRequest("GET", url, function getResult(data) {
             var info = document.getElementById('flickr-json-demo');
             var h = '<div id="flickr-json-demo">';
