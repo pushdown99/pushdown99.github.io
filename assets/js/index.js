@@ -221,27 +221,34 @@
 
     console.log($('#getjson-demo-block'));
     if ($('#getjson-demo-block').length > 0) {
-        var tag = 'boy';
-        var key = 'a828a6571bb4f0ff8890f7a386d61975';
-        var url = 'https://api.flickr.com/services/rest/?method=flickr.photos.search&format=json&nojsoncallback=1&api_key='+key+'&tags='+tag+'&safe_search=1&per_page=20'
+        function getjson_flickr(tag) {
+            var key = 'a828a6571bb4f0ff8890f7a386d61975';
+            var url = 'https://api.flickr.com/services/rest/?method=flickr.photos.search&format=json&nojsoncallback=1&api_key=' + key + '&tags=' + tag + '&safe_search=1&per_page=20'
   
-        $.getJSON(url, function(data) {
-            var info = document.getElementById('getjson-demo');
-            var h = '<div id="getjson-demo">';
+            $.getJSON(url, function (data) {
+                var info = document.getElementById('getjson-demo');
+                var h = '<div id="getjson-demo">';
 
-            console.log(data);
-            $.each(data.photos.photo, function(i, t) {
-                console.log(t);
-                var image = 'https://farm'+t.farm+'.staticflickr.com/'+t.server+'/'+t.id+'_'+t.secret+'_n.jpg';
-                h += '<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">';
-                h += '  <a href="' + image + '" target=_blank">';
-                h += '      <img src="' + image + '" class="img-responsive" alt="">';
-                h += '  </a>';
-                h += t.title;
-                h += '<br><br><br>';
-                h += '</div>';
-            });
-            info.innerHTML = h;
+                console.log(data);
+                $.each(data.photos.photo, function (i, t) {
+                    console.log(t);
+                    var image = 'https://farm' + t.farm + '.staticflickr.com/' + t.server + '/' + t.id + '_' + t.secret + '_n.jpg';
+                    h += '<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">';
+                    h += '  <a href="' + image + '" target=_blank">';
+                    h += '      <img src="' + image + '" class="img-responsive" alt="">';
+                    h += '  </a>';
+                    h += t.title;
+                    h += '<br><br><br>';
+                    h += '</div>';
+                });
+                info.innerHTML = h;
+          });
+        }
+        document.querySelector('#getjson-demo-btn').onclick = function() {
+            getjson_flickr(document.querySelector('#getjson-demo-input').value);
+        };
+        $('#getjson-demo-input').keyup(function(e) {
+            if (e.keyCode == 13)   getjson_flickr(document.querySelector('#getjson-demo-input').value);       
         });
     }
 }(window, window.document, window.jQuery));
