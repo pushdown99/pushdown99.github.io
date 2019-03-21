@@ -10,4 +10,14 @@ hide_image: true
 ## **iFrame auto-height**
 
 Test
-<iframe src="http://dgkim5360.tistory.com" style="display:block; width:100vw; height: 100vh"></iframe>
+
+<iframe src="https://cors.io/?https://www.naver.com" id="myiframe" style="display:block; width:90vw; height: 100vh"></iframe>
+ <script>
+ $('#myiframe').load(function(){
+     //then set up some access points
+     var contents = $(this).contents(); // contents of the iframe
+     $(contents).find("body").on('mouseup', function(event) { 
+         alert('test'); 
+     });
+ });
+ </script>
