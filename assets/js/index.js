@@ -186,7 +186,7 @@
     var cors_api_url = 'https://cors-anywhere.herokuapp.com/';
     function doCORSRequest(method, url) {
         var x = new XMLHttpRequest();
-        x.open(method, cors_api_url + options.url);
+        x.open(method, cors_api_url + url);
         x.onload = x.onerror = function () {
             return x;
         };
