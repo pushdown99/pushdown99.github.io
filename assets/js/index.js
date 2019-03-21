@@ -182,8 +182,6 @@
         }
     });
 
-    
-  
     function doCORSRequest(method, url) {
         var cors_api_url = 'https://cors-anywhere.herokuapp.com/';
         var x = new XMLHttpRequest();
@@ -193,6 +191,7 @@
             console.log(x.responseText); //
             return x.responseText;
         };
+        x.send();
         console.log("errorr? occurred!");
     }
 
