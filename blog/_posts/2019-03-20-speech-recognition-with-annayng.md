@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Speech recognition with annayng' 
+title: 'Speech recognition (annayng)' 
 author: haeyeon.hwang
 tags: [ai, speech-recognition, javascript]
 description: >
@@ -9,7 +9,7 @@ image: /assets/img/blog/node.js.png
 hide_image: true
 ---
 {:.no_toc}
-0. this unordered seed list will be replaced by toc as unordered list
+1. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
 ## [**How to use annayang**](https://www.talater.com/annyang/)

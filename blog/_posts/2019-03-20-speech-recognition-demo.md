@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Speech recognition demo' 
+title: 'annyang demo' 
 author: haeyeon.hwang
 tags: [speech-recognition, annyang, javascript]
 image: /assets/img/blog/annyang.png
