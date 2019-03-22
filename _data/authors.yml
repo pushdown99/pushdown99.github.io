@@ -8,7 +8,8 @@ haeyeon.hwang:
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about:             |
-    Haeyeon, Hwang   
+    Haeyeon, Hwang     
+
     Technical executive director with 23+ year of experience and a proven track record in development
 
   # This photo will be used in the about section

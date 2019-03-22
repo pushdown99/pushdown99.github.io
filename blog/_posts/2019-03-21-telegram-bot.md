@@ -10,3 +10,6 @@ hide_image: true
 ## **telegram bot**
 botfather
 webmacro
+
+https://github.com/python-telegram-bot/python-telegram-bot/wiki/Webhooks#heroku
+
