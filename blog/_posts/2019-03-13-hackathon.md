@@ -19,6 +19,7 @@ https://burst.shopify.com/coding
 https://cloud.mbed.com/docs/current/mbed-cloud-sdk-python/index.html
 https://github.com/ARMmbed/mbed-cloud-sdk-python/tree/master/examples
 https://dashboard.heroku.com/apps/popup-iot/deploy/heroku-git
+https://support.google.com/googlehome/answer/7194656?co=GENIE.Platform%3DiOS&hl=en
 
 https://mermaidjs.github.io/usage.html
 
