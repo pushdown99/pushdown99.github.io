@@ -62,7 +62,6 @@ https://devcenter.heroku.com/articles/heroku-postgresql
 Resources > Add-ons > Heroku Postgres
 heroku logs --tail
 
-
 https://docs.appery.io/docs/apiexpress-databaseconnection-heroku-postgres
 
 https://www.pgadmin.org/download/pgadmin-3-windows/
