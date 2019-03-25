@@ -49,3 +49,27 @@ hide_image: true
     $ heroku git:remote -a mbed-iot
     ~~~
 
+Ubuntu
+
+~~~bash
+$ sudo wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
+$ heroku login -i
+Email:
+Password:
+~~~
+https://devcenter.heroku.com/articles/heroku-postgresql
+
+Resources > Add-ons > Heroku Postgres
+heroku logs --tail
+
+
+https://docs.appery.io/docs/apiexpress-databaseconnection-heroku-postgres
+
+https://www.pgadmin.org/download/pgadmin-3-windows/
+
+heroku pg:psql postgresql-pointy-76099 
+
+
+
+http://www.mnlsolution.com/heroku/mbed-iot/hook/ifttt/
+https://mbed-iot.herokuapp.com/hook/ifttt/
