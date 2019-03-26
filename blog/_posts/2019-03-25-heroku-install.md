@@ -69,6 +69,10 @@ https://www.pgadmin.org/download/pgadmin-3-windows/
 
 heroku pg:psql postgresql-pointy-76099 
 
+$ heroku logs -t
+$ heroku pg:info
+$ heroku pg:psql
+
 
 
 http://www.mnlsolution.com/heroku/mbed-iot/hook/ifttt/
@@ -76,3 +80,6 @@ https://mbed-iot.herokuapp.com/hook/ifttt/
 
 https://gist.github.com/milo/daed6e958ea534e4eba3
 
+http://blog.weirdx.io/post/9008
+https://devcenter.heroku.com/articles/getting-started-with-python
+https://realpython.com/flask-by-example-part-1-project-setup/
