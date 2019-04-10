@@ -1,6 +1,6 @@
 ---
 layout: post
-title: '서울 하드웨어 해커톤' 
+title: '(2019) 서울 하드웨어 해커톤' 
 author: haeyeon.hwang
 tags: [esp8266, mbed, mqtt, sensor]
 image: /assets/img/blog/hackathon.png
@@ -11,7 +11,7 @@ hide_image: true
 1. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
-## **SEOUL HARDWARE HACKATHON 2019**
+## **2019 서울 하드웨어 해커톤 (SEOUL HARDWARE HACKATHON)**
 
 구분|내용  
 ---|---
