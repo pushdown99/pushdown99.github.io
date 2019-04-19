@@ -2,7 +2,7 @@
 layout: post
 title: '(2019) 서울 하드웨어 해커톤' 
 author: haeyeon.hwang
-tags: [esp8266, mbed, mqtt, sensor]
+tags: [arduino, esp8266, mbed, mqtt, sensor, postgresql, iot]
 image: /assets/img/blog/hackathon.png
 hide_image: true
 ---

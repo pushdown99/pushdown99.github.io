@@ -3,7 +3,7 @@ layout: post
 title: 'Arm Mbed CLI를 이용한 개발환경 만들기' 
 author: haeyeon.hwang
 date: 2018-12-24 10:00
-tags: [mbed-cli]
+tags: [mbed-cli, mbed]
 image: /files/covers/mbed-cli.png
 ---
 
