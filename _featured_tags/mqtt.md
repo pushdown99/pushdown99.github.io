@@ -4,5 +4,5 @@ title: mqtt
 slug: mqtt
 menu: false
 description: >
-  artificial intelligence (AI), sometimes called machine intelligence, is intelligence demonstrated by machines, in contrast to the natural intelligence displayed by humans and other animals. Computer science defines AI research as the study of "intelligent agents" `wiki`
+  MQTT(Message Queuing Telemetry Transport)는 ISO 표준(ISO/IEC PRF 20922) 발행/구독 기반의 메시징 프로토콜 `wiki`
 ---
