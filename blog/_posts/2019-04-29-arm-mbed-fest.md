@@ -54,6 +54,9 @@ hide_image: true
 * hackers.io
   * [Example](https://www.hackster.io/WolfxPac/simple-and-smart-robotic-arm-using-arduino-1ceda6)
 
+* [parrot mambo](https://www.parrot.com/global/drones/parrot-mambo-fpv)
 
+    ![](/assets/img/blog/mambo.png)
+  * SDK 확인필요
 
   
