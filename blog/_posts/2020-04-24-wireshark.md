@@ -74,6 +74,26 @@ $ git clone https://github.com/Lekensteyn/luagcrypt.git
 
 ~~~
 
+~~~lua
+rocks_trees = {
+    { name = [[user]],
+         root    = home..[[/luarocks]],
+    },
+    { name = [[system]],
+         root    = [[c:\lua\]],
+    },
+}
+variables = {
+    MSVCRT = 'MSVCRT',
+    LUALIB = 'lua53.dll',
+    LUA = 'C:/lua',
+    LUA_BINDIR = 'C:/lua/bin',
+    LUA_INCDIR = 'C:/lua/include',
+    LUA_LIBDIR = 'C:/lua/lib/lua/5.3',
+}
+verbose = false   -- set to 'true' to enable verbose output
+~~~
+
 https://www.dllme.com/getfile.php?file=24546&id=ddd895815e8a029e423ab6a2c07a0e6d
 
 SED = /c/cygwin64/bin/sed
