@@ -1,0 +1,11 @@
+@startuml
+start
+    : 인사하기;
+
+    if(친구?) then (yes)
+        : 반갑다;
+    else (no)
+        : 반갑습니다;
+    endif
+end
+@enduml
