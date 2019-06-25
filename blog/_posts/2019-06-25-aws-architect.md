@@ -49,6 +49,62 @@ architecture.
 
 ---
 
+## Solution
+
+No|Task
+---|---
+1|A Highly available architecture that resists to the failure of single component
+-|using multi component with ELB, and EC2 split to EC2 + RDS 
+2|Scaling to meet the demand, but with uncertainty around when and how much this demand will be they are very concerned about buying too much resource too soon
+-|Scale-up and Scale-out issue, Calculate expected traffic and needed size and scale 
+3|Disaster Recovery should be considered in case of multiple components failure 
+-|Backup and restore policy and solution needed each components
+4|Their ability to configure their database and data access layer for high performance and throughput
+-|split RDS role with read and write
+5|Making the user experience in the browser very low latency even though a large portion of their user base will be from far away
+-|Consider cache and CDN
+6|Effective distribution of load regardless whether it's http/1.1 or http/2 request
+-|Application ELB
+7|A self-healing infrastructure that recovers from failed service instances
+-|consider AWS OpsWorks
+8|Security of data at rest and in transit
+-|Amazon Glacier, Amazon Simple Storage Service(S3) w/ AWS Storage Gateway
+9|Securing access to the environment as the delivery team expands
+-|IAM and Authorization
+10|An archival strategy for inactive objects greater than 6 months
+-|Archivie
+11|Ability to easily manage and replicate multiple environments based on their blueprint architecture.
+-|Blueprint
+12|Application lifecycle management should be considered as a DevOps strategy
+-|AWS DevOps
+13|Cost-effectiveness should also be considered across all components of the architecture
+-|Cost-Effectiveness
+14|Access logs generated need to be collected and aggregated for visualization
+-|Amazon CloudWatch
+
+[http1.1 vs 2.0](https://medium.com/@shlee1353/http1-1-vs-http2-0-%EC%B0%A8%EC%9D%B4%EC%A0%90-%EA%B0%84%EB%8B%A8%ED%9E%88-%EC%82%B4%ED%8E%B4%EB%B3%B4%EA%B8%B0-5727b7499b78)
+[Data archive](https://aws.amazon.com/ko/archive/)
+[DevOps](https://www.slideshare.net/awskorea/20151120-partner-techshift-6-sangpil-kim-dev-ops-aws-services)
+[BioTech Blueprint](https://aws.amazon.com/ko/quickstart/biotech-blueprint/core/)
+[VMware blueprint, Specify Amazon AWS Blueprint Information](https://pubs.vmware.com/vCAC-61/index.jsp?topic=%2Fcom.vmware.vcac.iaas.cloud.doc%2FGUID-82953456-B457-4A0D-9D1B-B2F26A1780D9.html)
+[AWS architecture center](https://aws.amazon.com/ko/architecture/?awsf.quickstart-architecture-page-filter=highlight%23new)
+[AWS reliability](https://d1.awsstatic.com/whitepapers/architecture/AWS-Reliability-Pillar.pdf)
+[VC](https://brunch.co.kr/@bzup/206)
+https://brunch.co.kr/@conceptnd/32
+https://jeongyoon.tistory.com/52
+[Amazon Calc](https://calculator.s3.amazonaws.com/index.html?lng=ko_KR#/)
+[Region and Zone](https://docs.aws.amazon.com/ko_kr/AWSEC2/latest/UserGuide/using-regions-availability-zones.html)
+[k8s lamp](https://github.com/MengZn/kubernetes-lamp)
+
+구분|연차|투자규모|자금조달|제품화
+---|---|---|---|---
+시드머니|||엔젤투자,클라우드펀딩|초기상태
+시리즈A|2-5년차|10-20억|엔젤|프로토타입
+시리즈B||30-100억|VC|제품증명완료
+시리즈C-E||100억 이상|VC,헷지펀드,투자은행|글로벌,주식공개
+
+---
+
 ## AWS CloudFormation
 
 given CloudFormation yaml code
