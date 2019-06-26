@@ -101,5 +101,26 @@ In this manner, the list of Availability Zones at runtime rather than having the
       RouteTableId: !Ref PublicRouteTable
       DestinationCidrBlock: 0.0.0.0/0
       GatewayId: !Ref InternetGateway
+
+  PublicSubnetRouteTableAssociation1:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      SubnetId: !Ref PublicSubnet1
+      RouteTableId: !Ref PublicRouteTable
 ~~~
+
+**Outputs**  
+~~~yaml
+Outputs:
+  VPC:
+    Description: VPC
+    Value: !Ref VPC
+
+  AZ1:
+    Description: Availability Zone 1
+    Value: !GetAtt
+      - PublicSubnet1
+      - AvailabilityZone
+~~~
+
 
