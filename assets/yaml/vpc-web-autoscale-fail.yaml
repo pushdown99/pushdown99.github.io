@@ -1,0 +1,237 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: Deploy a VPC
+
+Parameters:
+  WebServerKeyName:
+    Description: Name of an existing Amazon EC2 KeyPair for SSH access
+    Type: 'AWS::EC2::KeyPair::KeyName'
+    ConstraintDescription: must be the name of an existing EC2 KeyPair.
+  WebServerInstanceType:
+    Description: WebServer EC2 instance type
+    Type: String
+    Default: t2.micro
+    AllowedValues:
+      - t2.micro
+      - t2.medium
+    ConstraintDescription: must be a valid EC2 instance type.
+
+Mappings:
+  AWSInstanceType2Arch:
+    t2.micro:
+      Arch: '64'
+    t2.medium:
+      Arch: '64'
+  AWSRegionArch2AMI:
+    us-east-1:
+      '64': ami-8c1be5f6
+    us-east-2:
+      '64': ami-c5062ba0
+    us-west-1:
+      '64': ami-02eada62
+    us-west-2:
+      '64': ami-e689729e
+    ap-southeast-1:
+      '64': ami-0797ea64
+    ap-southeast-2:
+      '64': ami-8536d6e7
+    ap-northeast-1:
+      '64': ami-2a69be4c
+    ap-northeast-2:
+      '64': ami-9bec36f5
+    eu-west-1:
+      '64': ami-acd005d5
+    eu-central-1:
+      '64': ami-c7ee5ca8
+    sa-east-1:
+      '64': ami-f1344b9d
+
+Resources:
+  WebServerInstanceProfile:
+    Type: 'AWS::IAM::InstanceProfile'
+    Properties:
+      Path: /
+      Roles:
+        - ec2-role-2
+  VPC:
+    Type: AWS::EC2::VPC
+    Properties:
+      CidrBlock: 10.0.0.0/16
+      EnableDnsHostnames: true
+      Tags:
+      - Key: Name
+        Value: Lab VPC
+
+  InternetGateway:
+    Type: AWS::EC2::InternetGateway
+    Properties:
+      Tags:
+      - Key: Name
+        Value: Lab Internet Gateway
+
+  AttachGateway:
+    Type: AWS::EC2::VPCGatewayAttachment
+    Properties:
+      VpcId: !Ref VPC
+      InternetGatewayId: !Ref InternetGateway
+
+  PublicSubnet1:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref VPC
+      CidrBlock: 10.0.0.0/24
+      AvailabilityZone: ap-northeast-2a 
+      MapPublicIpOnLaunch: 'True'
+      Tags:
+        - Key: Name
+          Value: Public Subnet 1
+
+  PublicSubnet2:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref VPC
+      CidrBlock: 10.0.1.0/24
+      AvailabilityZone: ap-northeast-2c
+      MapPublicIpOnLaunch: 'True'
+      Tags:
+        - Key: Name
+          Value: Public Subnet 2
+
+  PrivateSubnet1:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref VPC
+      CidrBlock: 10.0.2.0/24
+      AvailabilityZone: ap-northeast-2a
+      Tags:
+        - Key: Name
+          Value: Private Subnet 1
+
+  PrivateSubnet2:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref VPC
+      CidrBlock: 10.0.3.0/24
+      AvailabilityZone: ap-northeast-2c
+      Tags:
+        - Key: Name
+          Value: Private Subnet 2
+
+  PublicRouteTable:
+    Type: AWS::EC2::RouteTable
+    Properties:
+      VpcId: !Ref VPC
+      Tags:
+        - Key: Name
+          Value: Public Route Table
+
+  PublicRoute:
+    Type: AWS::EC2::Route
+    Properties:
+      RouteTableId: !Ref PublicRouteTable
+      DestinationCidrBlock: 0.0.0.0/0
+      GatewayId: !Ref InternetGateway
+
+  PublicSubnetRouteTableAssociation1:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      SubnetId: !Ref PublicSubnet1
+      RouteTableId: !Ref PublicRouteTable
+
+  PublicSubnetRouteTableAssociation2:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      SubnetId: !Ref PublicSubnet2
+      RouteTableId: !Ref PublicRouteTable
+
+  PrivateRouteTable:
+    Type: AWS::EC2::RouteTable
+    Properties:
+      VpcId: !Ref VPC
+      Tags:
+      - Key: Name
+        Value: Private Route Table
+
+  PrivateSubnetRouteTableAssociation1:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      SubnetId: !Ref PrivateSubnet1
+      RouteTableId: !Ref PrivateRouteTable
+
+  PrivateSubnetRouteTableAssociation2:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      SubnetId: !Ref PrivateSubnet2
+      RouteTableId: !Ref PrivateRouteTable
+
+  WebServerSecurityGroup:
+    Type: 'AWS::EC2::SecurityGroup'
+    Properties:
+      GroupDescription: Enable HTTP
+      VpcId: !Ref VPC
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: '80'
+          ToPort: '80'
+          CidrIp: 0.0.0.0/0
+
+  Listener:
+    Type: AWS::ElasticLoadBalancingV2::Listener
+    Properties:
+      DefaultActions:
+        - Type: forward
+          TargetGroupArn: !Ref 'TargetGroup'
+      LoadBalancerArn: !Ref 'ElasticLoadBalancer'
+      Port: 80
+      Protocol: HTTP
+
+  ElasticLoadBalancer:
+    Type: AWS::ElasticLoadBalancingV2::LoadBalancer
+    Properties:
+      Scheme: internet-facing
+      Subnets: [!Ref 'PublicSubnet1', !Ref 'PublicSubnet2']
+      SecurityGroups: [!Ref 'WebServerSecurityGroup']
+
+  TargetGroup:
+    Type: AWS::ElasticLoadBalancingV2::TargetGroup
+    Properties:
+      HealthCheckIntervalSeconds: 60
+      UnhealthyThresholdCount: 10
+      HealthCheckPath: /
+      Name: 'MyTargetGroup'
+      Port: 80
+      Protocol: HTTP
+      VpcId: !Ref 'VPC'
+      TargetGroupAttributes:
+        - Key: deregistration_delay.timeout_seconds
+          Value: 60
+
+  WebServerGroup:
+    Type: AWS::AutoScaling::AutoScalingGroup
+    Properties:
+      AvailabilityZones: [ap-northeast-2a, ap-northeast-2c]
+      LaunchConfigurationName: !Ref WebServerConfig
+      MinSize: '2'
+      MaxSize: '2'
+      LoadBalancerNames: [!Ref ElasticLoadBalancer]
+      VPCZoneIdentifier: [!Ref PrivateSubnet1, !Ref PrivateSubnet2]
+  
+  WebServerConfig:
+    Type: AWS::AutoScaling::LaunchConfiguration
+    Properties:
+      ImageId: ami-dac312b4
+      InstanceType: t2.micro
+      SecurityGroups: [!Ref WebServerSecurityGroup]
+      KeyName: !Ref WebServerKeyName
+      IamInstanceProfile: !Ref WebServerInstanceProfile
+      UserData: IyEvYmluL2Jhc2gNCnl1bSB1cGRhdGUgLXkNCnl1bSBpbnN0YWxsIC15IGh0dHBkMjQNCnNlcnZpY2UgaHR0cGQgc3RhcnQNCmNoa2NvbmZpZyBodHRwZCBvbg0KZ3JvdXBhZGQgd3d3DQp1c2VybW9kIC1hIC1HIHd3dyBlYzItdXNlcg0KY2hvd24gLVIgcm9vdDp3d3cgL3Zhci93d3cNCmNobW9kIDI3NzUgL3Zhci93d3cNCmZpbmQgL3Zhci93d3cgLXR5cGUgZCAtZXhlYyBjaG1vZCAyNzc1IHt9ICsNCmZpbmQgL3Zhci93d3cgLXR5cGUgZiAtZXhlYyBjaG1vZCAwNjY0IHt9ICsNCmVjaG8gJzxodG1sPjxoZWFkPjx0aXRsZT5TdWNjZXNzITwvdGl0bGU+PC9oZWFkPjxib2R5PjxpZnJhbWUgd2lkdGg9IjU2MCIgaGVpZ2h0PSIzMTUiIHNyYz0iaHR0cHM6Ly93d3cueW91dHViZS5jb20vZW1iZWQvSnMyMXhLTUZkd3ciIGZyYW1lYm9yZGVyPSIwIiBhbGxvd2Z1bGxzY3JlZW4+PC9pZnJhbWU+PGhyPlJlZmVyZW5jZXM6IDxiciAvPjxhIGhyZWY9Imh0dHBzOi8vbWVkaWEuYW1hem9ud2Vic2VydmljZXMuY29tL0FXU19DbG91ZF9CZXN0X1ByYWN0aWNlcy5wZGYiPkNsb3VkIEFyY2hpdGVjdHVyZSBiZXN0IHByYWN0aWNlczwvYT48YnIgLz48YSBocmVmPSJodHRwczovL2QwLmF3c3N0YXRpYy5jb20vd2hpdGVwYXBlcnMvYXJjaGl0ZWN0dXJlL0FXU19XZWxsLUFyY2hpdGVjdGVkX0ZyYW1ld29yay5wZGYiPldlbGwtQXJjaGl0ZWN0ZWQgRnJhbWV3b3JrPC9hPjxiciAvPjxhIGhyZWY9Imh0dHBzOi8vd3d3LmFtYXpvbi5qb2JzL2VuL3ByaW5jaXBsZXMiPkFtYXpvbiBMZWFkZXJzaGlwIFByaW5jaXBsZXM8L2E+PGJyIC8+DQo8L2JvZHk+PC9odG1sPicgPiAvdmFyL3d3dy9odG1sL2RlbW8uaHRtbA==
+
+  WebServerWaitHandle:
+    Type: AWS::CloudFormation::WaitConditionHandle
+  
+  WebServerWaitCondition:
+    Type: AWS::CloudFormation::WaitCondition
+    DependsOn: WebServerGroup
+    Properties:
+      Count: 2
+      Handle: !Ref WebServerWaitHandle
+      Timeout: '600'

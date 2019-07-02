@@ -1,0 +1,13 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: Deploy IAM
+
+Resources:
+  EC2Admin:
+    Type: AWS::IAM::Group
+  EC2Support:
+    Type: AWS::IAM::Group
+  S3Admin:
+    Type: AWS::IAM::Group
+  S3Support:
+    Type: AWS::IAM::Group
+ 

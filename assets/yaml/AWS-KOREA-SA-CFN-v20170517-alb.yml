@@ -342,13 +342,6 @@ Resources:
             - TransitionInDays: '1'
               StorageClass: Glacier
 
-  SAADBSubnetGroup: 
-    Type: "AWS::RDS::DBSubnetGroup"
-    Properties: 
-      DBSubnetGroupDescription: "description"
-      SubnetIds: [!Ref 'SAAPrivateSubnetA', !Ref 'SAAPrivateSubnetB']
-
-
 Outputs:
   LoadBalancerDNSName:
     Description: 'The DNS name of the load balancer'
