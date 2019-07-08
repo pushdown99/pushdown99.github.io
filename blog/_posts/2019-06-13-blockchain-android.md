@@ -14,16 +14,25 @@ hide_image: true
 ## Learning Site Address
 https://gitlab.com/teameverywhere-public/voteapp
 https://gitlab.com/teameverywhere-public/android/tree/final
+https://steemit.com/kr/@wonsama/kr-dev-ipfs
+https://github.com/maheshmurthy/ethereum_voting_dapp
+
+
 
 ---
 
 ## Source Code
 
+### Build Gradle (module)
 ~~~java
 compileOptions {
     sourceCompatibility JavaVersion.VERSION_1_8
     targetCompatibility JavaVersion.VERSION_1_8
 }
+
+// dependencies
+implementation 'org.web3j:core:4.1.0-android'
+
 ~~~
 
 ~~~java
@@ -196,6 +205,8 @@ public class MainActivity extends AppCompatActivity {
 }
 ~~~
 
+## Layouts (Activity Main)
+
 ~~~xml
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -222,6 +233,8 @@ public class MainActivity extends AppCompatActivity {
        />
 </LinearLayout>
 ~~~
+
+## Main Activity
 
 ~~~java
 import android.support.v7.app.AppCompatActivity;
@@ -316,3 +329,41 @@ public class MainActivity extends AppCompatActivity {
    }
 }
 ~~~
+
+
+backup
+~~~xml
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
+~~~
+
+## Manifest
+
+~~~xml
+<uses-permission android:name="android.permission.INTERNET"/>
+~~~
+
+## Using Infura Endpoint
+
+https://infura.io/
+~~~java
+web3 = ... HtpServer(...)
+~~~
+
+
