@@ -135,6 +135,9 @@ NH핀테크혁신센터
 https://nhfintech.nonghyup.com/svcportal/home/html/UIPD6030.html
 
 
+DID W3C specifications
+=> https://w3c-ccg.github.io/did-spec/
+
 
 
 
