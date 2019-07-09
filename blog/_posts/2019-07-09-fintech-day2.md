@@ -103,6 +103,36 @@ EU 27개국 중에 24개국이 PSD2 법제화 진행
 국내 표준 WG 준비 중
 
 
+BBVA
+은행앱/경험
+결제
+계좌
+핀테크
+....
+
+Everest Group 2017.9
+미래은행의 역할
+
+오픈API부상으로 예상되는 기회와 도전
+capgemini, Efma 2017.6
+
+데이터주도금융생태계
+
+데이터 => 우통 => 활성화 => 생태계 => 데이터주도경제
+
+정책 vs. 방법론
+데이터유톻ㅇ에 기반하여 생태계 가치사슬
+
+PDS2/OpenBanking/GDPS/MyData/RTS
+
+전자금융트렌드 10선(금융보안원)
+... [레그테크](https://www.samsungsds.com/global/ko/news/story/1203097_2919.html)
+
+
+http://file.mk.co.kr/imss/write/20190227114341__00.pdf
+
+NH핀테크혁신센터
+https://nhfintech.nonghyup.com/svcportal/home/html/UIPD6030.html
 
 
 
