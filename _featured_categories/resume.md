@@ -66,7 +66,7 @@ Employer|Role|Location|Duration|Business Territory
 
     - Accomplished government project as a overall R&D PM 
  
-    Goverment|R&D Project Title|Year
+    Government|R&D Project Title|Year
     ---|---|---
     [MSIT](https://www.msit.go.kr/web/main/main.do){: target="_blank"}|Pyeongchang Olympic 2018|2016-2018
     [NIPA](http://www.nipa.kr/main.it){: target="_blank"}/[KISA](https://www.kisa.or.kr/main.jsp){: target="_blank"}|strategy Report for Paperless e-Receipt|2014,2017
@@ -190,13 +190,13 @@ Award|Prize|Issuing|Issued date
 [**DMC innovation camp, startup challenge**](https://www.mk.co.kr/news/business/view/2018/12/774787/){: target="_blank"}|Encouragement|Seoul Business Agency|Nov 2018
 [**Smartmedia, startup challenge**](http://www.cloud.or.kr/community/notice/?mod=document&uid=1654){: target="_blank"}|Encouragement|Korea Creative Content Agency|Nov 2018
 
-`picture`: Winning a prize
+`picture`: Winning a prize  
 ![img](/assets/img/blog/award_hackathon.jpg){: width="45%"} ![img](/assets/img/blog/award_smart_media.jpg){: width="45%"}  
 
 `picture`: Smart cushion / pressure ulcer mat - hardware hackthon item  
 ![img](/assets/img/blog/cushion.png){: width="45%"}  ![img](/assets/img/blog/hackathon1.png){: width="25%"} ![img](/assets/img/blog/hackathon2.png){: width="25%"} 
 
-**Seoul IoT Hackathon 2019** [Detail](../2019-04-09-hackathon/){: target="_blank"}
+**Seoul IoT Hackathon 2019** [Detail](../blog/2019-04-09-hackathon/){: target="_blank"}
 
 
 * **Patents**
@@ -210,6 +210,8 @@ Patent title|Issued|#
 
 Course title|Issuer|Date
 ---|---
+Development course for Fintech project, Completion|[KISIS](https://www.kisis.or.kr/user/bbs/kisis/36/122/bbsDataList.do){: target="_blank"}|Jul 2019
+Service Development course for Fintech/Blockchain, Completion|[KISIS](https://www.kisis.or.kr/user/bbs/kisis/36/122/bbsDataList.do){: target="_blank"}|Jun 2019
 Blockchain Campus specialization course, Completion|[CCEI](https://ccei.creativekorea.or.kr/gyeonggi/){: target="_blank"}|May 2019
 Eagle CAD/3D circuit modeling|SBA|Feb 2019
 Free RTOS driver with STM32 chip|SBA|Feb 2019
@@ -222,7 +224,7 @@ Youth Entrepreneurship School, Completion|[KOSME](https://start.kosmes.or.kr){: 
 KT AI sdk development course (Giga Gini)|SBA|Dec 2018
 IoT development with Amazon alexa api|SBA|Nov 2018
 Entrepreneur, startup school|[Seoul Startup-Hub](http://seoulstartuphub.com/){: target="_balnk"}|Oct 2018
-Arm Mbed OS core and cloud development(pelion)|Oct 2018
+Arm Mbed OS core and cloud development(pelion)|Seoul IoT Center|Oct 2018
 LoRa and LoRaWAN|SBA|Oct 2018
 MS Azure Cloud Computing|SBA|Oct 2018
 
@@ -240,7 +242,7 @@ Skills|Level|
 
 Cloud Skills|Level|
 :---|:---:|:---
-**Amazon AWS**|2|&#10033;&#10033;&#10032;&#10032;&#10032;
+**Amazon AWS**|2|&#10033;&#10033;&#10033;&#10032;&#10032;
 **MS Azure**|2|&#10033;&#10033;&#10032;&#10032;&#10032;
 **Google GCP**|4|&#10033;&#10033;&#10033;&#10033;&#10032;
 **Openstack**|4|&#10033;&#10033;&#10033;&#10033;&#10032;
@@ -266,4 +268,4 @@ Embedded/IoT Skills|Level|
 
 **My AWS curriculum**
 
-[link](../2019-06-01-aws/){: target="_blank"}
+[link](../blog/2019-06-01-aws/){: target="_blank"}
