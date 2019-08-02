@@ -210,6 +210,7 @@ Patent title|Issued|#
 
 Course title|Issuer|Date
 ---|---
+Blockchain Campus specialization course for deep dive, Doing|[CCEI](https://ccei.creativekorea.or.kr/gyeonggi/){: target="_blank"}|Aug 2019
 Development course for Fintech project, Completion|[KISIS](https://www.kisis.or.kr/user/bbs/kisis/36/122/bbsDataList.do){: target="_blank"}|Jul 2019
 Service Development course for Fintech/Blockchain, Completion|[KISIS](https://www.kisis.or.kr/user/bbs/kisis/36/122/bbsDataList.do){: target="_blank"}|Jun 2019
 Blockchain Campus specialization course, Completion|[CCEI](https://ccei.creativekorea.or.kr/gyeonggi/){: target="_blank"}|May 2019
