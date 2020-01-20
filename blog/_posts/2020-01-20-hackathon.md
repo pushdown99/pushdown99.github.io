@@ -280,7 +280,7 @@ void loop() {
 
 ### Mbed 게이트웨이(Gateway) 개발하기
 
-  - [mbed-cloud-client-example](https://github.com/ARMmbed/mbed-cloud-client-example): Mbed Pelion Clieny /Ubuntu
+  - [mbed-cloud-client-example](https://github.com/ARMmbed/mbed-cloud-client-example): Mbed Pelion Client /Ubuntu
 
   ![](/assets/img/blog/connected-stamp-4.png)
 
