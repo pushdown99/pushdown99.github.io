@@ -380,5 +380,6 @@ void loop() {
 Output|Download
 ---|---
 동영상|[mp4](/assets/img/blog/connected-stamp-1.mp4)
+소개|[mp4](/assets/img/blog/connected-stamp-2.mp4)
 자료|[pptx](/assets/doc/connected-stamp.pptx)
 
