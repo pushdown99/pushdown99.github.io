@@ -41,6 +41,15 @@ hide_image: true
 :---|:---|---:|:---:|---:
 MCU|[esp-12e](http://mechasolution.com/shop/goods/goods_view.php?goodsno=539585&category=)|6,050|1|6,050
 서보모터|[servo](http://mechasolution.com/shop/goods/goods_view.php?goodsno=329599&category=)|3,520|1|3,520
+리튬폴리머|[LiPo](http://mechasolution.com/shop/goods/goods_view.php?goodsno=583815&category=)|2,700|1|2,700
+TP4056|[TP4056](http://mechasolution.com/shop/goods/goods_view.php?goodsno=9268&category=)|550|1|550
+적색LED(5파이)|-|-|1|-
+4파이 PCB서포트(스틸)|-|-|7|-
+4파이 너트|-|-|4|-
+4파이 PCB서포트(플라스틱)|-|-|1|-
+압정|-|-|1|-
+로커스위치|-|-|1|-
+점퍼|-|-|12|-
 
 
 ## 전체시스템구성
@@ -332,7 +341,7 @@ void loop() {
  
 ### Heroku
 
-* Installation
+* Using Heroku CLI
   [Heroku-CLI](https://devcenter.heroku.com/articles/heroku-cli)
 
   ~~~bash
@@ -341,7 +350,7 @@ void loop() {
   heroku/7.0.0 (darwin-x64) node-v8.0.0
   ~~~
 
-* Deploy using Heroku Git
+* Installation and Deploy using Heroku Git
   
   ~~~bash
   $ heroku login
@@ -354,24 +363,13 @@ void loop() {
   $ git clone https://git.heroku.com/mystamp.git
   $ cd mystamp
   $ npm install
-  ~~~
+  $ npm start
 
-* SQL schema and table setting
-  - `pg/table.sql` SQL 실행 
-  
-  ~~~bash
-  $ heroku pg:psql
-  --> Connecting to postgresql
-  psql (9.5.14, server 11.2 (Ubuntu 11.2-1.pgdg16.04+1))
-  WARNING: psql major version 9.5, server major version 11.
-           Some psql features might not work.
-  SSL connection (protocol: TLSv1.2, cipher: ECDHE-RSA-AES256-GCM-SHA384, bits: 256, compression: off)
-  Type "help" for help.
+  ...
 
-  DATABASE=> CREATE...
-
-  $ heroku ps:scale web=1
-  $ heroku open
+  $ git add .
+  $ git commit -am "make it better"
+  $ git push
   ~~~
 
 ## 화면/결과물
