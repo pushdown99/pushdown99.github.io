@@ -67,7 +67,7 @@ TP4056|[TP4056](http://mechasolution.com/shop/goods/goods_view.php?goodsno=9268&
 ![](/assets/img/blog/connected-stamp-3.png)
 
 
-### 스마트스탭프 w/ esp-12e
+### 커텍티드(스마트) 스탬프 w/ esp-12e
   
 [`github`](https://github.com/pushdown99/hackathon2)
 
