@@ -24,11 +24,11 @@ hide_image: true
 
 ## 과제개요
 
+구분|내용
+:---|:---
 팀명|WNB(WX+b)
 과제|커넥티드스탬프(Connected Stamp)
-개요|오프라인에서 종이에 스탬프를 찍고 있는 동작을 스탬프에 
-저전력기술(LPWA 커넥티비티 기술)을 적용하여 종이와 도장없이 
-스마트폰/기기의 디지털 매체에 아날로그 감성을 적용한 기술 
+개요|오프라인에서 종이에 스탬프를 찍고 있는 동작을 스탬프에 저전력기술(LPWA 커넥티비티 기술)을 적용하여 종이와 도장없이 스마트폰/기기의 디지털 매체에 아날로그 감성을 적용한 기술 
 
 ![logo](/assets/img/blog/connected-stamp-logo.png)
 ![logo](/assets/img/blog/connected-stamp-logo2.png)
