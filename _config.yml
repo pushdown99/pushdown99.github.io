@@ -273,6 +273,7 @@ kramdown:
   math_engine_opts:
     preview:           true
     preview_as_code:   true
+  hard_wrap: true
 
 compress_html:
   comments:            ["<!-- ", " -->"]
