@@ -27,8 +27,8 @@ description: >
 **Github**|[https://github.com/pushdown99](https://github.com/pushdown99)
 **Homepage**|[https://wb9lab.com/](https://wb9lab.com/)
 
-
-* Passionate IT engineer and technical executive director with 23+ year of experience and a proven track record in software and hardware development.
+ 
+* Passionate IT engineer and technical executive director with 24+ year of experience and a proven track record in software and hardware development.
 * Exceptional communicator with a consultative business style, exceptional problem solving abilities.
 * Aggressively identify opportunities, develop focus, and catch-up a tactical business moments.
 
