@@ -270,9 +270,7 @@ https://cors-anywhere.herokuapp.com
                 var info = document.getElementById('getjson-demo');
                 var h = '<div id="getjson-demo">';
 
-                console.log(data);
                 $.each(data.photos.photo, function (i, t) {
-                    console.log(t);
                     var image = 'https://farm' + t.farm + '.staticflickr.com/' + t.server + '/' + t.id + '_' + t.secret + '_n.jpg';
                     h += '<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">';
                     h += '  <a href="' + image + '" target=_blank">';
@@ -295,15 +293,13 @@ https://cors-anywhere.herokuapp.com
 
     if ($('#masonry-demo-block').length > 0) {
         console.log($('#masonry-demo-block'));
-        function getjson_flickr(tag) {
+        function masonry_getjson_flickr(tag) {
             var key = 'a828a6571bb4f0ff8890f7a386d61975';
             var url = 'https://api.flickr.com/services/rest/?method=flickr.photos.search&format=json&nojsoncallback=1&api_key=' + key + '&tags=' + tag + '&safe_search=1&per_page=20'
   
             $.getJSON(url, function (data) {
                 var info = document.getElementById('masonry-demo');
-                var h = '';
-                h  = '<div class="grid">';
-                h += '<div class="grid-sizer"></div>';
+                var h = '<div class="grid-sizer"></div>';
 
                 console.log(data);
                 $.each(data.photos.photo, function (i, t) {
@@ -316,11 +312,16 @@ https://cors-anywhere.herokuapp.com
                     // h += t.title;
                     h += '</div>';
                 });
-                h += '</div>';
                 info.innerHTML = h;
           });
         }
         //getjson_flickr('girl');
+        document.querySelector('#masonry-demo-btn').onclick = function() {
+            masonry_getjson_flickr(document.querySelector('#masonry-demo-input').value);
+        };
+        $('#masonry-demo-input').keyup(function(e) {
+            if (e.keyCode == 13)   masonry_getjson_flickr(document.querySelector('#masonry-demo-input').value);       
+        });
     }
 
 }(window, window.document, window.jQuery));
