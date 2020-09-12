@@ -113,10 +113,10 @@
             heatmapInstance.setData(data);
 
             document.querySelector('.heatmap-demo-btn').onclick = function() {
-                heatmapInstance.setData(generateRandomData(heatmap_element_num));
+                heatmapInstance.setData(generateRandomData(heatmap_element_num, 'heatmap-demo'));
             };
             $(window).resize(function() {
-                heatmapInstance.setData(generateRandomData(heatmap_element_num));
+                heatmapInstance.setData(generateRandomData(heatmap_element_num, 'heatmap-demo'));
             });
         }
 
