@@ -143,6 +143,23 @@ https://cors-anywhere.herokuapp.com
 
         ///////////////////////////////////////////////////////////////////////////////////////////////////
         //
+        // HEATMAP DEMO
+        //
+        if ($('.cors-demo-block').length > 0) {
+            console.log($('.cors-demo-block'));
+            //var url = "https://thingproxy.freeboard.io/fetch/https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=a828a6571bb4f0ff8890f7a386d61975&sort=interestingness-desc&per_page=30&format=json&callback=jsonFlickrApi&tags=boy"
+            var url = "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=a828a6571bb4f0ff8890f7a386d61975&sort=interestingness-desc&per_page=30&format=json&callback=jsonFlickrApi&tags=boy"
+            $.getJSON( url, function( data ) {
+                var items = [];
+                $.each( data, function( i, t ) {
+                    console.log(t);
+                  //items.push( "<li id='" + key + "'>" + val + "</li>" );
+                });
+            });
+        }        
+
+        ///////////////////////////////////////////////////////////////////////////////////////////////////
+        //
         // SPEACH RECOGNITION DEMO
         //
         if ($('.annyang-demo-block').length > 0) {
@@ -218,8 +235,8 @@ https://cors-anywhere.herokuapp.com
         x.send();
     }
 
-    console.log($('#flickr-json-demo-block'));
     if ($('#flickr-json-demo-block').length > 0) {
+        console.log($('#flickr-json-demo-block'));
         var tag = 'boy';
         var key = 'a828a6571bb4f0ff8890f7a386d61975';
         var url = 'https://api.flickr.com/services/rest/?method=flickr.photos.search&format=json&nojsoncallback=1&api_key='+key+'&tags='+tag+'&safe_search=1&per_page=20'
@@ -243,8 +260,8 @@ https://cors-anywhere.herokuapp.com
         });
     }
 
-    console.log($('#getjson-demo-block'));
     if ($('#getjson-demo-block').length > 0) {
+        console.log($('#getjson-demo-block'));
         function getjson_flickr(tag) {
             var key = 'a828a6571bb4f0ff8890f7a386d61975';
             var url = 'https://api.flickr.com/services/rest/?method=flickr.photos.search&format=json&nojsoncallback=1&api_key=' + key + '&tags=' + tag + '&safe_search=1&per_page=20'
@@ -275,4 +292,35 @@ https://cors-anywhere.herokuapp.com
             if (e.keyCode == 13)   getjson_flickr(document.querySelector('#getjson-demo-input').value);       
         });
     }
+
+    if ($('#masonry-demo-block').length > 0) {
+        console.log($('#masonry-demo-block'));
+        function getjson_flickr(tag) {
+            var key = 'a828a6571bb4f0ff8890f7a386d61975';
+            var url = 'https://api.flickr.com/services/rest/?method=flickr.photos.search&format=json&nojsoncallback=1&api_key=' + key + '&tags=' + tag + '&safe_search=1&per_page=20'
+  
+            $.getJSON(url, function (data) {
+                var info = document.getElementById('masonry-demo');
+                var h = '';
+                h  = '<div class="grid">';
+                h += '<div class="grid-sizer"></div>';
+
+                console.log(data);
+                $.each(data.photos.photo, function (i, t) {
+                    console.log(t);
+                    var image = 'https://farm' + t.farm + '.staticflickr.com/' + t.server + '/' + t.id + '_' + t.secret + '_n.jpg';
+                    h += '<div class="grid-item">';
+                    h += '  <a href="' + image + '" target=_blank">';
+                    h += '      <img src="' + image + '" class="img-responsive" alt="">';
+                    h += '  </a>';
+                    // h += t.title;
+                    h += '</div>';
+                });
+                h += '</div>';
+                info.innerHTML = h;
+          });
+        }
+        //getjson_flickr('girl');
+    }
+
 }(window, window.document, window.jQuery));

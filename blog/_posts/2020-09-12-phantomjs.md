@@ -1,10 +1,10 @@
 ---
 layout: post
-title: 'cors demo' 
+title: 'PhantomJS demo' 
 author: haeyeon.hwang
 tags: [iot, hackathon, javascript]
 description: >
-  cross-origin resource sharing (CORS) is a mechanism that allows restricted resources on a web page to be requested from another domain outside the domain from which the first resource was served. A web page may freely embed cross-origin images, stylesheets, scripts, iframes, and videos. `wiki`
+  PhantomJS is a discontinued headless browser used for automating web page interaction. PhantomJS provides a JavaScript API enabling automated navigation, screenshots, user behavior and assertions making it a common tool used to run browser-based unit tests in a headless system like a continuous integration environment.  `wiki`
 image: /assets/img/blog/hackathon.png
 hide_image: true
 ---
@@ -12,12 +12,13 @@ hide_image: true
 1. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
-## **CORS Demo**
+## **PhantomJS Demo**
 
 1. Reference [code](https://www.patrick-wied.at/static/heatmapjs/example-minimal-config.html) - heatmap.js
 
   * <a href="https://github.com/pushdown99/heatmap.git">source download <span class="icon-github"></span></a>
   <div class="cors-demo-block" id="cors-block">
+    <div class="cors-demo"><iframe id="cors-iframe" src="http://thingproxy.freeboard.io/fetch/http://debian.tric.kr" width="100%" height="400" frameborder="1" scrolling="no"></iframe></div>
   </div>
   https:// <input type="text" value="hello">
 
