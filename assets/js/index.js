@@ -78,21 +78,23 @@
             closeOnContentClick: true
         });
 
-        console.log($('.heatmap-demo-block'));
+        ///////////////////////////////////////////////////////////////////////////////////////////////////
+        //
+        // HEATMAP DEMO
+        //
         if ($('.heatmap-demo-block').length > 0) {
-            var heatmap_element_num      = 100;
+            console.log($('.heatmap-demo-block'));
 
-            function generateRandomData(num, id) {
+            var heatmap_element_num      = 100;
+            function generateRandomData(num, w) 
+            {
+                console.log(w);
                 var points = [];
-                var rect   = document.getElementById(id).getBoundingClientRect();
                 var max    = 0;
-                var width  = rect.width; 
+                var width  = w; 
                 var height = 400;
                 var len    = num;
   
-                console.log(document.getElementById('heatmap-demo').getBoundingClientRect());
-                console.log(id);
-                console.log(rect);
                 while(len--) {
                     var val = Math.floor(Math.random()*100);
                     max = Math.max(max, val);
@@ -111,32 +113,47 @@
                 container: document.querySelector('.heatmap-demo')
             });
 
-            var data = generateRandomData(heatmap_element_num, 'heatmap-demo');
+            var demoblock = document.getElementById('demo-block');
+
+            var data = generateRandomData(heatmap_element_num, demoblock.clientWidth);
             heatmapInstance.setData(data);
 
             document.querySelector('.heatmap-demo-btn').onclick = function() {
-                heatmapInstance.setData(generateRandomData(heatmap_element_num, 'heatmap-demo'));
+                heatmapInstance.setData(generateRandomData(heatmap_element_num, demoblock.clientWidth));
             };
-            $('.heatmap-demo-block').resize(function() {
-                heatmapInstance.setData(generateRandomData(heatmap_element_num, 'heatmap-demo'));
+
+            new ResizeSensor(demoblock, function() {
+                console.log('Changed to ' + demoblock.clientWidth);
+                heatmapInstance.setData(generateRandomData(heatmap_element_num, demoblock.clientWidth));
             });
         }
 
+        /*
         var testurl = 'https://cors.io/?https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=a828a6571bb4f0ff8890f7a386d61975&sort=interestingness-desc&per_page=30&format=json&callback=jsonFlickrApi&tags=boy';
-
+https://cors-anywhere.herokuapp.com
         console.log(testurl);
+        https://cors-anywhere.herokuapp.com/https://www.naver.com
+        Missing required request header. Must specify one of: origin,x-requested-with
         $.getJSON(testurl, function(data) {
             console.log(data);
         });
+        https://thingproxy.freeboard.io/fetch/https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=a828a6571bb4f0ff8890f7a386d61975&sort=interestingness-desc&per_page=30&format=json&callback=jsonFlickrApi&tags=boy;
+        https://nordicapis.com/10-free-to-use-cors-proxies/
+        */
 
-        console.log($('.annyang-demo-block'));
+        ///////////////////////////////////////////////////////////////////////////////////////////////////
+        //
+        // SPEACH RECOGNITION DEMO
+        //
         if ($('.annyang-demo-block').length > 0) {
+            console.log($('.annyang-demo-block'));
+
             var readyText  = 'Say "show me *"';
             var findText   = 'Finding... ';
     
             function showFlickr (tag) {
                 SpeechKITT.setInstructionsText(findText+tag);
-                var url = 'https://cors.io/?https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=a828a6571bb4f0ff8890f7a386d61975&sort=interestingness-desc&per_page=30&format=json&callback=jsonFlickrApi&tags='+tag;
+                var url = 'https://thingproxy.freeboard.io/?https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=a828a6571bb4f0ff8890f7a386d61975&sort=interestingness-desc&per_page=30&format=json&callback=jsonFlickrApi&tags='+tag;
                 $.ajax({
                     type: 'GET',
                     url: url,
