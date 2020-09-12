@@ -85,10 +85,11 @@
             function generateRandomData(len) {
                 var points = [];
                 var max    = 0;
-                var width  = 840;
+                var width  = 840; 
                 var height = 400;
                 var len    = 200;
   
+                console.log(document.getElementById('heatmap-demo').getBoundingClientRect());
                 while(len--) {
                     var val = Math.floor(Math.random()*100);
                     max = Math.max(max, val);
@@ -104,7 +105,7 @@
             }
   
             var heatmapInstance = h337.create({
-                container: document.querySelector('.heatmap-demo')
+                container: document.querySelector('#heatmap-demo')
             });
 
             var data = generateRandomData(heatmap_element_num);
