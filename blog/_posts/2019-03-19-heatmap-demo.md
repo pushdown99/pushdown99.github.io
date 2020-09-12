@@ -18,7 +18,7 @@ hide_image: true
 
   * <a href="https://github.com/pushdown99/heatmap.git">source download <span class="icon-github"></span></a>
   <div class="heatmap-demo-block">
-  <div id="heatmap-demo"></div>
+  <div id="heatmap-demo" class="heatmap-demo"></div>
   </div>
   <button class="heatmap-demo-btn">re-generate data</button>
 
