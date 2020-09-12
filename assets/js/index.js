@@ -82,12 +82,13 @@
         if ($('.heatmap-demo-block').length > 0) {
             var heatmap_element_num      = 500;
 
-            function generateRandomData(len) {
+            function generateRandomData(num, id) {
                 var points = [];
+                var rect   = document.getElementById(id).getBoundingClientRect();
                 var max    = 0;
-                var width  = 840; 
-                var height = 400;
-                var len    = 200;
+                var width  = rect.width; 
+                var height = rect.height;
+                var len    = num;
   
                 console.log(document.getElementById('heatmap-demo').getBoundingClientRect());
                 while(len--) {
@@ -108,7 +109,7 @@
                 container: document.querySelector('#heatmap-demo')
             });
 
-            var data = generateRandomData(heatmap_element_num);
+            var data = generateRandomData(heatmap_element_num, 'heatmap-demo');
             heatmapInstance.setData(data);
 
             document.querySelector('.heatmap-demo-btn').onclick = function() {
