@@ -115,6 +115,9 @@
             document.querySelector('.heatmap-demo-btn').onclick = function() {
                 heatmapInstance.setData(generateRandomData(heatmap_element_num));
             };
+            $(window).resize(function() {
+                heatmapInstance.setData(generateRandomData(heatmap_element_num));
+            });
         }
 
         var testurl = 'https://cors.io/?https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=a828a6571bb4f0ff8890f7a386d61975&sort=interestingness-desc&per_page=30&format=json&callback=jsonFlickrApi&tags=boy';
