@@ -291,6 +291,10 @@ https://cors-anywhere.herokuapp.com
         });
     }
 
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    //
+    // MASONRY DEMO
+    //   
     if ($('#masonry-demo-block').length > 0) {
         console.log($('#masonry-demo-block'));
         function masonry_getjson_flickr(tag) {
@@ -301,9 +305,7 @@ https://cors-anywhere.herokuapp.com
                 var info = document.getElementById('masonry-demo');
                 var h = '<div class="grid-sizer"></div>';
 
-                console.log(data);
                 $.each(data.photos.photo, function (i, t) {
-                    console.log(t);
                     var image = 'https://farm' + t.farm + '.staticflickr.com/' + t.server + '/' + t.id + '_' + t.secret + '_n.jpg';
                     h += '<div class="grid-item">';
                     h += '  <a href="' + image + '" target=_blank">';
@@ -315,12 +317,45 @@ https://cors-anywhere.herokuapp.com
                 info.innerHTML = h;
           });
         }
-        //getjson_flickr('girl');
         document.querySelector('#masonry-demo-btn').onclick = function() {
             masonry_getjson_flickr(document.querySelector('#masonry-demo-input').value);
         };
         $('#masonry-demo-input').keyup(function(e) {
             if (e.keyCode == 13)   masonry_getjson_flickr(document.querySelector('#masonry-demo-input').value);       
+        });
+    }
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    //
+    // CAROUSEL DEMO
+    //   
+    if ($('#carousel-demo-block').length > 0) {
+        console.log($('#carousel-demo-block'));
+        function carousel_getjson_flickr(tag) {
+            var key = 'a828a6571bb4f0ff8890f7a386d61975';
+            var url = 'https://api.flickr.com/services/rest/?method=flickr.photos.search&format=json&nojsoncallback=1&api_key=' + key + '&tags=' + tag + '&safe_search=1&per_page=20'
+  
+            $.getJSON(url, function (data) {
+                var info = document.getElementById('carousel-demo');
+                var h = '';
+
+                $.each(data.photos.photo, function (i, t) {
+                    var image = 'https://farm' + t.farm + '.staticflickr.com/' + t.server + '/' + t.id + '_' + t.secret + '_n.jpg';
+                    h += '<div class="item">';
+                    h += '  <a href="' + image + '" target=_blank">';
+                    h += '      <img src="' + image + '" class="img-responsive" alt="">';
+                    h += '  </a>';
+                    // h += t.title;
+                    h += '</div>';
+                });
+                info.innerHTML = h;
+          });
+        }
+        document.querySelector('#carousel-demo-btn').onclick = function() {
+            carousel_getjson_flickr(document.querySelector('#carousel-demo-input').value);
+        };
+        $('#carousel-demo-input').keyup(function(e) {
+            if (e.keyCode == 13)   carousel_getjson_flickr(document.querySelector('#carousel-demo-input').value);       
         });
     }
 
