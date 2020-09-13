@@ -143,7 +143,7 @@ https://cors-anywhere.herokuapp.com
 
         ///////////////////////////////////////////////////////////////////////////////////////////////////
         //
-        // HEATMAP DEMO
+        // CORS DEMO
         //
         if ($('.cors-demo-block').length > 0) {
             console.log($('.cors-demo-block'));
@@ -235,6 +235,10 @@ https://cors-anywhere.herokuapp.com
         x.send();
     }
 
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Flickr DEMO
+    //      
     if ($('#flickr-json-demo-block').length > 0) {
         console.log($('#flickr-json-demo-block'));
         var tag = 'boy';
@@ -260,6 +264,10 @@ https://cors-anywhere.herokuapp.com
         });
     }
 
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    //
+    // getJSON DEMO
+    //  
     if ($('#getjson-demo-block').length > 0) {
         console.log($('#getjson-demo-block'));
         function getjson_flickr(tag) {
@@ -331,6 +339,9 @@ https://cors-anywhere.herokuapp.com
     //   
     if ($('#carousel-demo-block').length > 0) {
         console.log($('#carousel-demo-block'));
+
+
+/*
         function carousel_getjson_flickr(tag) {
             var key = 'a828a6571bb4f0ff8890f7a386d61975';
             var url = 'https://api.flickr.com/services/rest/?method=flickr.photos.search&format=json&nojsoncallback=1&api_key=' + key + '&tags=' + tag + '&safe_search=1&per_page=20'
@@ -342,10 +353,7 @@ https://cors-anywhere.herokuapp.com
                 $.each(data.photos.photo, function (i, t) {
                     var image = 'https://farm' + t.farm + '.staticflickr.com/' + t.server + '/' + t.id + '_' + t.secret + '_n.jpg';
                     h += '<div class="item">';
-                    h += '  <a href="' + image + '" target=_blank">';
                     h += '      <img src="' + image + '" class="img-responsive" alt="">';
-                    h += '  </a>';
-                    // h += t.title;
                     h += '</div>';
                 });
                 info.innerHTML = h;
@@ -353,10 +361,15 @@ https://cors-anywhere.herokuapp.com
         }
         document.querySelector('#carousel-demo-btn').onclick = function() {
             carousel_getjson_flickr(document.querySelector('#carousel-demo-input').value);
+            //carousel_update ();
         };
         $('#carousel-demo-input').keyup(function(e) {
-            if (e.keyCode == 13)   carousel_getjson_flickr(document.querySelector('#carousel-demo-input').value);       
+            if (e.keyCode == 13) {
+                carousel_getjson_flickr(document.querySelector('#carousel-demo-input').value);       
+                //carousel_update ();
+            }
         });
+*/
     }
 
 }(window, window.document, window.jQuery));
