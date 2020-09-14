@@ -13,32 +13,55 @@ hide_image: true
 1. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
-## **웹크롤러 (Web Crawler)**
+## **Web Crawler**
 
 ---
 
-코드 레퍼런스: [https://codepen.io/desandro/pen/bdgRzg](https://codepen.io/desandro/pen/bdgRzg)
+### 환경구성
 
+구분|구성|비고
+---|---|---
+수집차트|멜론일간차트|[https://www.melon.com/chart/day/index.htm](https://www.melon.com/chart/day/index.htm)
+웹크롤러|heroku/node.js|[https://get-chart.herokuapp.com/](https://get-chart.herokuapp.com/)
+클라이언트|html5/jQuery|[http://127.0.0.1:4000/blog/2020-09-12-melon-chart/](http://127.0.0.1:4000/blog/2020-09-12-melon-chart/)
 
-<link href="/assets/css/bootstrap-3.1.1.min.css" rel="stylesheet" type="text/css"/>
-<link href="/assets/css/hydejack-8.4.0.css" rel="stylesheet" type="text/css"/>
-<link href="/assets/css/owl.carousel.min.css" rel="stylesheet" type="text/css"/>
+- node.js CORS (cross origin resource sharing) 문제 해결방법
+
+  방안|해결방안|코드
+  ---|---|---
+  1|Access-Control-Allow-Origin response header 추가|<code>res.header("Access-Control-Allow-Origin", "*");</code>
+  2|CORS middleware 추가|<code>app.use(cors());</code>
+
+- Access-Control-Allow-Origin response header 추가
+  ~~~javascript
+  app.get('/data', (req, res) => {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.send(data);
+  });
+  ~~~
+
+- CORS middleware 추가
+  ~~~javascript
+  const express = require('express');
+  const cors    = require('cors');
+  const app     = express();
+
+  const corsOptions = {
+    origin: 'http://localhost:3000', 
+    credentials: true, 
+  };
+  app.use(cors(corsOptions)); 
+  ~~~
+
+### Chart Crawler
+
+[https://get-chart.herokuapp.com/](https://get-chart.herokuapp.com/)
 
 <script src="/assets/js/jquery-1.10.2.min.js"></script>
-<script src="/assets/js/jquery-ui-1.10.4.min.js"></script>
-<script src="/assets/js/bootstrap-3.1.1.min.js"></script>
 
-<script src="/assets/js/owl.carousel.min.js"></script>
-
+### 멜론차트 (Top50)
 <div id='webcrawler-demo-block' class='container-fluid'>
   <div class="row">
-    <div class="input-group input-group-lg">
-      <input type="text" id="webcrawler-demo-input" class="form-control" placeholder="Search">
-      <div class="input-group-btn">
-        <button id="webcrawler-demo-btn" class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-      </div>
-      <br>
-    </div>
     <div id="webcrawler-demo"></div>
   </div>
 </div>
@@ -63,11 +86,10 @@ function webcrawler_getjson () {
     h += '  </thead>';
     h += '  <tbody>';
 
-    $.each(data.photos.photo, function (i, t) {
-      var image = 'https://farm' + t.farm + '.staticflickr.com/' + t.server + '/' + t.id + '_' + t.secret + '_n.jpg';
+    $.each(data, function (i, t) {
       h += '<tr>';
       h += '<td>' + t.rank +'</td>';
-      h += '<td><img src="' + t.image +'"></td>';
+      h += '<td><img src="' + t.image +'/melon/resize/120/quality/80/optimize' + '"></td>';
       h += '<td>' + t.title +'</td>';
       h += '<td>' + t.artist +'</td>';
       h += '</tr>';
@@ -81,9 +103,5 @@ function webcrawler_getjson () {
 
 jQuery(document).ready(function($) {
   webcrawler_getjson ();
-
-  document.querySelector('#webcrawler-demo-btn').onclick = function() {
-    webcrawler_getjson ();
-  };
 });
 </script>
