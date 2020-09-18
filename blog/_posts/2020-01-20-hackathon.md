@@ -3,7 +3,7 @@ layout: post
 title: '(2020) 서울 하드웨어 해커톤' 
 author: haeyeon.hwang
 tags: [lpwa, nb-iot, esp8266, mbed, mqtt, iot]
-image: /assets/img/blog/hackathon.png
+image: /assets/img/blog/hackathon.jpg
 hide_image: true
 ---
 

@@ -5,7 +5,7 @@ author: haeyeon.hwang
 tags: [iot, hackathon, javascript]
 description: >
   PhantomJS is a discontinued headless browser used for automating web page interaction. PhantomJS provides a JavaScript API enabling automated navigation, screenshots, user behavior and assertions making it a common tool used to run browser-based unit tests in a headless system like a continuous integration environment.  `wiki`
-image: /assets/img/blog/hackathon.png
+image: /assets/img/blog/phantomjs.jpg
 hide_image: true
 ---
 {:.no_toc}
