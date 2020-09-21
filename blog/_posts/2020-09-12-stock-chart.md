@@ -2,9 +2,9 @@
 layout: post
 title: 'Stock Chart Demo' 
 author: haeyeon.hwang
-tags: [speech-recognition, annyang, javascript]
+tags: [visualization, chart, stock, finance, javascript]
 description: >
-  Masonry is the building of structures from individual units, which are often laid in and bound together by mortar; the term masonry can also refer to the units themselves.
+  Google Charts is an interactive Web service that creates graphical charts from user-supplied information `wiki`
 image: /assets/img/blog/masonry.jpg
 hide_image: true
 ---
@@ -23,7 +23,12 @@ hide_image: true
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
 
-<div id="chart"></div>
+<div id='chart-demo-block' class='container-fluid'>
+  <div class="row">
+    <div id="chart"></div>
+    <div id="table"></div>
+  </div>
+</div>
 
 <script type='text/javascript'>
 
@@ -32,7 +37,7 @@ google.charts.setOnLoadCallback(drawChart);
 
 function drawChart() {
 
-  $.getJSON('https://get-krx-chart.herokuapp.com/', function(json) {
+  $.getJSON('https://get-krx-chart.herokuapp.com/005930.KS', function(json) {
     console.log(json);
     var ch = new google.visualization.DataTable();
     ch.addColumn('date', 't');
@@ -44,6 +49,75 @@ function drawChart() {
       ch.addRow([d, t.Close]);
     });
     chart.draw(ch, options);
+
+    var info = document.getElementById('table');
+    var html = '<table>';
+    html += '<thead>';
+    html += '<tr>';
+    html += '<th>Date</th>';
+    html += '<th>High</th>';
+    html += '<th>Low</th>';
+    html += '<th>Open</th>';
+    html += '<th>Close</th>';
+    html += '<th>Close(adj)</th>';
+    html += '<th>Volume</th>';
+
+    html += '<th>Range(p)</th>';
+    html += '<th>Range(t)</th>';
+    html += '<th>Signal</th>';
+    html += '<th>Buy</th>';
+    html += '<th>Revenue</th>';
+    html += '<th>Balance</th>';
+    html += '</tr>';
+    html += '</thead>';
+
+    var Range   = 0;
+    var Buy     = 0;
+    var Balance = 0;
+
+    html += '<tbody>';
+    $.each(json, function (i, t) {
+      var d = new Date(i*10/10).toISOString().split("T")[0];
+      var High    = t.High;
+      var Low     = t.Low;
+      var Open    = t.Open;
+      var Revenue = 0;
+      var Signal  = (Open + Range * 0.6);
+
+
+      html += '<tr>';
+      html += '<th>'+d+'</th>';
+      html += '<th>'+t.High+'</th>';
+      html += '<th>'+t.Low+'</th>';
+      html += '<th>'+t.Open+'</th>';
+      html += '<th>'+t.Close+'</th>';
+      html += '<th>'+t['Adj Close']+'</th>';
+      html += '<th>'+t.Volume+'</th>';
+
+      if(Buy > 0) {
+        Revenue = (Open - Buy)  
+        Balance += Revenue;
+        Buy = 0;
+      }
+
+      if(High > Signal) {
+        Buy = Signal;
+      }
+
+
+      html += '<th>'+Range+'</th>';
+      html += '<th>'+(High-Low)+'</th>';
+      html += '<th>'+Signal+'</th>';
+      html += '<th>'+Buy+'</th>';
+      html += '<th>'+Revenue+'</th>';
+      html += '<th>'+Balance+'</th>';
+      html += '</tr>';
+
+      Range = High - Low;
+    });
+    html += '</tbody>';
+    html += '</table>';
+    info.innerHTML = html;
   });
 }
 
