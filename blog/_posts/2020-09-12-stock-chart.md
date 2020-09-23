@@ -5,7 +5,7 @@ author: haeyeon.hwang
 tags: [visualization, chart, stock, finance, javascript]
 description: >
   Google Charts is an interactive Web service that creates graphical charts from user-supplied information `wiki`
-image: /assets/img/blog/masonry.jpg
+image: /assets/img/blog/google-chart.jpg
 hide_image: true
 ---
 
@@ -37,7 +37,7 @@ google.charts.setOnLoadCallback(drawChart);
 
 function drawChart() {
 
-  $.getJSON('https://get-krx-chart.herokuapp.com/005930.KS', function(json) {
+  $.getJSON('https://get-krx-chart.herokuapp.com/', function(json) {
     console.log(json);
     var ch = new google.visualization.DataTable();
     ch.addColumn('date', 't');
@@ -82,7 +82,7 @@ function drawChart() {
       var Low     = t.Low;
       var Open    = t.Open;
       var Revenue = 0;
-      var Signal  = (Open + Range * 0.6);
+      var Signal  = parseInt(((Open + Range * 0.6))/100)*100;
 
 
       html += '<tr>';
