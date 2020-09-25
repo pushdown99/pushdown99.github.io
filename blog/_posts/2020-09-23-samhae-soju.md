@@ -81,3 +81,35 @@ hide_image: true
   덧술(2차)||
   덧술(3차)||
   증류/병입||
+
+$$mean = \frac{\displaystyle\sum_{i=1}^{n} x_{i}}{n}$$
+
+<div class="mermaid">
+gantt
+       dateFormat  YYYY-MM-DD
+       title 삼해소주
+
+       section 원삼해소주
+       밑술     :done,  sh2011, 2020-01-27, 3d
+       첫술     :done,  sh2012, 2020-02-02, 36d
+       덧술2차  :done,  sh2013, after sh2012, 36d
+       덧술3차  :done,  sh2014, after sh2013, 36d
+
+</div>
+
+<div class="mermaid"> graph TD; A-->B; A-->C; B-->D; C-->D; </div>
+<div class="mermaid"> 
+sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice->>John: Hello John, how are you?
+    loop Healthcheck
+        John->>John: Fight against hypochondria
+    end
+    Note right of John: Rational thoughts <br/>prevail!
+    John-->>Alice: Great!
+    John->>Bob: How about you?
+    Bob-->>John: Jolly good! </div>
+
+
+<script src="/assets/js/mermaid.min.js"></script>
