@@ -213,6 +213,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-titles-from-headings
+  - kramdown-plantuml
 
 # Theme
 # ---------------------------------------------------------------------------------------
