@@ -199,7 +199,7 @@ Name|Issuing|Issued date|Credential ID
 
 Award|Prize|Issuing|Issued date
 ---|---|---|---
-**Big data hackathon for food, agriculture**{: target="_blank"}|Encouragement|MSIT|Nov 2020
+**Big data hackathon for food, agriculture**{: target="_blank"}|Encouragement|MAFRA|Nov 2020
 **8th Fintech hackathon**{: target="_blank"}|Excellence|FSC|Oct 2020
 **Paper contest for fintech business **{: target="_blank"}|Grand Prize|MSIT|Oct 2020
 [**Tizen Specialist**](http://specialist.tizen.org/index.html){: target="_blank"}||Tizen|Sep 2020
