@@ -31,7 +31,7 @@ description: >
 * Passionate IT engineer and technical executive director with 27+ year of experience and a proven track record in software and hardware development.
 * Exceptional communicator with a consultative business style, exceptional problem solving abilities.
 * Aggressively identify opportunities, develop focus, and catch-up a tactical business moments.
-* 4/5G Carrier-grade Core/VAS Network, IoT, Block-Chain
+* Rich experience for 4/5G Carrier-grade Core/VAS Network, Wireless, IoT, Block-Chain
 
 --- 
 
