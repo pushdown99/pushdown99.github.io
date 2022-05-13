@@ -4,7 +4,9 @@ title: '크라임웨어 (Crimeware)'
 author: haeyeon.hwang
 tags: [pe, propessional, engineer, license, security]
 description: >
-  공인중개사(公認仲介士)는 공인중개사법에 따라 공인중개사 자격을 취득한 자를 말한다. 공인중개사법으로는 토지·건물·토지의 정착물·입목(立木), 광업재단(鑛業財團)·공장재단(工場財團)의 중개를 영업으로 하는 전문 중개업자를 칭하는 것으로 명시함.  [`wiki`](https://ko.wikipedia.org/wiki/%EA%B3%B5%EC%9D%B8%EC%A4%91%EA%B0%9C%EC%82%AC)
+  사이버 환경에서 취약점을 이용. 
+  중요한 금융정보 또는 인증정보를 탈취하거나 유출을 유도. 
+  금적전인 이익을 취하고 시스템을 파괴하는 범죄행위가 목적인 악성코드
 image: /assets/img/blog/realtor.jpg
 hide_image: true
 ---

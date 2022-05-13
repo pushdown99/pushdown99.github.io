@@ -28,9 +28,10 @@ description: >
 **Homepage**|[https://wb9lab.com/](https://wb9lab.com/)
 
  
-* Passionate IT engineer and technical executive director with 24+ year of experience and a proven track record in software and hardware development.
+* Passionate IT engineer and technical executive director with 27+ year of experience and a proven track record in software and hardware development.
 * Exceptional communicator with a consultative business style, exceptional problem solving abilities.
 * Aggressively identify opportunities, develop focus, and catch-up a tactical business moments.
+* 4/5G Carrier-grade Core/VAS Network, IoT, Block-Chain
 
 --- 
 
@@ -55,6 +56,18 @@ Employer|Role|Location|Duration|Business Territory
 [**LG Electronics**](https://www.lg.com/global){: target="_blank"} `KOSPI`|Senior, Software Engineer|Seoul|Dec 1996 - Jun 2000|telco
 
 ---
+
+**Self-employed (WNB) **  
+  Seoul, Korea (Oct 2018 - Now)
+* Responsible for development the whole system alone and business.
+
+  Customer|Project Title|Year
+  ---|---|---
+  Ariatech|Advanced IoT platform (RADIX)|2019-2020
+  Hancom|Fire-fighter monitoring system (IoT)|2020
+  Hancom|Paperless receipt system|2020-2021
+  Hancom|Book point interworking system|2020-2021
+  Hancom|Smart fire safety platform|2022
 
 **MNL Solution / Executive Director, CTO**  
   Seoul, Korea (Aug 2012 - Sep 2018)
@@ -186,6 +199,10 @@ Name|Issuing|Issued date|Credential ID
 
 Award|Prize|Issuing|Issued date
 ---|---|---|---
+**Big data hackathon for food, agriculture**{: target="_blank"}|Encouragement|MSIT|Nov 2020
+**8th Fintech hackathon**{: target="_blank"}|Excellence|FSC|Oct 2020
+**Paper contest for fintech business **{: target="_blank"}|Grand Prize|MSIT|Oct 2020
+[**Tizen Specialist**](http://specialist.tizen.org/index.html){: target="_blank"}||Tizen|Sep 2020
 [**Seoul hardware hackathon / Top Maker**](https://www.topmaker.kr/){: target="_blank"}|Grand Prize|Seoul Business Agency|Sep 2020
 [**Seoul hardware hackathon / IoT**](https://www.seoulhackathon.org/){: target="_blank"}|Excellence|Seoul Business Agency|Mar 2019
 [**DMC innovation camp, startup challenge**](https://www.mk.co.kr/news/business/view/2018/12/774787/){: target="_blank"}|Encouragement|Seoul Business Agency|Nov 2018
@@ -211,10 +228,10 @@ Patent title|Issued|#
 
 Course title|Issuer|Date
 ---|---
-Blockchain Campus specialization course for deep dive, Doing|[CCEI](https://ccei.creativekorea.or.kr/gyeonggi/){: target="_blank"}|Aug 2019
+**Blockchain Campus specialization course for deep dive**|[CCEI](https://ccei.creativekorea.or.kr/gyeonggi/){: target="_blank"}|Aug 2019
 Development course for Fintech project, Completion|[KISIS](https://www.kisis.or.kr/user/bbs/kisis/36/122/bbsDataList.do){: target="_blank"}|Jul 2019
 Service Development course for Fintech/Blockchain, Completion|[KISIS](https://www.kisis.or.kr/user/bbs/kisis/36/122/bbsDataList.do){: target="_blank"}|Jun 2019
-Blockchain Campus specialization course, Completion|[CCEI](https://ccei.creativekorea.or.kr/gyeonggi/){: target="_blank"}|May 2019
+**Blockchain Campus specialization course**|[CCEI](https://ccei.creativekorea.or.kr/gyeonggi/){: target="_blank"}|May 2019
 Eagle CAD/3D circuit modeling|SBA|Feb 2019
 Free RTOS driver with STM32 chip|SBA|Feb 2019
 Development for LoRa chip/device|SBA|Jan 2019
@@ -236,6 +253,7 @@ MS Azure Cloud Computing|SBA|Oct 2018
 Skills|Level|
 :---|:---:|:---
 **C/C++**|5|&#10033;&#10033;&#10033;&#10033;&#10033;
+**BlockChain**|4|&#10033;&#10033;&#10033;&#10033;&#10032;
 **Embedded OS**|4|&#10033;&#10033;&#10033;&#10033;&#10032;
 **IoT**|5|&#10033;&#10033;&#10033;&#10033;&#10033;
 **IT Infrastructure**|5|&#10033;&#10033;&#10033;&#10033;&#10033;
