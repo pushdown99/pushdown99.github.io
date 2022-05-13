@@ -283,9 +283,3 @@ Embedded/IoT Skills|Level|
 **Mbed OS**|4|&#10033;&#10033;&#10033;&#10033;&#10032;
 **Free RTOS**|3|&#10033;&#10033;&#10033;&#10032;&#10032;
 
-## **Downloads**
-[My Resume](/assets/doc/iot-my-resume.pdf){: target="_blank"}
-
-**My AWS curriculum**
-
-[link](../blog/2019-06-01-aws/){: target="_blank"}
