@@ -50,6 +50,7 @@ Since  Dec, 1996
 
 Employer|Role|Location|Duration|Business Territory
 ---|---|---|---|---
+**Self-emplyed(WNB)**{: target="_blank"}||Seoul|Oct 2018 - Now|industry
 [**MNL Solution**](http://www.mnlsolution.com/){: target="_blank"}|Executive Director, CTO|Seoul|Aug 2010 - Sep 2018|telco/gov/industry
 **uPRESTO**|Executive Director, CTO|Seoul|Jan 2006 - Jun 2012|telco/gov
 [**Eluon**](http://www.eluon.com/){: target="_blank"} `KOSDAQ`|Senior Staff, Software Engineer|Seoul|Jul 2000 - Dec 2005|telco
