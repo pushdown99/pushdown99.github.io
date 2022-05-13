@@ -204,7 +204,7 @@ Award|Prize|Issuing|Issued date
 [**Seoul hardware hackathon / Top Maker**](https://www.topmaker.kr/){: target="_blank"}|Excellence|Seoul Business Agency|Sep 2021
 **Big data hackathon for food, agriculture**{: target="_blank"}|Encouragement|MAFRA|Nov 2020
 **8th Fintech hackathon**{: target="_blank"}|Excellence|FSC|Oct 2020
-**Paper contest for fintech business **{: target="_blank"}|Grand Prize|MSIT|Oct 2020
+**Paper contest for fintech business**{: target="_blank"}|Grand Prize|MSIT|Oct 2020
 [**Tizen Specialist**](http://specialist.tizen.org/index.html){: target="_blank"}||Tizen|Sep 2020
 [**Seoul hardware hackathon / Top Maker**](https://www.topmaker.kr/){: target="_blank"}|Grand Prize|Seoul Business Agency|Aug 2020
 [**Seoul hardware hackathon / IoT**](https://www.seoulhackathon.org/){: target="_blank"}|Excellence|Seoul Business Agency|Mar 2019
