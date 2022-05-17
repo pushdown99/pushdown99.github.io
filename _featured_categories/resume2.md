@@ -37,7 +37,7 @@ description: >
 
 --- 
 
-## **Education**
+## **대학교/학력**
 [**벤처대학원대학교**](http://www.svu.ac.kr/){: target="_blank"},  
 융합산업석사.  
 서울, 대한민국
@@ -50,11 +50,9 @@ Incheon, 대한민국
 
 ---
 
-## **Employment History**
+## **업무이력**
 
-Since  Dec, 1996  
-
-Employer|Role|Location|Duration|Business Territory
+직장|역할|소재지|기간|사업영역
 ---|---|---|---|---
 **프리랜서(가칭:WNB)**{: target="_blank"}||서울|2018.10 - 현재|산업
 [**(주)엠앤엘솔루션**](http://www.mnlsolution.com/){: target="_blank"}|사업본부장, CTO|서울|2010.08 - 2018.09|통신/산업/공공
@@ -64,8 +62,9 @@ Employer|Role|Location|Duration|Business Territory
 
 ---
 
-**프리랜서 (가칭:WNB) **  
+**프리랜서 (가칭:WNB)**  
   서울, 대한민국 (2018.10 - 현재)
+
 * 개발 및 사업총괄 진행
 
   고객|프로젝트명|연도
@@ -80,7 +79,7 @@ Employer|Role|Location|Duration|Business Territory
   서울, 대한민국 (2012.08 - 2018.09)
 
 * 사업총괄 및 CTO 역할을 수행.
-* 시장예측에 따른 신규사업 발굴 및 수행 (5G/NFV/SDN, 증강현실, 하둡/스플렁크/ELK, 클라우드 컴퓨팅 (AWS, Azure, 오픈스택/클라우드스택) 등.
+* 신규사업 발굴 및 수행 (5G/NFV/SDN, 증강현실, 하둡/스플렁크/ELK, 클라우드 컴퓨팅 (AWS, Azure, 오픈스택/클라우드스택) 등.
     - LTE/5G 사업 및 개발총괄 (KT private LTE, 5G E2E orchestrator)  
     ![Orchestration](/assets/img/blog/orchestration.jpg){: width="50%"}
 
@@ -95,10 +94,10 @@ Employer|Role|Location|Duration|Business Territory
     [인터넷진흥원](https://www.kisa.or.kr/main.jsp){: target="_blank"}|미래인터넷 융합서비스|2013
     [한국지능정보사회진흥원](https://www.nia.or.kr/site/nia_kor/main.do){: target="_blank"}|CCTV 인프라표준화 사업|2016
 
-    - Development software and deploy service ([LG유플러스 IoT video/streaming platform a.k.a. "MomCa"/Home cctv](https://www.uplus.co.kr/ent/iot/IothomeSer.hpi){: target="_blank"}, lte blackbox, lte drone, LG전자 smart tv accelerator server)
-    - Business development for mobile boundaries ([삼성전자 mobile Instance messaging a.k.a. "ChatON"](https://en.wikipedia.org/wiki/ChatON){: target="_blank"}, recommendation service/ML, 삼성전자 S-Cloud(Cloud Storage Platform),삼성전자 S-Cloud, 삼성전자 health care, SK텔레콤 location based service, contents management service)
-    - Pyeongchang Olympic 2018, AR-ways Indoor navigation: [`video`](https://www.youtube.com/watch?v=Ls28ZnRA6HQ&feature=youtu.be)
-    - Paperless eReceipt: [`video`](https://www.youtube.com/watch?v=rAUl3y78s1g)
+    - 소프트웨어 개발 및 서비스 론칭 ([LG유플러스 영상플랫폼 "맘카"](https://www.uplus.co.kr/ent/iot/IothomeSer.hpi){: target="_blank"}, LTE 블랙박스/드론, LG전자 스마트TV 가속서버)
+    - 모바일 서비스 ([삼성전자 모바일메신저 "ChatON"](https://en.wikipedia.org/wiki/ChatON){: target="_blank"}, 추천서비스/ML, 삼성전자 S-Cloud, 삼성전자 헬스케어, SK텔레콤 위치기반 서비스, 컨텐츠 관리시스템/CMS)
+    - 평창 동계올림픽 2018, AR-ways 실내외 네비게이션: [`video`](https://www.youtube.com/watch?v=Ls28ZnRA6HQ&feature=youtu.be)
+    - 전자영수증: [`video`](https://www.youtube.com/watch?v=rAUl3y78s1g)
 
 * 고객사:
 
