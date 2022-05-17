@@ -244,10 +244,10 @@ Eagle CAD/3D 회로모델링|서울산업진흥원(SBA)|2019.02
 Free RTOS, STM32 chip|서울산업진흥원(SBA)|2019.02
 LoRa 디바이스 개발|서울산업진흥원(SBA)|2019.01
 Google Assistant API를 이용한 IoT 개발|서울산업진흥원(SBA)|2019.01
-VR/AR/MR and 컨텐츠 개발|[KIPFA](http://kipfa.or.kr){: target="_blank"}|2019.01 
-Python/Tensorflow 기반 인공지능 개발|[KIPFA](http://kipfa.or.kr){: target="_blank"}|2019.01
+VR/AR/MR and 컨텐츠 개발|[한국인터넷전문가협회](http://kipfa.or.kr){: target="_blank"}|2019.01 
+Python/Tensorflow 기반 인공지능 개발|[한국인터넷전문가협회](http://kipfa.or.kr){: target="_blank"}|2019.01
 Free RTOS 전문가 과정|서울산업진흥원(SBA)|2018.12
-젊은 기업가정신(Entrepreneurship)|[KOSME](https://start.kosmes.or.kr){: target="_blank"},[MSS](https://www.mss.go.kr/){: target="Mblank"}|2018.12
+예비창업자심화교육/선정|[청년창업사관학교](https://start.kosmes.or.kr){: target="_blank"},[중소벤처기업부](https://www.mss.go.kr/){: target="Mblank"}|2018.12
 KT AI SDK 개발자 과정 (기가 지니)|서울산업진흥원(SBA)|2018.12
 Amazon 알렉사 API를 이용한 개발자 과정|서울산업진흥원(SBA)|2018.11
 기업가정신(Entrepreneur), 스타트업스쿨|[서울 Startup-Hub](http://서울startuphub.com/){: target="_balnk"}|2018.10
