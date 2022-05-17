@@ -41,7 +41,7 @@ description: >
 [**벤처대학원대학교**](http://www.svu.ac.kr/){: target="_blank"},  
 융합산업석사.  
 서울, 대한민국
-(2021 ~ 2023)   
+(2021 ~ present)   
 
 [**인하대학교**](http://www.inha.ac.kr/mbshome/mbs/eng/index.do){: target="_blank"},  
 컴퓨터공학학사.  
