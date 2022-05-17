@@ -18,11 +18,11 @@ description: >
 
 [**영문 이력서 보기**](/resume/)
 
-## **Summary**
+## **요약**
 
 **Hae-Yeon, Hwang (황해연)**
 
-**Address**|56, Digital-ro Gwangmyeong-si, Gyeonggi-do, 14242
+**Address**|경기도 광명시 디지털로 56, 우)14242
 **Tel**|+82 10 2936 xxxx
 **Email**|haeyun@gmail.com
 **Headline**| Proven technical director and architect.  
@@ -38,9 +38,13 @@ description: >
 --- 
 
 ## **Education**
+[**벤처대학원대학교**](http://www.svu.ac.kr/){: target="_blank"},  
+융합산업석사.  
+서울, Korea
+(2021 ~ 2023)   
 
-[**Inha University**](http://www.inha.ac.kr/mbshome/mbs/eng/index.do){: target="_blank"},  
-Bechelor of Science in Computer Engineering.  
+[**인하대학교**](http://www.inha.ac.kr/mbshome/mbs/eng/index.do){: target="_blank"},  
+컴퓨터공학학사.  
 Incheon, Korea   
 (Graduated Feb, 1997)  
 
@@ -52,28 +56,28 @@ Since  Dec, 1996
 
 Employer|Role|Location|Duration|Business Territory
 ---|---|---|---|---
-**Self-emplyed(WNB)**{: target="_blank"}||Seoul|Oct 2018 - Now|industry
-[**MNL Solution**](http://www.mnlsolution.com/){: target="_blank"}|Executive Director, CTO|Seoul|Aug 2010 - Sep 2018|telco/gov/industry
-**uPRESTO**|Executive Director, CTO|Seoul|Jan 2006 - Jun 2012|telco/gov
-[**Eluon**](http://www.eluon.com/){: target="_blank"} `KOSDAQ`|Senior Staff, Software Engineer|Seoul|Jul 2000 - Dec 2005|telco
-[**LG Electronics**](https://www.lg.com/global){: target="_blank"} `KOSPI`|Senior, Software Engineer|Seoul|Dec 1996 - Jun 2000|telco
+**프리랜서(가칭:WNB)**{: target="_blank"}||서울|2018.10 - 현재|산업
+[**(주)엠앤엘솔루션**](http://www.mnlsolution.com/){: target="_blank"}|사업본부장, CTO|서울|2010.08 - 2018.09|통신/산업/공공
+**(주)유프레스토**|사업본부장, 전략기획실장, CTO|서울|Jan 2006 - Jun 2012|통신/공공
+[**(주)이루온**](http://www.eluon.com/){: target="_blank"} `KOSDAQ`|책임연구원|서울|2000.07 - 2005.12|통신
+[**LG전자**](https://www.lg.com/global){: target="_blank"} `KOSPI`|주임연구원|서울|1996.12 - 2000.07|통신
 
 ---
 
-**Self-employed (WNB) **  
-  Seoul, Korea (Oct 2018 - Now)
-* Responsible for development the whole system alone and business.
+**프리랜서 (가칭:WNB) **  
+  서울, 대한민국 (2018.10 - 현재)
+* 개발 및 사업총괄 진행
 
-  Customer|Project Title|Year
+  고객|프로젝트명|연도
   ---|---|---
-  Ariatech|Advanced IoT platform (RADIX)|2019-2020
-  Hancom|Fire-fighter monitoring system (IoT)|2020
-  Hancom|Paperless receipt system|2020-2021
-  Hancom|Book point interworking system|2020-2021
-  Hancom|Smart fire safety platform|2022
+  (주)아리아텍|Advanced IoT 플랫폼 (RADIX)|2019-2020
+  (주)한컴|소방관제시스템 (IoT)|2020
+  (주)한컴|전자영수증 플랫폼/서비스|2020-2021
+  (주)한컴|전주시 북포인트 연동시스템|2020-2021
+  (주)한컴|전주시 시마트현장지휘통제소|2022
 
 **MNL Solution / Executive Director, CTO**  
-  Seoul, Korea (Aug 2012 - Sep 2018)
+  서울, Korea (Aug 2012 - Sep 2018)
 
 * Responsible for overall business development and technical leading for R&D Group as a CTO.
 * Responsible for creating new business opportunities with technologies and market harmonized. (like a 5G/NFV/SDN, augmented reality, Hadoop/Splunk/ELK, Cloud computing (AWS, Azure, Openstack/Cloudstack).
@@ -123,7 +127,7 @@ document [1](/assets/doc/mnl.pdf){: target="_blank"}, [2](/assets/doc/mnl-app.pd
 ---
 
 **uPRESTO / Executive Director, CTO**  
-  Seoul, Korea / Jan 2006 - Jun 2012
+  서울, Korea / Jan 2006 - Jun 2012
 
 * Responsible for overall business development and technical leading for R&D Group as a CTO. and making business strategy and planning.
 
@@ -147,7 +151,7 @@ document [1](/assets/doc/mnl.pdf){: target="_blank"}, [2](/assets/doc/mnl-app.pd
 ---
 
 **Eluon / Senior Staff, Software Engineer**  
-  Seoul, Korea / Jul 2000 - Dec 2005
+  서울, Korea / Jul 2000 - Dec 2005
 
 * Responsible for development core system for carrier-grade. (KT, SKT, LGU+).
 
@@ -169,7 +173,7 @@ document [1](/assets/doc/mnl.pdf){: target="_blank"}, [2](/assets/doc/mnl-app.pd
 ---
 
 **LG Electronics / Senior, Software Engineer**  
-  Seoul, Korea / Dec 1996 - Jun 2000
+  서울, Korea / Dec 1996 - Jun 2000
 
 * Responsible for software development of dial-up internet(a.k.a. "KT 014XY")
     - Part leader for o&am and high-performance connectivity module, forming a consortium with samsung electronics, daewoo. (langauge; c/c++ & informix/oracle)
@@ -202,15 +206,15 @@ Name|Issuing|Issued date|Credential ID
 
 Award|Prize|Issuing|Issued date
 ---|---|---|---
-[**Seoul hardware hackathon**](https://www.seoulhackathon.org/){: target="_blank"}|Encouragement|Seoul Business Agency|Jan 2022
-[**Seoul hardware hackathon / Top Maker**](https://www.topmaker.kr/){: target="_blank"}|Excellence|Seoul Business Agency|Sep 2021
+[**서울 hardware hackathon**](https://www.서울hackathon.org/){: target="_blank"}|Encouragement|서울 Business Agency|Jan 2022
+[**서울 hardware hackathon / Top Maker**](https://www.topmaker.kr/){: target="_blank"}|Excellence|서울 Business Agency|Sep 2021
 **Big data hackathon for food, agriculture**{: target="_blank"}|Encouragement|MAFRA|Nov 2020
 **8th Fintech hackathon**{: target="_blank"}|Excellence|FSC|Oct 2020
 **Paper contest for fintech business**{: target="_blank"}|Grand Prize|MSIT|Oct 2020
 [**Tizen Specialist**](http://specialist.tizen.org/index.html){: target="_blank"}||Tizen|Sep 2020
-[**Seoul hardware hackathon / Top Maker**](https://www.topmaker.kr/){: target="_blank"}|Grand Prize|Seoul Business Agency|Aug 2020
-[**Seoul hardware hackathon / IoT**](https://www.seoulhackathon.org/){: target="_blank"}|Excellence|Seoul Business Agency|Mar 2019
-[**DMC innovation camp, startup challenge**](https://www.mk.co.kr/news/business/view/2018/12/774787/){: target="_blank"}|Encouragement|Seoul Business Agency|Nov 2018
+[**서울 hardware hackathon / Top Maker**](https://www.topmaker.kr/){: target="_blank"}|Grand Prize|서울 Business Agency|Aug 2020
+[**서울 hardware hackathon / IoT**](https://www.서울hackathon.org/){: target="_blank"}|Excellence|서울 Business Agency|Mar 2019
+[**DMC innovation camp, startup challenge**](https://www.mk.co.kr/news/business/view/2018/12/774787/){: target="_blank"}|Encouragement|서울 Business Agency|Nov 2018
 [**Smartmedia, startup challenge**](http://www.cloud.or.kr/community/notice/?mod=document&uid=1654){: target="_blank"}|Encouragement|Korea Creative Content Agency|Nov 2018
 
 `picture`: Winning a prize  
@@ -219,7 +223,7 @@ Award|Prize|Issuing|Issued date
 `picture`: Smart cushion / pressure ulcer mat - hardware hackthon item  
 ![img](/assets/img/blog/cushion.png){: width="45%"}  ![img](/assets/img/blog/hackathon1.png){: width="25%"} ![img](/assets/img/blog/hackathon2.png){: width="25%"} 
 
-**Seoul IoT Hackathon 2019** [Detail](../blog/2019-04-09-hackathon/){: target="_blank"}
+**서울 IoT Hackathon 2019** [Detail](../blog/2019-04-09-hackathon/){: target="_blank"}
 
 
 * **Patents**
@@ -247,8 +251,8 @@ Free RTOS specialization course|SBA|Dec 2018
 Youth Entrepreneurship School, Completion|[KOSME](https://start.kosmes.or.kr){: target="_blank"},[MSS](https://www.mss.go.kr/){: target="Mblank"}|Dec 2018
 KT AI sdk development course (Giga Gini)|SBA|Dec 2018
 IoT development with Amazon alexa api|SBA|Nov 2018
-Entrepreneur, startup school|[Seoul Startup-Hub](http://seoulstartuphub.com/){: target="_balnk"}|Oct 2018
-Arm Mbed OS core and cloud development(pelion)|Seoul IoT Center|Oct 2018
+Entrepreneur, startup school|[서울 Startup-Hub](http://서울startuphub.com/){: target="_balnk"}|Oct 2018
+Arm Mbed OS core and cloud development(pelion)|서울 IoT Center|Oct 2018
 LoRa and LoRaWAN|SBA|Oct 2018
 MS Azure Cloud Computing|SBA|Oct 2018
 
