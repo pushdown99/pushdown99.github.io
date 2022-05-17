@@ -40,12 +40,12 @@ description: >
 ## **Education**
 [**벤처대학원대학교**](http://www.svu.ac.kr/){: target="_blank"},  
 융합산업석사.  
-서울, Korea
+서울, 대한민국
 (2021 ~ 2023)   
 
 [**인하대학교**](http://www.inha.ac.kr/mbshome/mbs/eng/index.do){: target="_blank"},  
 컴퓨터공학학사.  
-Incheon, Korea   
+Incheon, 대한민국   
 (Graduated Feb, 1997)  
 
 ---
@@ -76,122 +76,122 @@ Employer|Role|Location|Duration|Business Territory
   (주)한컴|전주시 북포인트 연동시스템|2020-2021
   (주)한컴|전주시 시마트현장지휘통제소|2022
 
-**MNL Solution / Executive Director, CTO**  
-  서울, Korea (Aug 2012 - Sep 2018)
+**(주)엠앤엘솔루션 / 사업본부장, CTO**  
+  서울, 대한민국 (2012.08 - 2018.09)
 
-* Responsible for overall business development and technical leading for R&D Group as a CTO.
-* Responsible for creating new business opportunities with technologies and market harmonized. (like a 5G/NFV/SDN, augmented reality, Hadoop/Splunk/ELK, Cloud computing (AWS, Azure, Openstack/Cloudstack).
-    - Business development for LTE/5G (KT private LTE, 5G E2E orchestrator)  
+* 사업총괄 및 CTO 역할을 수행.
+* 시장예측에 따른 신규사업 발굴 및 수행 (5G/NFV/SDN, 증강현실, 하둡/스플렁크/ELK, 클라우드 컴퓨팅 (AWS, Azure, 오픈스택/클라우드스택) 등.
+    - LTE/5G 사업 및 개발총괄 (KT private LTE, 5G E2E orchestrator)  
     ![Orchestration](/assets/img/blog/orchestration.jpg){: width="50%"}
 
-    - Accomplished government project as a overall R&D PM 
+    - 국책과제, 총괄PM 
  
-    Government|R&D Project Title|Year
+    정부/공공|R&D 프로젝트|연도
     ---|---|---
-    [MSIT](https://www.msit.go.kr/web/main/main.do){: target="_blank"}|Pyeongchang Olympic 2018|2016-2018
-    [NIPA](http://www.nipa.kr/main.it){: target="_blank"}/[KISA](https://www.kisa.or.kr/main.jsp){: target="_blank"}|strategy Report for Paperless e-Receipt|2014,2017
-    [MSIT](https://www.msit.go.kr/web/main/main.do){: target="_blank"}|Smart Home IoT/Cloud|2012-2015
-    [MSS](https://www.mss.go.kr/site/smba/main.do){: target="_blank"}|Federation for Heterogeneous Cloud Computing|2012-2014
-    [KISA](https://www.kisa.or.kr/main.jsp){: target="_blank"}|Converging Service for Future Internet|2013
-    [NIA](https://www.nia.or.kr/site/nia_kor/main.do){: target="_blank"}|Standard for CCTV Infrastructure|2016
+    [과기정통부](https://www.msit.go.kr/web/main/main.do){: target="_blank"}|평창동계올림픽 2018|2016-2018
+    [정보통신산업진흥원](http://www.nipa.kr/main.it){: target="_blank"}/[KISA](https://www.kisa.or.kr/main.jsp){: target="_blank"}|전자영수증 도입/확대 전략보고서|2014, 2017
+    [과기정통부](https://www.msit.go.kr/web/main/main.do){: target="_blank"}|스마트홈 IoT/클라우드|2012-2015
+    [중소벤처기업부](https://www.mss.go.kr/site/smba/main.do){: target="_blank"}|이기종 클라우드 연동|2012-2014
+    [인터넷진흥원](https://www.kisa.or.kr/main.jsp){: target="_blank"}|미래인터넷 융합서비스|2013
+    [한국지능정보사회진흥원](https://www.nia.or.kr/site/nia_kor/main.do){: target="_blank"}|CCTV 인프라표준화 사업|2016
 
-    - Development software and deploy service ([LGU+ IoT video/streaming platform a.k.a. "MomCa"/Home cctv](https://www.uplus.co.kr/ent/iot/IothomeSer.hpi){: target="_blank"}, lte blackbox, lte drone, LGE smart tv accelerator server)
-    - Business development for mobile boundaries ([SEC mobile Instance messaging a.k.a. "ChatON"](https://en.wikipedia.org/wiki/ChatON){: target="_blank"}, recommendation service/ML, SEC S-Cloud(Cloud Storage Platform),SEC S-Cloud, SEC health care, SKT location based service, contents management service)
+    - Development software and deploy service ([LG유플러스 IoT video/streaming platform a.k.a. "MomCa"/Home cctv](https://www.uplus.co.kr/ent/iot/IothomeSer.hpi){: target="_blank"}, lte blackbox, lte drone, LG전자 smart tv accelerator server)
+    - Business development for mobile boundaries ([삼성전자 mobile Instance messaging a.k.a. "ChatON"](https://en.wikipedia.org/wiki/ChatON){: target="_blank"}, recommendation service/ML, 삼성전자 S-Cloud(Cloud Storage Platform),삼성전자 S-Cloud, 삼성전자 health care, SK텔레콤 location based service, contents management service)
     - Pyeongchang Olympic 2018, AR-ways Indoor navigation: [`video`](https://www.youtube.com/watch?v=Ls28ZnRA6HQ&feature=youtu.be)
     - Paperless eReceipt: [`video`](https://www.youtube.com/watch?v=rAUl3y78s1g)
 
-* Customer:
+* 고객사:
 
     ---|---
-    Manufacture|SEC (samsung electronics), LGE (LG electronics)
-    Carrier|KT (korea telecom), SKT (sk telecom), LGU+ (LG uplus), SK planet, SK broadband
-    Retails|AP (amore pacific)
-    System Integration|HP, SDS, LG-CNS, LDCC (Lotte data communication company)
-    Advertisement|CHEIL worldwide, Pengtai
-    Government|KISA (Korea Internet Security Agency), MSS (Ministry of Science and ICT), KCC (Korea Communications Commission), NIA (National Information Society Agency), NIPA (National IT Industry Promotion Agency), MSIT (Ministry of Science and ICT), MSS (Ministry of SMEs and Startups)
+    제조|삼성전자, LG전자
+    통신사|KT, SK텔레콤, LG유플러스, SK 플레닛, SK 브로드밴드
+    유통|아모레퍼시픽
+    SI|HP, SDS, LG-CNS, 롯데정보통신
+    광고|제일기획, 펑타이
+    정부/공공|인터넷진흥원, 중소벤처기업부, 방송통신위원회, 한국지능정보사회진흥원, 정보통신산업진흥원, 과기정통부
 
-`picture`: mobile recommendation services (SEC chaton, LGU+ momca, MSIT eReceipt/paperless)  
+`picture`: 모바일 응용서비스 (삼성전자 chaton, LG유플러스 momca, MSIT eReceipt/paperless)  
 ![img](/assets/img/blog/chaton.jpg){: width="30%"} ![img](/assets/img/blog/momca.jpg){: width="30%"} ![img](/assets/img/blog/receipt.png){: width="30%"} 
 
-`picture`: mobile recommendation services (pyungchang olymphic 2018, SEC smart healthy, SKT LBS)  
+`picture`: 위치기반 서비스 (pyungchang olymphic 2018, 삼성전자 smart healthy, SK텔레콤 LBS)  
 ![img](/assets/img/blog/pc.jpg){: width="30%"} ![img](/assets/img/blog/health.png){: width="30%"} ![img](/assets/img/blog/lbs.png){: width="30%"} 
 
-`picture`: mobile recommendation services (SKT qade, SEC always)  
+`picture`: 모바일 추천 서비스 (SK텔레콤 qade, 삼성전자 always)  
 ![img](/assets/img/blog/recommend1.png){: width="45%"} ![img](/assets/img/blog/recommend2.png){: width="45%"} 
 
-`picture`: pyungchang olymphic 2018, ARways indoor navigation  
+`picture`: 평창동계올림픽 2018, ARways 실내외 네비게이션  
 ![img](/assets/img/blog/arways.png){: width="45%"}
 
 document [1](/assets/doc/mnl.pdf){: target="_blank"}, [2](/assets/doc/mnl-app.pdf){: target="_blank"}
 
 ---
 
-**uPRESTO / Executive Director, CTO**  
-  서울, Korea / Jan 2006 - Jun 2012
+**유프레스토 / 사업본부장, 전략기획, CTO**  
+  서울, 대한민국 / 2006.01 - Jun 2012.06
 
-* Responsible for overall business development and technical leading for R&D Group as a CTO. and making business strategy and planning.
+* 사업총괄 및 신사업/전략기획, CTO 역할 수행
 
-    - Business and system development for "performance assurance service" (2G WAP, 3G CDMA/EVDO, WCDMA, WiMax/WiBro)
-    - Software development for packet analyzer (KT, LGU+ for mobile infrastructure traffic analysis; TCP/IP, HTTP, SS7/Sigtran, SMS/MMS, ...)
-    - Business development for charging/billing gateway (KT CDMA/WCDMA, LGU+ CDMA)
-    - Software development for **Augmented Reality** services and latform ([SKT smart-cart](https://www.mk.co.kr/news/sports/view/2011/07/489092/){: target="_blank"}, [KT Olleh town](https://m.blog.naver.com/PostView.nhn?blogId=jegalcsh&logNo=80119755401&categoryNo=135&proxyReferer=https%3A%2F%2Fwww.google.com%2F){: target="_blank"}, [LGU+ Vuu](https://todamga.tistory.com/m/439?category=309071){: target="_blank"})
-    - Oversea business for above solution (Canada Bell mobility, Telus, Rogers, Malaysia YTL, US Metro PCS)
-    - Government project as a PM (dlna for home appliance, digital signage)
+    - 이동통신 네트워크 품질분석 시스템 사업/개발총괄 (2G WAP, 3G CDMA/EVDO, WCDMA, WiMax/WiBro)
+    - 이동통신 패킷네트워크 분석기 사업/개발총괄 (KT, LG유플러스 for mobile infrastructure traffic analysis; TCP/IP, HTTP, SS7/Sigtran, SMS/MMS, ...)
+    - 과금시스템 사업/개발총괄 (KT CDMA/WCDMA, LG유플러스 CDMA)
+    - **증강현실(AR)** 서비스 및 플랫폼 사업/개발총괄 ([SK텔레콤 smart-cart](https://www.mk.co.kr/news/sports/view/2011/07/489092/){: target="_blank"}, [KT Olleh town](https://m.blog.naver.com/PostView.nhn?blogId=jegalcsh&logNo=80119755401&categoryNo=135&proxyReferer=https%3A%2F%2Fwww.google.com%2F){: target="_blank"}, [LG유플러스 Vuu](https://todamga.tistory.com/m/439?category=309071){: target="_blank"})
+    - 해외사업 추진 (Canada Bell mobility, Telus, Rogers, Malaysia YTL, US Metro PCS)
+    - 국책사업 총괄책임자 (dlna for home appliance, digital signage)
 
-    - mobile AR(Augmented Reality) Service.   
+    - 모바일 증강현실(AR; Augmented Reality) 서비스.   
 ![img](/assets/img/blog/smartcart.png){: width="30%"} ![img](/assets/img/blog/ollehtown.png){: width="30%"} ![img](/assets/img/blog/vuu.png){: width="30%"}  
 
-* Customer:
+* 고객사:
 
     ---|---
-    Carrier|SKT (sk telecom), KT (korea telecom), LGU+ (LG uplus), Canada Bell mobility, Telus, Rogers
-    Manufacture|SEC (Samsung electronics)
-    Government|KISA (Korea Internet Security Agency), MSIT (Ministry of Science and ICT), KCC (Korea Communications Commission)
+    통신사|SK텔레콤, KT, LG유플러스, 캐나다 벨모빌리티, 텔루스, 로저스
+    제조|삼성전자
+    정부/공공|인터넷진흥원, 과기정통부, 방송통신위원회 
 
 ---
 
-**Eluon / Senior Staff, Software Engineer**  
-  서울, Korea / Jul 2000 - Dec 2005
+**이루온 / 책임연구원 (소프트웨어개발)**  
+  서울, 대한민국 / 2000.07 - 2005.12
 
-* Responsible for development core system for carrier-grade. (KT, SKT, LGU+).
+* 이동통신사용 핵심망 장비 개발. (KT, SK텔레콤, LG유플러스).
 
-    - IMT-2000 core system development (sgsn/ggsn/ha)
-    - advanced dual-stack packet gateway development (pdsn & ggsn)
-    - Signaling gateway development
-    - Embedding ipv6 kernel feature at packet gateway development
-    - Carrier grade oss/bss development
-    - Adaptive memoty database interface module development (oracle timesten altibase/memcached)
-    - Feasibility study and proposal for overseas telecom (virtualized switch and gateway; japan/kddi and docomo)
+    - IMT-2000 핵심망 장비 개발 (sgsn/ggsn/ha)
+    - 개선된 듀얼스택 패킷 게이트웨이 개발 (pdsn & ggsn)
+    - 시그널링 게이트웨이 (SG for SS7/Sigtran/SS7oIP)
+    - IPv6 커널 기능 개발
+    - 이동 통신사용 OSS/BSS 개발
+    - 적응형 메모리 데이터베이스 어뎁터 개발 (오라클 타임스텐, 알티베이스, memcached)
+    - 해외 통신사 장비 제안 (virtualized switch and gateway; 일본/KDDI & Docomo)
 
-* Customer:
+* 고객사:
 
     ---|---
-    Carrier|KT (korea telecom), LGU+ (LG uplus)
+    통신사|KT, LG유플러스
 
 ![img](/assets/img/blog/pdsn.jpg){: width="45%"} ![img](/assets/img/blog/ggsn.jpg){: width="45%"} 
 
 ---
 
-**LG Electronics / Senior, Software Engineer**  
-  서울, Korea / Dec 1996 - Jun 2000
+**LG전자 / 주임연구원 (소프트웨어 개발)**  
+  서울, 대한민국 / 1996.12 - Jun 2000.07
 
-* Responsible for software development of dial-up internet(a.k.a. "KT 014XY")
-    - Part leader for o&am and high-performance connectivity module, forming a consortium with samsung electronics, daewoo. (langauge; c/c++ & informix/oracle)
+* 다이얼모뎀을 통한 인터넷 접속장비 개발 (a.k.a. "KT 014XY")
+    - O&AM, 고성능 스위치/연결 모듈 (개발환경: C/C++ & Informix/Oracle)
  
-* Customer:
+* 고객:
 
     ---|---
-    Carrier|KT (korea telecom)
+    통신사|KT
 
 ![img](/assets/img/blog/aicps.gif){: width="45%"} ![img](/assets/img/blog/hitel.jpg){: width="45%"} 
 
 ---
 
-## **Accomplishments**
+## **성취/업적**
 
-* **Licenses & Certifications**
+* **라이선스 & 인증**
 
-Name|Issuing|Issued date|Credential ID
+이름|발급처|발급일|인증번호
 ---|---|---|---
 **Machine Learning Specialization**|Coursera|Jun 2019|[CWVRTFUMUADS](https://www.coursera.org/account/accomplishments/specialization/CWVRTFUMUADS){: target="_blank"}
 **Architecting with Google Kubernetes Engine Specialization**|Coursera|May 2019|[YZND8ZS66NRH](https://www.coursera.org/account/accomplishments/specialization/YZND8ZS66NRH){: target="_blank"}
@@ -202,20 +202,20 @@ Name|Issuing|Issued date|Credential ID
 ![img](/assets/img/blog/cert_ml.png){: width="23%"} ![img](/assets/img/blog/cert_dl.png){: width="23%"} ![img](/assets/img/blog/cert_k8s.png){: width="23%"} ![img](/assets/img/blog/cert_bd.png){: width="23%"}  
 ![img](/assets/img/blog/qwiklab.png){: width="90%"}
 
-* **Honors & Awards**
+* **수상이력**
 
-Award|Prize|Issuing|Issued date
+대회명|수상|발급처|발급일
 ---|---|---|---
-[**서울 hardware hackathon**](https://www.서울hackathon.org/){: target="_blank"}|Encouragement|서울 Business Agency|Jan 2022
-[**서울 hardware hackathon / Top Maker**](https://www.topmaker.kr/){: target="_blank"}|Excellence|서울 Business Agency|Sep 2021
-**Big data hackathon for food, agriculture**{: target="_blank"}|Encouragement|MAFRA|Nov 2020
-**8th Fintech hackathon**{: target="_blank"}|Excellence|FSC|Oct 2020
-**Paper contest for fintech business**{: target="_blank"}|Grand Prize|MSIT|Oct 2020
-[**Tizen Specialist**](http://specialist.tizen.org/index.html){: target="_blank"}||Tizen|Sep 2020
-[**서울 hardware hackathon / Top Maker**](https://www.topmaker.kr/){: target="_blank"}|Grand Prize|서울 Business Agency|Aug 2020
-[**서울 hardware hackathon / IoT**](https://www.서울hackathon.org/){: target="_blank"}|Excellence|서울 Business Agency|Mar 2019
-[**DMC innovation camp, startup challenge**](https://www.mk.co.kr/news/business/view/2018/12/774787/){: target="_blank"}|Encouragement|서울 Business Agency|Nov 2018
-[**Smartmedia, startup challenge**](http://www.cloud.or.kr/community/notice/?mod=document&uid=1654){: target="_blank"}|Encouragement|Korea Creative Content Agency|Nov 2018
+[**서울 하드웨어 해커톤**](https://www.seoulhackathon.org/){: target="_blank"}|장려상|서울산업진흥원(SBA)|2022.01
+[**서울 하드웨어 해커톤 / Top Maker**](https://www.topmaker.kr/){: target="_blank"}|우수상|서울산업진흥원(SBA)|2021.09
+**빅데이터 해커톤**{: target="_blank"}|Encouragement|농축수산부|2020.11
+**제8회 핀테크 해커톤**{: target="_blank"}|우수상|금융위원회|2020.10
+**핀테크 아이디어/논문전**{: target="_blank"}|대상/장관상|과기정통부|2020.10
+[**타이젠 스페셜리스**](http://specialist.tizen.org/index.html){: target="_blank"}||타이젠|2020.09
+[**2020 하드웨어 해커톤 / Top Maker**](https://www.topmaker.kr/){: target="_blank"}|Grand Prize|서울산업진흥원(SBA)|2020.08
+[**2019 하드웨어 해커톤 / IoT**](https://www.seoulhackathon.org/){: target="_blank"}|Excellence|서울산업진흥원(SBA)|2019.03
+[**DMC 이노베이션 캠프, 스타트업챌린지**](https://www.mk.co.kr/news/business/view/2018/12/774787/){: target="_blank"}|장려상|서울산업진흥원(SBA)|2018.11
+[**2018 스마트미디어, 스타트업챌린지**](http://www.cloud.or.kr/community/notice/?mod=document&uid=1654){: target="_blank"}|특별상|전파진흥원|2018.11
 
 `picture`: Winning a prize  
 ![img](/assets/img/blog/award_hackathon.jpg){: width="45%"} ![img](/assets/img/blog/award_smart_media.jpg){: width="45%"}  
@@ -223,19 +223,19 @@ Award|Prize|Issuing|Issued date
 `picture`: Smart cushion / pressure ulcer mat - hardware hackthon item  
 ![img](/assets/img/blog/cushion.png){: width="45%"}  ![img](/assets/img/blog/hackathon1.png){: width="25%"} ![img](/assets/img/blog/hackathon2.png){: width="25%"} 
 
-**서울 IoT Hackathon 2019** [Detail](../blog/2019-04-09-hackathon/){: target="_blank"}
+**서울 IoT 해커톤 2019** [Detail](../blog/2019-04-09-hackathon/){: target="_blank"}
 
 
-* **Patents**
+* **특허/지적재산권**
 
-Patent title|Issued|#
+특허|등록일|#
 ---|---|---
 **Apparatus for tagging image file based in voice and method for searching image file based in cloud services**|Feb 2, 2016|1015929810000
 **Apparatus for recognizing document and sharing personal information based in cloud service**|Mar 3, 2015|1015041560000
 
-* **Training**
+* **교육/훈련**
 
-Course title|Issuer|Date
+과정명|발급처|일자
 ---|---
 **Blockchain Campus specialization course for deep dive**|[CCEI](https://ccei.creativekorea.or.kr/gyeonggi/){: target="_blank"}|Aug 2019
 Development course for Fintech project, Completion|[KISIS](https://www.kisis.or.kr/user/bbs/kisis/36/122/bbsDataList.do){: target="_blank"}|Jul 2019
@@ -257,9 +257,9 @@ LoRa and LoRaWAN|SBA|Oct 2018
 MS Azure Cloud Computing|SBA|Oct 2018
 
 
-* **Professional Skills**
+* **전문기술**
 
-Core/Programming Skills|Level|
+핵심기술/프로그래밍|레벨|
 :---|:---:|:---
 **C/C++**|5|&#10033;&#10033;&#10033;&#10033;&#10033;
 **BlockChain**|4|&#10033;&#10033;&#10033;&#10033;
@@ -271,7 +271,7 @@ Core/Programming Skills|Level|
 **Mbed OS**|4|&#10033;&#10033;&#10033;&#10033;
 **Free RTOS**|3|&#10033;&#10033;&#10033;
 
-Cloud Skills|Level|
+클라우드|레벨|
 :---|:---:|:---
 **Amazon AWS**|3|&#10033;&#10033;&#10033;
 **MS Azure**|2|&#10033;&#10033;
@@ -280,7 +280,7 @@ Cloud Skills|Level|
 **Heroku**|4|&#10033;&#10033;&#10033;&#10033;
 **Mbed Pelion**|4|&#10033;&#10033;&#10033;&#10033;
 
-Big data Skills|Level|
+빅데이터|레벨|
 :---|:---:|:---
 **Hadoop**|4|&#10033;&#10033;&#10033;&#10033;
 **ELK stack**|3|&#10033;&#10033;&#10033;

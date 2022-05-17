@@ -106,10 +106,10 @@ Employer|Role|Location|Duration|Business Territory
     Advertisement|CHEIL worldwide, Pengtai
     Government|KISA (Korea Internet Security Agency), MSS (Ministry of Science and ICT), KCC (Korea Communications Commission), NIA (National Information Society Agency), NIPA (National IT Industry Promotion Agency), MSIT (Ministry of Science and ICT), MSS (Ministry of SMEs and Startups)
 
-`picture`: mobile recommendation services (SEC chaton, LGU+ momca, MSIT eReceipt/paperless)  
+`picture`: mobile application services (SEC chaton, LGU+ momca, MSIT eReceipt/paperless)  
 ![img](/assets/img/blog/chaton.jpg){: width="30%"} ![img](/assets/img/blog/momca.jpg){: width="30%"} ![img](/assets/img/blog/receipt.png){: width="30%"} 
 
-`picture`: mobile recommendation services (pyungchang olymphic 2018, SEC smart healthy, SKT LBS)  
+`picture`: mobile location based services (pyungchang olymphic 2018, SEC smart healthy, SKT LBS)  
 ![img](/assets/img/blog/pc.jpg){: width="30%"} ![img](/assets/img/blog/health.png){: width="30%"} ![img](/assets/img/blog/lbs.png){: width="30%"} 
 
 `picture`: mobile recommendation services (SKT qade, SEC always)  
