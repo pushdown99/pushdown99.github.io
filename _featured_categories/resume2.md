@@ -222,38 +222,38 @@ document [1](/assets/doc/mnl.pdf){: target="_blank"}, [2](/assets/doc/mnl-app.pd
 `picture`: Smart cushion / pressure ulcer mat - hardware hackthon item  
 ![img](/assets/img/blog/cushion.png){: width="45%"}  ![img](/assets/img/blog/hackathon1.png){: width="25%"} ![img](/assets/img/blog/hackathon2.png){: width="25%"} 
 
-**서울 IoT 해커톤 2019** [Detail](../blog/2019-04-09-hackathon/){: target="_blank"}
+**서울 IoT 해커톤 2019** [자세히보기](../blog/2019-04-09-hackathon/){: target="_blank"}
 
 
 * **특허/지적재산권**
 
 특허|등록일|#
 ---|---|---
-**Apparatus for tagging image file based in voice and method for searching image file based in cloud services**|Feb 2, 2016|1015929810000
-**Apparatus for recognizing document and sharing personal information based in cloud service**|Mar 3, 2015|1015041560000
+**Apparatus for tagging image file based in voice and method for searching image file based in cloud services**|2016.02.02|1015929810000
+**Apparatus for recognizing document and sharing personal information based in cloud service**|2015.03.03|1015041560000
 
 * **교육/훈련**
 
 과정명|발급처|일자
 ---|---
-**Blockchain Campus specialization course for deep dive**|[CCEI](https://ccei.creativekorea.or.kr/gyeonggi/){: target="_blank"}|Aug 2019
-Development course for Fintech project, Completion|[KISIS](https://www.kisis.or.kr/user/bbs/kisis/36/122/bbsDataList.do){: target="_blank"}|Jul 2019
-Service Development course for Fintech/Blockchain, Completion|[KISIS](https://www.kisis.or.kr/user/bbs/kisis/36/122/bbsDataList.do){: target="_blank"}|Jun 2019
-**Blockchain Campus specialization course**|[CCEI](https://ccei.creativekorea.or.kr/gyeonggi/){: target="_blank"}|May 2019
-Eagle CAD/3D circuit modeling|SBA|Feb 2019
-Free RTOS driver with STM32 chip|SBA|Feb 2019
-Development for LoRa chip/device|SBA|Jan 2019
-IoT with Google Assistant API|SBA|Jan 2019 
-Understanding VR/AR/MR and Contents creation|[KIPFA](http://kipfa.or.kr){: target="_blank"}|Jan 2019 
-Python/Tensorflow Learning for AI|[KIPFA](http://kipfa.or.kr){: target="_blank"}|Jan 2019
-Free RTOS specialization course|SBA|Dec 2018
-Youth Entrepreneurship School, Completion|[KOSME](https://start.kosmes.or.kr){: target="_blank"},[MSS](https://www.mss.go.kr/){: target="Mblank"}|Dec 2018
-KT AI sdk development course (Giga Gini)|SBA|Dec 2018
-IoT development with Amazon alexa api|SBA|Nov 2018
-Entrepreneur, startup school|[서울 Startup-Hub](http://서울startuphub.com/){: target="_balnk"}|Oct 2018
-Arm Mbed OS core and cloud development(pelion)|서울 IoT Center|Oct 2018
-LoRa and LoRaWAN|SBA|Oct 2018
-MS Azure Cloud Computing|SBA|Oct 2018
+**블록체인 전문가과정 (심화)**|[창조경제혁신센터](https://ccei.creativekorea.or.kr/gyeonggi/){: target="_blank"}|2019.08
+핀테크 개발과정|[정보보호산업지원센터](https://www.kisis.or.kr/user/bbs/kisis/36/122/bbsDataList.do){: target="_blank"}|2019.07
+**핀체크/블록체인 서비스 개발과정**|[정보보호산업지원센터](https://www.kisis.or.kr/user/bbs/kisis/36/122/bbsDataList.do){: target="_blank"}|2019.01
+**Blockchain Campus specialization course**|[창조경제혁신센터](https://ccei.creativekorea.or.kr/gyeonggi/){: target="_blank"}|2019.05
+Eagle CAD/3D 회로모델링|서울산업진흥원(SBA)|2019.02
+Free RTOS, STM32 chip|서울산업진흥원(SBA)|2019.02
+LoRa 디바이스 개발|서울산업진흥원(SBA)|2019.01
+Google Assistant API를 이용한 IoT 개발|서울산업진흥원(SBA)|2019.01
+VR/AR/MR and 컨텐츠 개발|[KIPFA](http://kipfa.or.kr){: target="_blank"}|2019.01 
+Python/Tensorflow 기반 인공지능 개발|[KIPFA](http://kipfa.or.kr){: target="_blank"}|2019.01
+Free RTOS 전문가 과정|서울산업진흥원(SBA)|2018.12
+젊은 기업가정신(Entrepreneurship)|[KOSME](https://start.kosmes.or.kr){: target="_blank"},[MSS](https://www.mss.go.kr/){: target="Mblank"}|2018.12
+KT AI SDK 개발자 과정 (기가 지니)|서울산업진흥원(SBA)|2018.12
+Amazon 알렉사 API를 이용한 개발자 과정|서울산업진흥원(SBA)|2018.11
+기업가정신(Entrepreneur), 스타트업스쿨|[서울 Startup-Hub](http://서울startuphub.com/){: target="_balnk"}|2018.10
+Arm Mbed OS 코어 및 클라우드(펠리온) 개발과정|서울 IoT 센터|2018.10
+LoRa and LoRaWAN|서울산업진흥원(SBA)|2018.10
+MS Azure 클라우드컴퓨팅|서울산업진흥원(SBA)|2018.10
 
 
 * **전문기술**
