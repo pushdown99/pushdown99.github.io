@@ -14,8 +14,9 @@ description: >
 {:toc}
 
 
-[**English**](/resume/)
 --- 
+
+[**영문 이력서 보기**](/resume/)
 
 ## **Summary**
 

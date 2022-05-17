@@ -16,7 +16,7 @@ description: >
 
 --- 
 
-[**Korean**](/resume2/)
+[**View Korean**](/resume2/)
 
 ## **Summary**
 
