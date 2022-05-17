@@ -16,8 +16,6 @@ description: >
 
 --- 
 
-[**Korean**](/resume2/)
-
 ## **Summary**
 
 **Hae-Yeon, Hwang (황해연)**
