@@ -55,7 +55,7 @@ Incheon, 대한민국
 직장|역할|소재지|기간|사업영역
 ---|---|---|---|---
 **프리랜서(가칭:WNB)**{: target="_blank"}||서울|2018.10 - 현재|산업
-[**(주)엠앤엘솔루션**](http://www.mnlsolution.com/){: target="_blank"}|사업본부장, CTO|서울|2010.08 - 2018.09|통신/산업/공공
+**(주)엠앤엘솔루션**|사업본부장, CTO|서울|2010.08 - 2018.09|통신/산업/공공
 **(주)유프레스토**|사업본부장, 전략기획실장, CTO|서울|Jan 2006 - Jun 2012|통신/공공
 [**(주)이루온**](http://www.eluon.com/){: target="_blank"} `KOSDAQ`|책임연구원|서울|2000.07 - 2005.12|통신
 [**LG전자**](https://www.lg.com/global){: target="_blank"} `KOSPI`|주임연구원|서울|1996.12 - 2000.07|통신
@@ -79,7 +79,7 @@ Incheon, 대한민국
   서울, 대한민국 (2012.08 - 2018.09)
 
 * 사업총괄 및 CTO 역할을 수행.
-* 신규사업 발굴 및 수행 (5G/NFV/SDN, 증강현실, 하둡/스플렁크/ELK, 클라우드 컴퓨팅 (AWS, Azure, 오픈스택/클라우드스택) 등.
+* 신규사업 (5G/NFV/SDN, 증강현실, 하둡/스플렁크/ELK, 클라우드 컴퓨팅 (AWS, Azure, 오픈스택/클라우드스택) 등.
     - LTE/5G 사업 및 개발총괄 (KT private LTE, 5G E2E orchestrator)  
     ![Orchestration](/assets/img/blog/orchestration.jpg){: width="50%"}
 
