@@ -108,7 +108,7 @@ Incheon, 대한민국
     광고|제일기획, 펑타이
     정부/공공|인터넷진흥원, 중소벤처기업부, 방송통신위원회, 한국지능정보사회진흥원, 정보통신산업진흥원, 과기정통부
 
-`사진`: 모바일 응용서비스 (삼성전자 chaton, LG유플러스 momca, MSIT eReceipt/paperless)  
+`사진`: 모바일 응용서비스 (삼성전자 **챗온(ChatON)**, LG유플러스 **맘카/가정용CCTV**, 과기정통부 **전자영수증 도입**)  
 ![img](/assets/img/blog/chaton.jpg){: width="30%"} ![img](/assets/img/blog/momca.jpg){: width="30%"} ![img](/assets/img/blog/receipt.png){: width="30%"} 
 
 `사진`: 위치기반 서비스 (평창동계올림픽 2018 ARways, 삼성전자 스마트건강지킴이, SK텔레콤 LBS/위치기반 서비스플랫폼)  
@@ -244,7 +244,7 @@ Free RTOS, STM32 chip|서울산업진흥원(SBA)|2019.02
 LoRa 디바이스 개발|서울산업진흥원(SBA)|2019.01
 Google Assistant IoT 개발|서울산업진흥원(SBA)|2019.01
 VR/AR/MR and 컨텐츠 개발|[한국인터넷전문가협회](http://kipfa.or.kr){: target="_blank"}|2019.01 
-Python/Tensorflow 기반 인공지능 개발|[한국인터넷전문가협회](http://kipfa.or.kr){: target="_blank"}|2019.01
+Python/Tensorflow 기반 인공지능 개발|[한국인터넷전문가협회](http://kipfa.or.촘kr){: target="_blank"}|2019.01
 Free RTOS 전문가 과정|서울산업진흥원(SBA)|2018.12
 예비창업자 심화교육(선정)|[청년창업사관학교](https://start.kosmes.or.kr){: target="_blank"},[중소벤처기업부](https://www.mss.go.kr/){: target="Mblank"}|2018.12
 KT AI 개발자 과정 (기가 지니)|서울산업진흥원(SBA)|2018.12
