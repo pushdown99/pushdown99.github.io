@@ -208,14 +208,14 @@ Incheon, 대한민국
 [**2021 하드웨어 해커톤 / 타이젠**](https://www.topmaker.kr/){: target="_blank"}|우수상|서울산업진흥원(SBA)|2021.09
 **빅데이터 해커톤**{: target="_blank"}|Encouragement|농축수산부|2020.11
 **제8회 핀테크 해커톤**{: target="_blank"}|우수상|금융위원회|2020.10
-**핀테크 아이디어/논문전**{: target="_blank"}|대상(장관상)|과기정통부|2020.10
+[**핀테크 아이디어/논문전**](https://www.cctvnews.co.kr/news/articleView.html?idxno=210466){: target="_blank"}|대상(장관상)|과기정통부|2020.10
 [**타이젠 스페셜리스**](http://specialist.tizen.org/index.html){: target="_blank"}||타이젠|2020.09
 [**2020 하드웨어 해커톤 / 탑메이커**](https://www.topmaker.kr/){: target="_blank"}|대상(최우수상)|서울산업진흥원(SBA)|2020.08
 [**2019 하드웨어 해커톤 / IoT**](https://www.seoulhackathon.org/){: target="_blank"}|우수상|서울산업진흥원(SBA)|2019.03
 [**DMC 이노베이션 캠프, 스타트업챌린지**](https://www.mk.co.kr/news/business/view/2018/12/774787/){: target="_blank"}|장려상|서울산업진흥원(SBA)|2018.11
 [**2018 스마트미디어, 스타트업챌린지**](http://www.cloud.or.kr/community/notice/?mod=document&uid=1654){: target="_blank"}|특별상|전파진흥원|2018.11
 
-`사진`: Winning a prize  
+`사진`: 수상사진  
 ![img](/assets/img/blog/award_hackathon.jpg){: width="45%"} ![img](/assets/img/blog/award_smart_media.jpg){: width="45%"}  
 
 `사진`: 스마트 욕창방지 방석 (2019 하드웨어 해커톤)  
