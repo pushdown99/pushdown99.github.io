@@ -132,7 +132,7 @@ Incheon, 대한민국
     - 이동통신 네트워크 품질분석 시스템 사업/개발총괄 (2G WAP, 3G CDMA/EVDO, WCDMA, WiMax/WiBro)
     - 이동통신 패킷네트워크 분석기 사업/개발총괄 (KT, LG유플러스)
     - 과금시스템 사업/개발총괄 (KT CDMA/WCDMA, LG유플러스 CDMA)
-    - **증강현실(AR)** 서비스 및 플랫폼 사업/개발총괄 ([SK텔레콤 smart-cart](https://www.mk.co.kr/news/sports/view/2011/07/489092/){: target="_blank"}, [KT Olleh town](https://m.blog.naver.com/PostView.nhn?blogId=jegalcsh&logNo=80119755401&categoryNo=135&proxyReferer=https%3A%2F%2Fwww.google.com%2F){: target="_blank"}, [LG유플러스 Vuu](https://todamga.tistory.com/m/439?category=309071){: target="_blank"})
+    - **증강현실(AR)** 서비스 및 플랫폼 사업/개발총괄 ([SK텔레콤 smart-cart](https://www.mk.co.kr/news/sports/view/2011/07/489092/){: target="_blank"}, [KT Olleh town](https://m.blog.naver.com/PostView.nhn?blogId=jegalcsh&logNo=80119755401&categoryNo=135&proxyReferer=https%3A%2F%2Fwww.google.com%2F){: target="_blank"}, [LG유플러스 Vuu](https://www.newswire.co.kr/newsRead.php?no=513248){: target="_blank"})
     - 해외사업 추진 (Canada Bell mobility, Telus, Rogers, Malaysia YTL, US Metro PCS)
     - 국책사업 총괄책임자 (dlna for home appliance, digital signage)
 
