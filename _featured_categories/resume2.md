@@ -45,7 +45,7 @@ description: >
 [**인하대학교**](http://www.inha.ac.kr/mbshome/mbs/eng/index.do){: target="_blank"},  
 컴퓨터공학학사.  
 Incheon, 대한민국   
-(Graduated Feb, 1997)  
+(1997.02 졸업)  
 
 ---
 
@@ -204,21 +204,21 @@ Incheon, 대한민국
 
 대회명|수상|발급처|발급일
 ---|---|---|---
-[**서울 하드웨어 해커톤**](https://www.seoulhackathon.org/){: target="_blank"}|장려상|서울산업진흥원(SBA)|2022.01
-[**서울 하드웨어 해커톤 / Top Maker**](https://www.topmaker.kr/){: target="_blank"}|우수상|서울산업진흥원(SBA)|2021.09
+[**2022 하드웨어 해커톤**](https://www.seoulhackathon.org/){: target="_blank"}|장려상|서울산업진흥원(SBA)|2022.01
+[**2021 하드웨어 해커톤 / 타이젠**](https://www.topmaker.kr/){: target="_blank"}|우수상|서울산업진흥원(SBA)|2021.09
 **빅데이터 해커톤**{: target="_blank"}|Encouragement|농축수산부|2020.11
 **제8회 핀테크 해커톤**{: target="_blank"}|우수상|금융위원회|2020.10
-**핀테크 아이디어/논문전**{: target="_blank"}|대상/장관상|과기정통부|2020.10
+**핀테크 아이디어/논문전**{: target="_blank"}|대상(장관상)|과기정통부|2020.10
 [**타이젠 스페셜리스**](http://specialist.tizen.org/index.html){: target="_blank"}||타이젠|2020.09
-[**2020 하드웨어 해커톤 / Top Maker**](https://www.topmaker.kr/){: target="_blank"}|Grand Prize|서울산업진흥원(SBA)|2020.08
-[**2019 하드웨어 해커톤 / IoT**](https://www.seoulhackathon.org/){: target="_blank"}|Excellence|서울산업진흥원(SBA)|2019.03
+[**2020 하드웨어 해커톤 / 탑메이커**](https://www.topmaker.kr/){: target="_blank"}|대상(최우수상)|서울산업진흥원(SBA)|2020.08
+[**2019 하드웨어 해커톤 / IoT**](https://www.seoulhackathon.org/){: target="_blank"}|우수상|서울산업진흥원(SBA)|2019.03
 [**DMC 이노베이션 캠프, 스타트업챌린지**](https://www.mk.co.kr/news/business/view/2018/12/774787/){: target="_blank"}|장려상|서울산업진흥원(SBA)|2018.11
 [**2018 스마트미디어, 스타트업챌린지**](http://www.cloud.or.kr/community/notice/?mod=document&uid=1654){: target="_blank"}|특별상|전파진흥원|2018.11
 
 `사진`: Winning a prize  
 ![img](/assets/img/blog/award_hackathon.jpg){: width="45%"} ![img](/assets/img/blog/award_smart_media.jpg){: width="45%"}  
 
-`사진`: Smart cushion / pressure ulcer mat - hardware hackthon item  
+`사진`: 스마트 욕창방지 방석 (2019 하드웨어 해커톤)  
 ![img](/assets/img/blog/cushion.png){: width="45%"}  ![img](/assets/img/blog/hackathon1.png){: width="25%"} ![img](/assets/img/blog/hackathon2.png){: width="25%"} 
 
 **서울 IoT 해커톤 2019** [자세히보기](../blog/2019-04-09-hackathon/){: target="_blank"}
@@ -238,7 +238,7 @@ Incheon, 대한민국
 **블록체인 전문가과정 (심화)**|[창조경제혁신센터](https://ccei.creativekorea.or.kr/gyeonggi/){: target="_blank"}|2019.08
 핀테크 개발과정|[정보보호산업지원센터](https://www.kisis.or.kr/user/bbs/kisis/36/122/bbsDataList.do){: target="_blank"}|2019.07
 **핀체크/블록체인 서비스 개발과정**|[정보보호산업지원센터](https://www.kisis.or.kr/user/bbs/kisis/36/122/bbsDataList.do){: target="_blank"}|2019.01
-**Blockchain Campus specialization course**|[창조경제혁신센터](https://ccei.creativekorea.or.kr/gyeonggi/){: target="_blank"}|2019.05
+**블록체인 전문가과정**|[창조경제혁신센터](https://ccei.creativekorea.or.kr/gyeonggi/){: target="_blank"}|2019.05
 Eagle CAD/3D 회로모델링|서울산업진흥원(SBA)|2019.02
 Free RTOS, STM32 chip|서울산업진흥원(SBA)|2019.02
 LoRa 디바이스 개발|서울산업진흥원(SBA)|2019.01
