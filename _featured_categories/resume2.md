@@ -111,7 +111,7 @@ Incheon, 대한민국
 `사진`: 모바일 응용서비스 (삼성전자 chaton, LG유플러스 momca, MSIT eReceipt/paperless)  
 ![img](/assets/img/blog/chaton.jpg){: width="30%"} ![img](/assets/img/blog/momca.jpg){: width="30%"} ![img](/assets/img/blog/receipt.png){: width="30%"} 
 
-`사진`: 위치기반 서비스 (평창동계올림픽 2018, 삼성전자 smart healthy, SK텔레콤 LBS)  
+`사진`: 위치기반 서비스 (평창동계올림픽 2018 ARways, 삼성전자 스마트건강지킴이, SK텔레콤 LBS/위치기반 서비스플랫폼)  
 ![img](/assets/img/blog/pc.jpg){: width="30%"} ![img](/assets/img/blog/health.png){: width="30%"} ![img](/assets/img/blog/lbs.png){: width="30%"} 
 
 `사진`: 모바일 개인화/추천 서비스 (SK텔레콤 QADE, 삼성전자 올웨이즈/Always)  
@@ -211,7 +211,7 @@ Incheon, 대한민국
 [**제8회 핀테크 아이디어.논문전**](https://www.cctvnews.co.kr/news/articleView.html?idxno=210466){: target="_blank"}|대상(장관상)|과기정통부|2020.10
 [**타이젠 스페셜리스**](http://specialist.tizen.org/index.html){: target="_blank"}||타이젠|2020.09
 [**2020 하드웨어 해커톤 / 탑메이커**](https://www.topmaker.kr/){: target="_blank"}|대상(최우수상)|서울산업진흥원(SBA)|2020.08
-[**2019 하드웨어 해커톤 / IoT**](https://www.seoulhackathon.org/){: target="_blank"}|우수상|서울산업진흥원(SBA)|2019.03
+[**2019 하드웨어 해커톤 / 사물인터넷**](https://www.seoulhackathon.org/){: target="_blank"}|우수상|서울산업진흥원(SBA)|2019.03
 [**DMC 이노베이션 캠프, 스타트업챌린지**](https://www.mk.co.kr/news/business/view/2018/12/774787/){: target="_blank"}|장려상|서울산업진흥원(SBA)|2018.11
 [**2018 스마트미디어, 스타트업챌린지**](http://www.cloud.or.kr/community/notice/?mod=document&uid=1654){: target="_blank"}|특별상|전파진흥원|2018.11
 
@@ -236,22 +236,22 @@ Incheon, 대한민국
 과정명|발급처|일자
 ---|---
 **블록체인 전문가과정 (심화)**|[창조경제혁신센터](https://ccei.creativekorea.or.kr/gyeonggi/){: target="_blank"}|2019.08
-핀테크 개발과정|[정보보호산업지원센터](https://www.kisis.or.kr/user/bbs/kisis/36/122/bbsDataList.do){: target="_blank"}|2019.07
+**핀테크 개발과정**|[정보보호산업지원센터](https://www.kisis.or.kr/user/bbs/kisis/36/122/bbsDataList.do){: target="_blank"}|2019.07
 **핀체크/블록체인 서비스 개발과정**|[정보보호산업지원센터](https://www.kisis.or.kr/user/bbs/kisis/36/122/bbsDataList.do){: target="_blank"}|2019.01
 **블록체인 전문가과정**|[창조경제혁신센터](https://ccei.creativekorea.or.kr/gyeonggi/){: target="_blank"}|2019.05
 Eagle CAD/3D 회로모델링|서울산업진흥원(SBA)|2019.02
 Free RTOS, STM32 chip|서울산업진흥원(SBA)|2019.02
 LoRa 디바이스 개발|서울산업진흥원(SBA)|2019.01
-Google Assistant API를 이용한 IoT 개발|서울산업진흥원(SBA)|2019.01
+Google Assistant IoT 개발|서울산업진흥원(SBA)|2019.01
 VR/AR/MR and 컨텐츠 개발|[한국인터넷전문가협회](http://kipfa.or.kr){: target="_blank"}|2019.01 
 Python/Tensorflow 기반 인공지능 개발|[한국인터넷전문가협회](http://kipfa.or.kr){: target="_blank"}|2019.01
 Free RTOS 전문가 과정|서울산업진흥원(SBA)|2018.12
-예비창업자심화교육/선정|[청년창업사관학교](https://start.kosmes.or.kr){: target="_blank"},[중소벤처기업부](https://www.mss.go.kr/){: target="Mblank"}|2018.12
-KT AI SDK 개발자 과정 (기가 지니)|서울산업진흥원(SBA)|2018.12
-Amazon 알렉사 API를 이용한 개발자 과정|서울산업진흥원(SBA)|2018.11
+예비창업자 심화교육(선정)|[청년창업사관학교](https://start.kosmes.or.kr){: target="_blank"},[중소벤처기업부](https://www.mss.go.kr/){: target="Mblank"}|2018.12
+KT AI 개발자 과정 (기가 지니)|서울산업진흥원(SBA)|2018.12
+Amazon 알렉사 개발자 과정|서울산업진흥원(SBA)|2018.11
 기업가정신(Entrepreneur), 스타트업스쿨|[서울 Startup-Hub](http://서울startuphub.com/){: target="_balnk"}|2018.10
 Arm Mbed OS 코어 및 클라우드(펠리온) 개발과정|서울 IoT 센터|2018.10
-LoRa and LoRaWAN|서울산업진흥원(SBA)|2018.10
+LoRa and LoRaWAN 시스템 개발|서울산업진흥원(SBA)|2018.10
 MS Azure 클라우드컴퓨팅|서울산업진흥원(SBA)|2018.10
 
 
