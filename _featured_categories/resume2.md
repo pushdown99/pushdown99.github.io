@@ -119,7 +119,7 @@ Incheon, 대한민국
 
 `사진`: 평창동계올림픽 2018, ARways 실내외 네비게이션  
 ![img](/assets/img/blog/arways.png){: width="45%"}
-
+shd
 문서보기 [1](/assets/doc/mnl.pdf){: target="_blank"}, [2](/assets/doc/mnl-app.pdf){: target="_blank"}
 
 ---
@@ -206,7 +206,7 @@ Incheon, 대한민국
 ---|---|---|---
 [**2022 하드웨어 해커톤**](https://www.seoulhackathon.org/){: target="_blank"}|장려상|서울산업진흥원(SBA)|2022.01
 [**2021 하드웨어 해커톤 / 타이젠**](https://www.topmaker.kr/){: target="_blank"}|우수상|서울산업진흥원(SBA)|2021.09
-**2020 농식품 빅데이터 온라인 해커톤**{: target="_blank"}|우수상|농축수산부|2020.11
+**2020 농식품 빅데이터 온라인 해커톤**{: target="_blank"}|우수상|농림축산식품부|2020.11
 **제3회 핀테크 아이디어 공모전**{: target="_blank"}|우수상|금융위원회|2020.10
 [**제8회 핀테크 아이디어.논문전**](https://www.cctvnews.co.kr/news/articleView.html?idxno=210466){: target="_blank"}|대상(장관상)|과기정통부|2020.10
 [**타이젠 스페셜리스**](http://specialist.tizen.org/index.html){: target="_blank"}||타이젠|2020.09
