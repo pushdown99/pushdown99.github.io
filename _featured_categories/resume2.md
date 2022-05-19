@@ -111,10 +111,10 @@ Incheon, 대한민국
 `사진`: 모바일 응용서비스 (삼성전자 chaton, LG유플러스 momca, MSIT eReceipt/paperless)  
 ![img](/assets/img/blog/chaton.jpg){: width="30%"} ![img](/assets/img/blog/momca.jpg){: width="30%"} ![img](/assets/img/blog/receipt.png){: width="30%"} 
 
-`사진`: 위치기반 서비스 (pyungchang olymphic 2018, 삼성전자 smart healthy, SK텔레콤 LBS)  
+`사진`: 위치기반 서비스 (평창동계올림픽 2018, 삼성전자 smart healthy, SK텔레콤 LBS)  
 ![img](/assets/img/blog/pc.jpg){: width="30%"} ![img](/assets/img/blog/health.png){: width="30%"} ![img](/assets/img/blog/lbs.png){: width="30%"} 
 
-`사진`: 모바일 추천 서비스 (SK텔레콤 qade, 삼성전자 always)  
+`사진`: 모바일 개인화/추천 서비스 (SK텔레콤 QADE, 삼성전자 올웨이즈/Always)  
 ![img](/assets/img/blog/recommend1.png){: width="45%"} ![img](/assets/img/blog/recommend2.png){: width="45%"} 
 
 `사진`: 평창동계올림픽 2018, ARways 실내외 네비게이션  
@@ -200,15 +200,15 @@ Incheon, 대한민국
 ![img](/assets/img/blog/cert_ml.png){: width="23%"} ![img](/assets/img/blog/cert_dl.png){: width="23%"} ![img](/assets/img/blog/cert_k8s.png){: width="23%"} ![img](/assets/img/blog/cert_bd.png){: width="23%"}  
 ![img](/assets/img/blog/qwiklab.png){: width="90%"}
 
-* **수상이력**
+* **개인 수상이력**
 
 대회명|수상|발급처|발급일
 ---|---|---|---
 [**2022 하드웨어 해커톤**](https://www.seoulhackathon.org/){: target="_blank"}|장려상|서울산업진흥원(SBA)|2022.01
 [**2021 하드웨어 해커톤 / 타이젠**](https://www.topmaker.kr/){: target="_blank"}|우수상|서울산업진흥원(SBA)|2021.09
-**빅데이터 해커톤**{: target="_blank"}|Encouragement|농축수산부|2020.11
-**제8회 핀테크 해커톤**{: target="_blank"}|우수상|금융위원회|2020.10
-[**핀테크 아이디어/논문전**](https://www.cctvnews.co.kr/news/articleView.html?idxno=210466){: target="_blank"}|대상(장관상)|과기정통부|2020.10
+**2020 농식품 빅데이터 온라인 해커톤**{: target="_blank"}|우수상|농축수산부|2020.11
+**제3회 핀테크 아이디어 공모전**{: target="_blank"}|우수상|금융위원회|2020.10
+[**제8회 핀테크 아이디어.논문전**](https://www.cctvnews.co.kr/news/articleView.html?idxno=210466){: target="_blank"}|대상(장관상)|과기정통부|2020.10
 [**타이젠 스페셜리스**](http://specialist.tizen.org/index.html){: target="_blank"}||타이젠|2020.09
 [**2020 하드웨어 해커톤 / 탑메이커**](https://www.topmaker.kr/){: target="_blank"}|대상(최우수상)|서울산업진흥원(SBA)|2020.08
 [**2019 하드웨어 해커톤 / IoT**](https://www.seoulhackathon.org/){: target="_blank"}|우수상|서울산업진흥원(SBA)|2019.03
