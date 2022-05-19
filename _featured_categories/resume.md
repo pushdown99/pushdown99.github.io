@@ -91,9 +91,9 @@ Employer|Role|Location|Duration|Business Territory
     [KISA](https://www.kisa.or.kr/main.jsp){: target="_blank"}|Converging Service for Future Internet|2013
     [NIA](https://www.nia.or.kr/site/nia_kor/main.do){: target="_blank"}|Standard for CCTV Infrastructure|2016
 
-    - Development software and deploy service ([LGU+ IoT video/streaming platform a.k.a. "MomCa"/Home cctv](https://www.uplus.co.kr/ent/iot/IothomeSer.hpi){: target="_blank"}, lte blackbox, lte drone, LGE smart tv accelerator server)
+    - Development software and deploy service ([LGU+ IoT video/streaming platform a.k.a. "MomCa"/Home cctv](https://www.uplus.co.kr/ent/shome/SmartHomeInfo.hpi?mid=100023){: target="_blank"}, lte blackbox, lte drone, LGE smart tv accelerator server)
     - Business development for mobile boundaries ([SEC mobile Instance messaging a.k.a. "ChatON"](https://en.wikipedia.org/wiki/ChatON){: target="_blank"}, recommendation service/ML, SEC S-Cloud(Cloud Storage Platform),SEC S-Cloud, SEC health care, SKT location based service, contents management service)
-    - Pyeongchang Olympic 2018, AR-ways Indoor navigation: [`video`](https://www.youtube.com/watch?v=Ls28ZnRA6HQ&feature=youtu.be)
+    - Pyeongchang Olympic 2018, AR-ways Indoor navigation: [`video`](https://www.youtube.com/watch?v=rAUl3y78s1g)
     - Paperless eReceipt: [`video`](https://www.youtube.com/watch?v=rAUl3y78s1g)
 
 * Customer:

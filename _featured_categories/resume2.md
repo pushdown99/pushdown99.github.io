@@ -30,10 +30,9 @@ description: >
 **Homepage**|[https://wb9lab.com/](https://wb9lab.com/)
 
  
-* Passionate IT engineer and technical executive director with 27+ year of experience and a proven track record in software and hardware development.
-* Exceptional communicator with a consultative business style, exceptional problem solving abilities.
-* Aggressively identify opportunities, develop focus, and catch-up a tactical business moments.
-* Rich experience for 4/5G Carrier-grade Core/VAS Network, Wireless, IoT, Block-Chain
+* 소프트웨어, 하드웨어를 포함한 IT관련 개발 및 관리 경험 다수(27년 이상)
+* 상품/전략기획 및 사업총괄 업무 수행
+* 3/4/5G 등 다양한 이동통신 경험 (RF/무선, 핵심망, 부가망등), 사물인터넷(IoT), 핀테크/블록체인
 
 --- 
 
@@ -94,9 +93,9 @@ Incheon, 대한민국
     [인터넷진흥원](https://www.kisa.or.kr/main.jsp){: target="_blank"}|미래인터넷 융합서비스|2013
     [한국지능정보사회진흥원](https://www.nia.or.kr/site/nia_kor/main.do){: target="_blank"}|CCTV 인프라표준화 사업|2016
 
-    - 소프트웨어 개발 및 서비스 론칭 ([LG유플러스 영상플랫폼 "맘카"](https://www.uplus.co.kr/ent/iot/IothomeSer.hpi){: target="_blank"}, LTE 블랙박스/드론, LG전자 스마트TV 가속서버)
+    - 소프트웨어 개발 및 서비스 론칭 ([LG유플러스 영상플랫폼 "맘카"](https://www.uplus.co.kr/ent/shome/SmartHomeInfo.hpi?mid=100023){: target="_blank"}, LTE 블랙박스/드론, LG전자 스마트TV 가속서버)
     - 모바일 서비스 ([삼성전자 모바일메신저 "ChatON"](https://en.wikipedia.org/wiki/ChatON){: target="_blank"}, 추천서비스/ML, 삼성전자 S-Cloud, 삼성전자 헬스케어, SK텔레콤 위치기반 서비스, 컨텐츠 관리시스템/CMS)
-    - 평창 동계올림픽 2018, AR-ways 실내외 네비게이션: [`video`](https://www.youtube.com/watch?v=Ls28ZnRA6HQ&feature=youtu.be)
+    - 평창 동계올림픽 2018, AR-ways 실내외 네비게이션: [`video`](https://www.youtube.com/watch?v=rAUl3y78s1g)
     - 전자영수증: [`video`](https://www.youtube.com/watch?v=rAUl3y78s1g)
 
 * 고객사:
@@ -109,19 +108,19 @@ Incheon, 대한민국
     광고|제일기획, 펑타이
     정부/공공|인터넷진흥원, 중소벤처기업부, 방송통신위원회, 한국지능정보사회진흥원, 정보통신산업진흥원, 과기정통부
 
-`picture`: 모바일 응용서비스 (삼성전자 chaton, LG유플러스 momca, MSIT eReceipt/paperless)  
+`사진`: 모바일 응용서비스 (삼성전자 chaton, LG유플러스 momca, MSIT eReceipt/paperless)  
 ![img](/assets/img/blog/chaton.jpg){: width="30%"} ![img](/assets/img/blog/momca.jpg){: width="30%"} ![img](/assets/img/blog/receipt.png){: width="30%"} 
 
-`picture`: 위치기반 서비스 (pyungchang olymphic 2018, 삼성전자 smart healthy, SK텔레콤 LBS)  
+`사진`: 위치기반 서비스 (pyungchang olymphic 2018, 삼성전자 smart healthy, SK텔레콤 LBS)  
 ![img](/assets/img/blog/pc.jpg){: width="30%"} ![img](/assets/img/blog/health.png){: width="30%"} ![img](/assets/img/blog/lbs.png){: width="30%"} 
 
-`picture`: 모바일 추천 서비스 (SK텔레콤 qade, 삼성전자 always)  
+`사진`: 모바일 추천 서비스 (SK텔레콤 qade, 삼성전자 always)  
 ![img](/assets/img/blog/recommend1.png){: width="45%"} ![img](/assets/img/blog/recommend2.png){: width="45%"} 
 
-`picture`: 평창동계올림픽 2018, ARways 실내외 네비게이션  
+`사진`: 평창동계올림픽 2018, ARways 실내외 네비게이션  
 ![img](/assets/img/blog/arways.png){: width="45%"}
 
-document [1](/assets/doc/mnl.pdf){: target="_blank"}, [2](/assets/doc/mnl-app.pdf){: target="_blank"}
+문서보기 [1](/assets/doc/mnl.pdf){: target="_blank"}, [2](/assets/doc/mnl-app.pdf){: target="_blank"}
 
 ---
 
@@ -131,7 +130,7 @@ document [1](/assets/doc/mnl.pdf){: target="_blank"}, [2](/assets/doc/mnl-app.pd
 * 사업총괄 및 신사업/전략기획, CTO 역할 수행
 
     - 이동통신 네트워크 품질분석 시스템 사업/개발총괄 (2G WAP, 3G CDMA/EVDO, WCDMA, WiMax/WiBro)
-    - 이동통신 패킷네트워크 분석기 사업/개발총괄 (KT, LG유플러스 for mobile infrastructure traffic analysis; TCP/IP, HTTP, SS7/Sigtran, SMS/MMS, ...)
+    - 이동통신 패킷네트워크 분석기 사업/개발총괄 (KT, LG유플러스)
     - 과금시스템 사업/개발총괄 (KT CDMA/WCDMA, LG유플러스 CDMA)
     - **증강현실(AR)** 서비스 및 플랫폼 사업/개발총괄 ([SK텔레콤 smart-cart](https://www.mk.co.kr/news/sports/view/2011/07/489092/){: target="_blank"}, [KT Olleh town](https://m.blog.naver.com/PostView.nhn?blogId=jegalcsh&logNo=80119755401&categoryNo=135&proxyReferer=https%3A%2F%2Fwww.google.com%2F){: target="_blank"}, [LG유플러스 Vuu](https://todamga.tistory.com/m/439?category=309071){: target="_blank"})
     - 해외사업 추진 (Canada Bell mobility, Telus, Rogers, Malaysia YTL, US Metro PCS)
@@ -143,7 +142,7 @@ document [1](/assets/doc/mnl.pdf){: target="_blank"}, [2](/assets/doc/mnl-app.pd
 * 고객사:
 
     ---|---
-    통신사|SK텔레콤, KT, LG유플러스, 캐나다 벨모빌리티, 텔루스, 로저스
+    통신사|SK텔레콤, KT, LG유플러스, 캐나다 벨모빌리티/텔루스/로저스
     제조|삼성전자
     정부/공공|인터넷진흥원, 과기정통부, 방송통신위원회 
 
@@ -216,10 +215,10 @@ document [1](/assets/doc/mnl.pdf){: target="_blank"}, [2](/assets/doc/mnl-app.pd
 [**DMC 이노베이션 캠프, 스타트업챌린지**](https://www.mk.co.kr/news/business/view/2018/12/774787/){: target="_blank"}|장려상|서울산업진흥원(SBA)|2018.11
 [**2018 스마트미디어, 스타트업챌린지**](http://www.cloud.or.kr/community/notice/?mod=document&uid=1654){: target="_blank"}|특별상|전파진흥원|2018.11
 
-`picture`: Winning a prize  
+`사진`: Winning a prize  
 ![img](/assets/img/blog/award_hackathon.jpg){: width="45%"} ![img](/assets/img/blog/award_smart_media.jpg){: width="45%"}  
 
-`picture`: Smart cushion / pressure ulcer mat - hardware hackthon item  
+`사진`: Smart cushion / pressure ulcer mat - hardware hackthon item  
 ![img](/assets/img/blog/cushion.png){: width="45%"}  ![img](/assets/img/blog/hackathon1.png){: width="25%"} ![img](/assets/img/blog/hackathon2.png){: width="25%"} 
 
 **서울 IoT 해커톤 2019** [자세히보기](../blog/2019-04-09-hackathon/){: target="_blank"}
