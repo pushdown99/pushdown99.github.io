@@ -3,6 +3,7 @@
 <!--comment-->
 The "Best Jekyll Theme by a Mile".
 
+<!--comment-->
 
 ![Screenshot](assets/img/blog/hydejack-8.png)
 Hydejack's cover page on a variety of screens.
