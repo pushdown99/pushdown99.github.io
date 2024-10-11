@@ -13,7 +13,7 @@ hide_image: true
 1. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
-## **vSphere를 이용한 목표시스템 설계**
+## **vSphere를 이용한 목표시스템 인프라 설계**
 
 #### **설계**
 
