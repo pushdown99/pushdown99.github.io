@@ -5,7 +5,7 @@ author: haeyeon.hwang
 tags: [cloud, VMware, vSphere, Network]
 description: >
   vSphere 관련 내용 
-image: /assets/img/blog/realtor.jpg
+image: /assets/img/blog/vSphere.png
 hide_image: true
 ---
 
