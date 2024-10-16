@@ -25,7 +25,7 @@ hide_image: true
 [참고] 트래픽 세이핑|물리적인 네트워크 연결을 무한정 늘릴수 없으므로 네트워크별 트래픽 한계 지정</br>vSwitch 및 포트그룹별 평균/최대 대역폭 지정 가능</br>분산스위치의 [NIOC(Network I/O Control)](https://docs.vmware.com/kr/VMware-vSphere/8.0/vsan-network-design-guide/GUID-6B00B437-53A3-4ACD-8CD7-AC9D0CE5BA8E.html) 기능을 쓰는경우 시스템 트래픽을 종류 별로 제한 가능
 
 
-1) 논리 네트워크 구분
+1. 논리 네트워크 구분
 
     네트워크 구분|VLAN ID|비고
     ---|---|---
@@ -36,7 +36,7 @@ hide_image: true
     VM Network#2|900|가상머신 개발 네트워크
 
 
-2) 가상 스위치 설계 
+2. 가상 스위치 설계 
 
     네트워크 구분|VLAN ID|포트그룹 이름|vSwitch|비고
     ---|---|---|---|---
@@ -47,7 +47,7 @@ hide_image: true
     VM Network#2|900|PG-900-DEV|가상머신 개발 네트워크
 
 
-3) 업-링크 설계
+3. 업-링크 설계
 
     네트워크 구분|VLAN ID|포트그룹 이름|vSwitch|MTU|Uplink|물리포트맵|로드밸런싱|Failover|비고
     ---|---|---|---|---|---|---|---|---|---
