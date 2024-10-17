@@ -58,3 +58,49 @@ hide_image: true
     VM Network#2|900|PG-900-DEV|가상머신 개발 네트워크
     
     Failover - Notify Switch 옵션 : Uplink장애 발생후 Failover시 대상 VM의 주소정보를 이용해 GARP패킷을 발생시켜 스위치의 ARP테이블을 빠르게 업데이트
+
+~~~php
+use Junges\Kafka\Facades\Kafka;
+
+Kafka::publishOn('topic')
+~~~
+
+<script>
+  let blocks = document.querySelectorAll("pre");
+
+  blocks.forEach((block) => {
+    if (!navigator.clipboard) {
+        return;
+    }
+
+    let button = document.createElement("button");
+    button.className = "button-copy-code";
+    button.innerHTML = copyIcon;
+    block.appendChild(button);
+
+    button.addEventListener("click", async () => {
+        await copyCode(block);
+    });
+  });
+
+  async function copyCode(block) {
+    let copiedCode = block.cloneNode(true);
+    copiedCode.removeChild(copiedCode.querySelector("button.button-copy-code"));
+
+    const html = copiedCode.outerHTML.replace(/<[^>]*>?/gm, "");
+
+    block.querySelector("button.button-copy-code").innerHTML = copiedIcon;
+    setTimeout(function () {
+        block.querySelector("button.button-copy-code").innerHTML = copyIcon;
+    }, 2000);
+
+    const parsedHTML = htmlDecode(html);
+
+    await navigator.clipboard.writeText(parsedHTML);
+  }
+
+  function htmlDecode(input) {
+    const doc = new DOMParser().parseFromString(input, "text/html");
+    return doc.documentElement.textContent;
+  }
+</script>
