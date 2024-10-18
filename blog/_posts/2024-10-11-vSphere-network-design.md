@@ -65,82 +65,29 @@ use Junges\Kafka\Facades\Kafka;
 Kafka::publishOn('topic')
 ~~~
 
-<style>
-  pre[class*="shiki"] {
-    position: relative;
-    margin: 5px 0;
-    padding: 1.75rem 0 1.75rem 1rem;
-  }
-  .markup-docs > pre > .button-copy-code {
-    @apply rounded;
-    @apply bg-gray-300;
-    @apply py-2 px-2;
-    position: absolute;
-    top: 85px;
-    right: 15px;
-  }
-
-  @screen sm {
-    .markup-docs > pre > .button-copy-code {
-        top: 85px;
-        right: 10px;
-    }
-  }
-  .markup-docs > pre > .button-copy-code:hover {
-    @apply border-2 border-gray-600;
-    @apply bg-gray-200;
-  }
-
-  .markup-docs > pre > .button-copy-code:focus {
-    @apply bg-gray-300;
-  }
-
-  .copy-docs-icon {
-    fill: #0a001f;
-  }
-
-  .docs-copied-icon {
-    color: #148a25 !important;
-    fill: #148a25 !important;
-  }
-</style>
-
 <script>
-  let blocks = document.querySelectorAll("pre");
 
-  blocks.forEach((block) => {
-    if (!navigator.clipboard) {
-        return;
-    }
+import panel as pn
 
-    let button = document.createElement("button");
-    button.className = "button-copy-code";
-    button.innerHTML = copyIcon;
-    block.appendChild(button);
+DEFAULT_KWARGS = {
+    "button_type": "default",
+    "description": "Copy to the clipboard",
+    "icon": "clipboard",
+    "sizing_mode": "fixed",
+    "width": 30,
+    "margin": 0,
+}
 
-    button.addEventListener("click", async () => {
-        await copyCode(block);
-    });
-  });
 
-  async function copyCode(block) {
-    let copiedCode = block.cloneNode(true);
-    copiedCode.removeChild(copiedCode.querySelector("button.button-copy-code"));
+def create_copy_to_clipboard_button(text, **kwargs):
+    for key, value in DEFAULT_KWARGS.items():
+        if not key in kwargs:
+            kwargs[key] = value
 
-    const html = copiedCode.outerHTML.replace(/<[^>]*>?/gm, "");
+    button = pn.widgets.Button(**kwargs)
 
-    block.querySelector("button.button-copy-code").innerHTML = copiedIcon;
-    setTimeout(function () {
-        block.querySelector("button.button-copy-code").innerHTML = copyIcon;
-    }, 2000);
+    copy_code = f"navigator.clipboard.writeText(`{text}`);"
+    button.js_on_click(code=copy_code)
 
-    const parsedHTML = htmlDecode(html);
-
-    await navigator.clipboard.writeText(parsedHTML);
-  }
-
-  function htmlDecode(input) {
-    const doc = new DOMParser().parseFromString(input, "text/html");
-    return doc.documentElement.textContent;
-  }
+    return button
 </script>
