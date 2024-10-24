@@ -72,6 +72,8 @@ hide_image: true
 - PV Lifecycle
 - Volume 구분
 
+$\left\lvert \frac{s^2+1}{s^3+2s^2+3s+1} \right\rvert$
+
 #### **Networking**
 - Pod Network 구성
 - CNI (Container Network Interface)
