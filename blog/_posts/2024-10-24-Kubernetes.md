@@ -204,12 +204,137 @@ PVC</br>(퍼시스턴트 볼륨 클레임)|개발자가 어플리케이션에 �
 PV와 매칭되기 위한 조건|사용 시 바인딩 할 퍼시스턴트 볼륨 오브젝트의 값과 동일해야 함 (생략가능)</br>볼륨 요청 크기는 바인딩 할 PV에 지정한 용량보다 같거나 작아야 함 (PV와 PVC는 반드시 1:1로 매핑)</br>PV와 동일해야 함</br>사용 시 바인딩하고 싶은 PV의 labels와 동일해야 함(생략 가능)
 
 - PV Lifecycle
+
+![k8s-PV-Lifecycle](/assets/img/blog/k8s-PV-Lifecycle.png)
+
+파드에 마운트 되어 사용중인 PV를 지우려면</br>
+✓ 먼저 파드를 삭제하고 퍼시스턴트 볼륨 클레임까지 지워야 함.</br>
+✓ 바인딩까지만 되어 있으면 PVC만 먼저 지우면 삭제할 수 있음.</br>
+
+단계|설명
+---|---
+[1] 프로비저닝|퍼시스턴트 볼륨 오브젝트에 정의된 대로 물리적인 볼륨이 프로비저닝(공급)되는 단계
+[2] 바인딩|퍼시스턴트 볼륨 오브젝트가 퍼시스턴트 볼륨 클레임 오브젝트와 연결되는 단계
+[3] 사용중|파드에 볼륨이 마운트 되어 볼륨을 사용하는 단계</br>파드 명세에 정의된 퍼시스턴트 볼륨 클레임과 바인딩된 퍼시스턴트 볼륨이 마운트 됨
+[4] 반환중|퍼시스턴트 볼륨 클레임 오브젝트가 삭제 되어 볼륨이 반환 되는 단계</br>퍼시스턴트 볼륨 오브젝트에 정의한 반환 정책(Reclaim Policy) 에 따라 다르게 처리</br></br>•Retain: PV는 프로비저닝 단계로 돌아가고 물리적 볼륨 데이터 유지. PVC와 바인딩 되려면 이전 바인딩 정보를 없애야 함</br>•Delete: PV가 자동으로 삭제되고 볼륨 종류에 따라 물리적 볼륨의 데이터도 삭제. 현재 물리적 볼륨 삭제가 되는 볼륨 종류: AWS EBS, GCE PD, Azure Disk</br>•Recycle: 볼륨 디렉토리 안의 파일들을 모두 삭제하고 프로비저닝 단계로 돌아감. 아무 작업 없이도 퍼시스턴트 볼륨 클레임과 바인딩 될 수 있음. Delete와 Recycle 반환 정책은 데이터가 사라질 수 있으니 주의 필요
+[5] 삭제|반환 정책이 Delete인 경우 퍼시스턴트 볼륨이 삭제</br>프로비저닝된 퍼시스턴트 볼륨을 바인딩 되기 전에 삭제하면 반환 정책과 상관 없이 물리 볼륨 데이터는 유지됨
+
+- PV Lifecycle - PV 프로비저닝
+
+구분|설명
+---|---
+개요|PV를 만드는 단계</br>- Static 프로비저닝 : PV를 미리 만들어 두고 사용하는 정적(static) 방법</br>- Dynamic 프로비저닝 : 요청이 있을 때 마다 PV를 만드는 동적(dynamic) 방법
+정적(static) 프로비저닝|✓ 클러스터 관리자가 미리 적정 용량의 PV를 만들어 두고 사용자의 요청이 있을 때 해당 PV를 할당</br>✓ 사용할 수 있는 스토리지 용량에 제한이 있을 때 유용</br>✓ 사용하도록 미리 만들어 둔 PV의 용량이 100GB라면 150GB를 사용하려는 요청들은 실패
+동적(dynamic) 프로비저닝|✓ 동적으로 프로비저닝 할 때는 사용자가 PVC를 거쳐서 PV를 요청했을 때 생성해 제공</br>✓ 쿠버네티스 클러스터에 사용할 1TB 스토리지가 있다면 사용자가 원하는 용량만큼 생성해서 사용</br>✓ 정적 프로비저닝과 달리 필요하다면 한번에 200GB PV도 만들 수 있음</br>✓ PVC는 동적 프로비저닝할 때 여러가지 스토리지 중 원하는 스토리지를 정의하는 스토리지 클래스(Storage Class)로 PV를 생성
+-|PVC에 스토리지 클래스명을 지정하지 않았을 때 자동으로 동적 프로비저닝이 되게 하려면 생성한 스토리지 클래스를 기본 클래스로 생성
+
+![k8s-PV-provisioning](/assets/img/blog/k8s-PV-provisioning.png)
+
+단계|설명
+---|---
+[1]|동적 프로비저닝을 위한 동적 프로비저너를 파드로 설치
+[2]|관리자는 동적 프로비저닝을 지원하는 스토리지 클래스를 미리 생성 필요
+[3]|볼륨 사용자가 퍼시스턴트 볼륨 클레임 오브젝트를 생성
+[4]|동적 프로비저너는 PVC에 정의되어 있는 스토리지 클래스의 내용 참조하여 스토리지 볼륨에 볼륨을 생성하고 퍼시스턴트 볼륨 오브젝트도 생성됨
+[5]|PV와 PVC 바인딩 됨
+[6,7]|진행
+-|동적 프로비저닝을 사용하려면 각 스토리지 제품에 맞는 CSI 드라이버가 설치되어야 함
+
 - Volume 구분
 
+접근모드|설명
+---|---
+ReadWriteOnce|ReadWriteOnce: RWO-한 노드에서만 볼륨 마운트를 할 수 있고 읽기/쓰기 허용
+ReadWriteMany|RWX- 여러 노드에서 볼륨 마운트를 할 수 있고 읽기/쓰기 허용
+ReadOnlyMany|ROX-여러 노드에서 볼륨 마운트를 할 수 있고 읽기만 허용
+ReadWriteOncePod|RWOP-한 파드에서만 볼륨 마운트를 할 수 있고 읽기/쓰기 허용
+
+벤더|제품명|쿠버네티스 사용명|볼륨확장|RWO|ROX|RWX
+---|---|---|---|---|---|---
+아마존 AWS|AWS EBS(Elastic Block Store)|awsElasticBlockStore|O|O|X|X
+MS Azure|Azure Disk|azureDisk|O|O|X|X
+-|Azure File|azureFile|X|O|O|O
+구글 GCP|GCE PD(Persistent Disk)|gcePersistentDisk|O|O|O|X
+레드햇RedHat|GlusterFS|GlusterFS|O|O|O|O
+포트웍스Portworx|Portworx Volume|portworxVolume|O|O|X|O
+VMWare|vSphere Volume|vsphereVolume|X|O|X|X
+Ceph|Ceph FS|cephfs|X|O|O|O
+-|Ceph RBD|rbd|O|O|O|X
+기타|CSI|csi|O|△|△|△
+-|NFS|nfs|X|O|O|O
+-|FlexVolume|flexVolume|O|O|O|X
+-|FC|fc|X|O|O|X
+-|iSCSI|fc|X|O|O|X
+
+- for Test
 $\left\lvert \frac{s^2+1}{s^3+2s^2+3s+1} \right\rvert$
 
 #### **Networking**
+- Pod Network 구성: “Pod 안의 Container는 네트워크 스택을 공유한다”
+
+![k8s-pod-network](/assets/img/blog/k8s-pod-network.png)
+
+구분|설명
+---|---
+네트워크|운영자가 설정하는 대역은 eth0</br>즉, 운영자는 10.100.0.2 대역은 알고 있지만 나머지는 모름</br></br>172.17.0.X 대역은 Kubernetes에 의해서 자동 생성</br>-> 외부에서 172.17.0.x 대역을 어떻게 알고 트래픽을 보낼 수 있을까?
+Pause Container|같은 Pod의 Container들이 동일한 Linux Namespace를 공유할 수 있도록 함</br>서로 다른 Container 및 바깥과의 통신을 담당하는 핵심 Container
+
+- CNI (Container Network Interface): CNI는 오직 "컨테이너의 네트워크 연결성" 과 "컨테이너 삭제시 관련된 네트워크 리소스 해제" 에 대해서만 관여
+  - CNI에 대해 알아야할 기본 상식
+
+    순번|내용
+    ---|---
+    1|CNI는 Container에 대한 Network 정의로 K8s에서만 동작하는 것이 아님!
+    2|k8s에서는 Pod에서 동작함 (Container 개별이 아닌 PoD임)
+    3|CNI plugin은 컨테이너 네트워크 연결에 책임을 가짐</br>(컨테이너가 네트워크에 연결되기 위한 모든 작업에 대한 책임)
+    4|CNI plugin은 IPAM(IP 할당관리)에 책임
+    5|IP주소 할당 뿐만 아니라 적절한 라우팅 정보를 입력하는 것까지 포함</br>(Kube-proxy는 Pod to Pod 통신에 관여하지 않음, 이 역할은 CNI와 노드에서 필요한 라우팅 설정)
+
 - Pod Network 구성
-- CNI (Container Network Interface)
-- Pod Network 구성
-- Service Network 구성
+
+![k8s-pod-network2](/assets/img/blog/k8s-pod-network2.png)
+
+이슈|설명
+---|---
+이슈#1|Host마다 Pod 네트워크가 다름.</br>Pod가 죽고 다시 실행되면 같은 Host에 배포될 가능성 낮음</br></br>즉, Pod의 IP가 변함</br>그렇다면 L3로 Routing을 잡아도 해당 Pod가 어디에 있는지 모름
+이슈#2|동일한 기능을 수행하는 Pod가 기본적으로 여러 개 생성됨</br>Pod의 위치와 상관없이 지속적인 통신이 이루져야 함</br></br>즉, 여러 개의 Pod에 하나의 IP를 통한 단일 진입점이 필요함</br>그렇다면, VIP 제공이 필요 => SLB 요구 사항과 동일함
+-|Service라는 컴포넌트 필요!
+
+- [Service Network 구성](https://sharplee7.tistory.com/90)
+
+![k8s-service-network](/assets/img/blog/k8s-service-network.png)
+
+목적|서비스유형
+---|---
+클러스터 내부 간 통신| ClusterIP - 클러스터 내의 모든 Pod가 해당 Cluster IP 주소로 접근 가능
+클러스터 외부와 내부통신| NodePort
+클라우드벤더의 로드밸런서 이용|LoadBalancer
+클라우드 외부로의 프록시 역할|ExternalName
+
+- Service Network 구성 – ClusterIP
+
+구분|설명
+---|---
+개요|Cluster IP인 10.3.241.152은 어디서도 모르는 IP임</br>(Pod IP도 아니고 Gateway에 등록된 IP도 아님)
+특징|✓ Cluster IP는 클러스터 내부 Pod에서 시작되는 통신에 적합함</br>✓ 외부에서 오는 요청에는 적합하지 않음 (Origin IP 변경 등)
+kube-proxy|- 관리자가 별도의 작업을 수행하지 않아도 Kubernetes 오브젝트들 간에 통신이 이루어질 수 있도록 네트워크 룰 설정</br>- NodePort와 같이 외부로 노출되는 port들을 오픈
+
+- Service Network 구성 – NodePort & Loadbalancer
+
+구분|내용
+---|---
+Cluster IP 제약 사항|✓ Cluster IP는 L3 Layer로 실제 해당 프로세스가 정상 동작하는지 확인할 수 있는 방법이 없음 (Layer 4 헬스 체크 필요 : Http – TCP 80 등)</br>✓ Cluster 내 Pod에서 시작되는 통신에 대해 Kube-Proxy에서 실제 Pod IP로 NAT 시키는 방식이기 때문에 외부 통신에 취약</br>=> 이를 해결하기 위해 Node Port, Load Balancer, Ingress 방식 소개됨.
+NodePort 기본 동작 방식|✓ NodePort 서비스 생성 (포트 번호 30000-32767 사이가 초기 값임)</br>✓ 해당 NodePort 포트 번호는 서비스에 연결된 Pod가 있던 없던 모든 Node에 설정됨</br>✓ 아무 Node에나 Node Port 포트 번호로 요청이 오면 이를 Cluster IP로 전달함
+외부 통신을 위해 Node Port 설정 시 외부 Load Balancer</br>(강력 권장)|✓ NodePort의 포트 번호가 표준 포트 번호가 아님</br>=> SLB NAT를 통해 포트 번호 이슈 해결 필요</br>✓ Source IP가 가려짐 (Origin IP 변경)</br>=> 외부 SLB를 통해 Origin IP 확보 필요</br>=> NodePort 사용 시 내/외부 상관없이 Load Balancer 권장
+LoadBalancer Service type 특징|✓ 동작 방식은 외부 Load Balancer 연동과 비슷함</br>✓ NodePort에 외부 Load Balancer를 사용할 때는 수동 설정 필요.</br>Load Balancer Service Type은 자동 설정이 많음</br>✓ 서비스 생성과 함께 Load Balancer 새롭게 생성됨</br>✓ Public Cloud 환경에서 주로 사용됨 / Private은 MetalLB 사용
+외부에서 내부 통신하는 절차|1 Load Balancer 설정: Virtual IP - 공인 IP와 클라이언트 요청 포트번호 등록 / Real IP – 모든 Node eth0와 Node Port 포트번호 등록</br>2 (NAT) 해당 공인 IP와 포트번호로 요청이 오면 Load Balancer는 등록된 Node 중 하나에 Node Port 포트 번호로 전송</br>3 (NAT) 요청 받은 Node는 Kube-Proxy에서 Cluster IP로 변환</br>4 (NAT) 해당 Pod가 있는 Node로 연결 전 Cluster IP는 해당 Pod IP로 변환</br>5 통신
+
+
+![k8s-service-network2](/assets/img/blog/k8s-service-network2.png)
+
+종류|특징|사용시기
+---|---|---
+ClusterIP|ClusterIP 서비스는 k8s 기본 서비스로 클러스터 내의 다른 앱이 접근 가능하도록 함.</br>ClusterIP는 외부 접근 불가. </br>k8s 내에 Proxy 설정을 통해 외부에서 접근 가능|서비스를 디버깅하거나 특정사유로 PC 에서 직접 접근할 때</br>내부 대시보드 표시 등 내부 트래픽을 허용할 때
+NodePort|NodePort 서비스는 Pod가 탑재된 Node에 접근할 수 있는 포트를 외부로 노출시켜주는 포트</br>NodePort는 30000~32767 사이의 포트를 사용|포트 당 1개 서비스만 할당 가능</br>30000~32767 사이의 포트만 사용 가능</br>비용에 민감하거나 항상 운용하는 서비스가 아니라면 사용 추천
+LoadBalancer|LoadBalancer 서비스는 서비스를 인터넷에 노출하는 일반적인 방식</br>[GKE](https://cloud.google.com/kubernetes-engine?hl=ko)의 경우 Network Load Balancer를 작동시켜 모든 트래픽을 서비스로 포워딩하는 단 하나의 IP주소를 제공|서비스를 직접적으로 노출하기 원할 경우</br>필터, 라우팅이 필요 없을 때.DMZ 등의 API Gateway 등과 통합할 때. </br>단, 노출하는 서비스마다 자체IP를 가지게 된다는 것과 노출되는  서비스 마다 LoadBalancer 비용을 지불해야하는 것이 부담
+Ingress|Ingress는 Cluster, NodePort, LoadBalancer와 달리 서비스가 아님</br>L7 수준의 Load Balancing 기능을 수행</br>End Port 역할</br>가장 강력한 외부로의 서비스 노춟방식이지만 가장 복잡한 방식임|[Nginx](https://docs.nginx.com/nginx/admin-guide/load-balancer/http-load-balancer/), [Contour](https://projectcontour.io/), [ELB](https://aws.amazon.com/ko/elasticloadbalancing/), [Google Cloud Load Balancer](https://cloud.google.com/load-balancing?hl=ko), [Kong](https://docs.konghq.com/gateway/latest/get-started/load-balancing/) 등이 유명</br>다양한 부가기능이 필요할 떼 (제품에 따라 트래픽 제어, 필터링, 로드밸런싱, SSL, Auth 등 가능)
