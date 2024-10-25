@@ -338,3 +338,37 @@ ClusterIP|ClusterIP 서비스는 k8s 기본 서비스로 클러스터 내의 다
 NodePort|NodePort 서비스는 Pod가 탑재된 Node에 접근할 수 있는 포트를 외부로 노출시켜주는 포트</br>NodePort는 30000~32767 사이의 포트를 사용|포트 당 1개 서비스만 할당 가능</br>30000~32767 사이의 포트만 사용 가능</br>비용에 민감하거나 항상 운용하는 서비스가 아니라면 사용 추천
 LoadBalancer|LoadBalancer 서비스는 서비스를 인터넷에 노출하는 일반적인 방식</br>[GKE](https://cloud.google.com/kubernetes-engine?hl=ko)의 경우 Network Load Balancer를 작동시켜 모든 트래픽을 서비스로 포워딩하는 단 하나의 IP주소를 제공|서비스를 직접적으로 노출하기 원할 경우</br>필터, 라우팅이 필요 없을 때.DMZ 등의 API Gateway 등과 통합할 때. </br>단, 노출하는 서비스마다 자체IP를 가지게 된다는 것과 노출되는  서비스 마다 LoadBalancer 비용을 지불해야하는 것이 부담
 Ingress|Ingress는 Cluster, NodePort, LoadBalancer와 달리 서비스가 아님</br>L7 수준의 Load Balancing 기능을 수행</br>End Port 역할</br>가장 강력한 외부로의 서비스 노춟방식이지만 가장 복잡한 방식임|[Nginx](https://docs.nginx.com/nginx/admin-guide/load-balancer/http-load-balancer/), [Contour](https://projectcontour.io/), [ELB](https://aws.amazon.com/ko/elasticloadbalancing/), [Google Cloud Load Balancer](https://cloud.google.com/load-balancing?hl=ko), [Kong](https://docs.konghq.com/gateway/latest/get-started/load-balancing/) 등이 유명</br>다양한 부가기능이 필요할 떼 (제품에 따라 트래픽 제어, 필터링, 로드밸런싱, SSL, Auth 등 가능)
+
+
+~~~c
+#include <stdio.h>
+
+int main() 
+{
+    return 0
+}
+~~~
+
+<script>
+var copy = function(target) {
+    var textArea = document.createElement('textarea')
+    textArea.setAttribute('style','width:1px;border:0;opacity:0;')
+    document.body.appendChild(textArea)
+    textArea.value = target.innerHTML
+    textArea.select()
+    document.execCommand('copy')
+    document.body.removeChild(textArea)
+}
+
+var pres = document.querySelectorAll(".comment-body > pre")
+pres.forEach(function(pre){
+  var button = document.createElement("button")
+  button.className = "btn btn-sm"
+  button.innerHTML = "copy"
+  pre.parentNode.insertBefore(button, pre)
+  button.addEventListener('click', function(e){
+    e.preventDefault()
+    copy(pre.childNodes[0])
+  })
+})
+</script>
