@@ -287,3 +287,5 @@ sass:
 webrick:
   headers:
     Access-Control-Allow-Origin: "*"
+
+gems: [jekyll-mermaid]
