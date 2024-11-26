@@ -58,6 +58,12 @@ tree
 
 - [db/words.sql](#words.sql)
 
+#### k8s-manifests
+
+- [k8s-manifests/api.yaml](#manifest_api.yaml)
+- [k8s-manifests/db.yaml](#manifest_db.yaml)
+- [k8s-manifests/web.yaml](#manifest_web.yaml)
+
 ### Architecture
 
 ![wordsmith](/assets/img/blog/wordsmith.png)
@@ -106,7 +112,83 @@ You can deploy the same app to Kubernetes using the [Kustomize configuration](#k
 
 Apply the manifest using kubectl while at the root of the project:
 
+### Connect to pod
 
+~~~console
+kubectl get pods
+
+NAME                                     READY   STATUS    RESTARTS       AGE
+api-7849895d7-8kpc8                      1/1     Running   0              164m
+api-7849895d7-cwvv6                      1/1     Running   0              164m
+api-7849895d7-fl4bz                      1/1     Running   0              164m
+api-7849895d7-r87gq                      1/1     Running   0              164m
+api-7849895d7-trzr9                      1/1     Running   0              164m
+coredns-7db6d8ff4d-jkpv6                 1/1     Running   7 (21h ago)    14d
+coredns-7db6d8ff4d-q2gf7                 1/1     Running   7 (21h ago)    14d
+db-545b8b4744-jmb6w                      1/1     Running   0              164m
+etcd-docker-desktop                      1/1     Running   7 (21h ago)    14d
+kube-apiserver-docker-desktop            1/1     Running   7 (21h ago)    14d
+kube-controller-manager-docker-desktop   1/1     Running   7 (21h ago)    14d
+kube-proxy-8cssg                         1/1     Running   7 (21h ago)    14d
+kube-scheduler-docker-desktop            1/1     Running   18 (21h ago)   14d
+storage-provisioner                      1/1     Running   24 (21h ago)   14d
+vpnkit-controller                        1/1     Running   8 (21h ago)    14d
+web-6f4cc769f-hwjkm                      1/1     Running   0              164m
+~~~
+
+~~~console
+kubectl exec api-7849895d7-8kpc8 -it -- bash
+
+bash-4.2#
+~~~
+
+### logs 
+~~~console
+kubectl logs -f deployment/api
+
+Found 5 pods, using pod/api-7849895d7-r87gq
+{"word":"pushes"}
+{"word":"møby døck"}
+{"word":"flødebolle"}
+{"word":"løves"}
+{"word":"viking"}
+{"word":"will ship"}
+{"word":"the serverless"}
+{"word":"an awesøme"}
+{"word":"laptøp"}
+{"word":"will drink"}
+{"word":"a pink"}
+{"word":"walks tøwards"}
+{"word":"flødebolle"}
+{"word":"a pink"}
+{"word":"smørrebrød"}
+{"word":"the impressive"}
+{"word":"cøntainer"}
+{"word":"the impressive"}
+{"word":"helps"}
+~~~
+
+~~~console
+kubectl logs -f deployment/web
+
+2024/11/26 04:49:24 /noun 5 available ips: [10.1.0.114 10.1.0.115 10.1.0.112 10.1.0.113 10.1.0.111]
+2024/11/26 04:49:24 /adjective 5 available ips: [10.1.0.112 10.1.0.111 10.1.0.113 10.1.0.115 10.1.0.114]
+2024/11/26 04:49:24 /noun I choose 10.1.0.115
+2024/11/26 04:49:24 /noun Calling http://10.1.0.115:8080/noun
+2024/11/26 04:49:24 /adjective I choose 10.1.0.115
+2024/11/26 04:49:24 /adjective Calling http://10.1.0.115:8080/adjective
+2024/11/26 04:49:24 /adjective 5 available ips: [10.1.0.115 10.1.0.113 10.1.0.111 10.1.0.114 10.1.0.112]
+2024/11/26 04:49:24 /noun 5 available ips: [10.1.0.115 10.1.0.114 10.1.0.112 10.1.0.111 10.1.0.113]
+2024/11/26 04:49:24 /adjective I choose 10.1.0.115
+2024/11/26 04:49:24 /noun I choose 10.1.0.113
+2024/11/26 04:49:24 /adjective Calling http://10.1.0.115:8080/adjective
+2024/11/26 04:49:24 /noun Calling http://10.1.0.113:8080/noun
+2024/11/26 04:49:24 /verb 5 available ips: [10.1.0.114 10.1.0.113 10.1.0.112 10.1.0.111 10.1.0.115]
+2024/11/26 04:49:24 /verb I choose 10.1.0.115
+2024/11/26 04:49:24 /verb Calling http://10.1.0.115:8080/verb
+~~~
+
+---
 
 #kustomization.yaml
 
@@ -706,4 +788,135 @@ INSERT INTO adjectives(word) VALUES
   ('the nørdic'),
   ('the welcøming'),
   ('the deliciøus');
+~~~
+
+#manifest_api.yaml
+
+~~~yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: api
+  labels:
+    app: api
+spec:
+  ports:
+    - port: 8080
+      targetPort: 8080
+      name: api
+  selector:
+    app: api
+  clusterIP: None
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api
+  labels:
+    app: api
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: api
+  template:
+    metadata:
+      labels:
+        app: api
+    spec:
+      containers:
+        - name: api
+          image: dockersamples/wordsmith-api
+          ports:
+            - containerPort: 8080
+              name: api
+~~~
+
+#manifest_db.yaml
+
+~~~yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: db
+  labels:
+    app: db
+spec:
+  ports:
+    - port: 5432
+      targetPort: 5432
+      name: db
+  selector:
+    app: db
+  clusterIP: None
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: db
+  labels:
+    app: db
+spec:
+  selector:
+    matchLabels:
+      app: db
+  template:
+    metadata:
+      labels:
+        app: db
+    spec:
+      containers:
+        - name: db
+          image: postgres:10.0-alpine
+          ports:
+            - containerPort: 5432
+              name: db
+          volumeMounts:
+            - name: db-schema
+              mountPath: /docker-entrypoint-initdb.d
+      volumes:
+        - name: db-schema
+          configMap:
+            name: db-schema
+~~~
+
+#manifest_web.yaml
+
+~~~yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: web
+  labels:
+    app: web
+spec:
+  ports:
+    - port: 8080
+      targetPort: 80
+      name: web
+  selector:
+    app: web
+  type: LoadBalancer
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: web
+  labels:
+    app: web
+spec:
+  selector:
+    matchLabels:
+      app: web
+  template:
+    metadata:
+      labels:
+        app: web
+    spec:
+      containers:
+        - name: web
+          image: dockersamples/wordsmith-web
+          ports:
+            - containerPort: 80
+              name: web
 ~~~
