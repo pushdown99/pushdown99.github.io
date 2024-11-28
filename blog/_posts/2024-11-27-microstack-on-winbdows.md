@@ -43,19 +43,29 @@ choco install multipass
 
 #### Microstack Installation
 
+- SSH Key Creation (at windows powershell or command terminal)
+  
+~~~console
+ssh-keygen -C ubuntu -f multipass-ssh-key
+touch cloud-init.yaml
+~~~
+
+~~~console
+code cloud-init.yaml
+
+users:
+  - default
+  - name: vmuser
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    ssh_authorized_keys:
+    - <content of YOUR public key> 
+~~~
+
 - Ubuntu VM Creation w/ multipass (Using Hyper-V; Windows Hypervisor)
   
 ~~~console
-multipass launch --name microstack --cpus 4 --memory 8G --disk 30G jammy
+multipass launch --name microstack --cpus 4 --memory 8G --disk 30G jammy --cloud-init cloud-init.yaml
 ~~~
-
-구분|설명
----|---
-Name|Ubuntu VM name
-cpus|Core 개수 (4)
-memory|메모리 크기 (8G)
-disk|블록스토리지 (30G)
--|Ubuntu distro (jammy)
 
 - Hyper-V 관리자
   
@@ -67,10 +77,19 @@ disk|블록스토리지 (30G)
 multipass shell microstack
 ~~~
 
-- Microstack Installation
+- Microstack Installation (at Ubuntu VM)
   
 ~~~console
-sudo snap install microstack --devmode --edge
+sudo snap install microstack --devmode --beta
+udo microstack init --auto --control --setup-loop-based-cinder-lvm-backend --loop-device-file-size 10
+
+sudo tee /var/snap/microstack/common/etc/cinder/cinder.conf.d/glance.conf <<EOF
+[DEFAULT]
+glance_ca_certificates_file = /var/snap/microstack/common/etc/ssl/certs/cacert.pem
+EOF
+
+sudo snap restart microstack.cinder-{uwsgi,scheduler,volume}
+sudo snap alias microstack.openstack openstack
 ~~~
 
 - Microstack Initialization
@@ -96,3 +115,13 @@ sudo snap get microstack config.credentials.keystone-password
   - password
 
 ![openstack_dashboard.png](/assets/img/blog/openstack_dashboard.png)
+
+### Cirros VM Creation w/Openstack
+
+~~~console
+microstack launch cirros --name test
+ssh -i /home/ubuntu/snap/microstack/common/.ssh/id_microstack cirros@10.20.20.167
+
+계정 : cirros
+암호 : gocubsgo
+~~~
