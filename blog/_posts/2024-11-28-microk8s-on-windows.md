@@ -220,55 +220,16 @@ eyJhbGciOiJSUzI1NiIsImtpZCI6IlNkbEYzN2cwX3BMTlV0cHBCNFFPcGNscEZzYlJLV3Vsem8zSmZH
 
 ### Microk8s Dashboard Connection
 
-- ip address 확인하기
+- 크롬 브라우져 설치하기
   
 ~~~console
 sudo apt install net-tools
 
 ifconfig -a
-
-sudo snap get microstack config.credentials.keystone-password
 ~~~
 
-- PC Browser에서 Openstack Dashboard 접근
-  - admin
-  - password
+- PC Browser에서 Microk8s Dashboard 접근 (https://)
 
-![openstack_dashboard.png](/assets/img/blog/openstack_dashboard.png)
-
-- [오픈스택 이미지 다운로드 (.qcow2; for KVM)](https://docs.openstack.org/image-guide/obtain-images.html)
+![openstack_dashboard.png](/assets/img/blog/microk8s_dashboard.png)
 
 ---
-
-### Cirros VM Creation w/Openstack
-
-~~~console
-microstack launch cirros --name test
-ssh -i /home/ubuntu/snap/microstack/common/.ssh/id_microstack cirros@10.20.20.167
-
-계정 : cirros
-암호 : gocubsgo or cubswin:)
-~~~
-
-#### Build Cirros Simple Web Server
-
-- 웹 서버 생성
-  
-~~~console
-nohup sh -c "while true; do echo -e 'HTTP/1.0 200 OK\r\n\r\nserver' | sudo nc -l -p 80 ; done" & 
-~~~
-
-- 웹 서버 테스트
-
-~~~console
-curl 127.0.0.1
-~~~
-
-- 추가 볼륨 생성 및 붙이기 (OpenStack에서 볼륨 생성 후 연결)
-
-~~~console
-lsblk
-df -h
-sudo mkfs -t ext4 /dev/vdb
-sudo mount /dev/vdb /mnt
-~~~
