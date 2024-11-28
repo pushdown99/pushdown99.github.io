@@ -33,6 +33,15 @@ Chocolatey v2.3.0
 Please run 'choco -?' or 'choco <command> -?' for help menu.
 ~~~
 
+- Windows Home 에디션으로 Hyper-V 비활성
+  - [Hyper-V.zip](/assets/doc/Hyper-V.zip) 다운로드/압축해제 후 관리자권한으로 실행
+  - [Download Multipass for Windows](https://multipass.run/download/windows)
+  - Default 로컬드라이버인 VirtualBox를 Hyper-V로 변경
+
+~~~console
+multipass set local.driver=hyperv
+~~~ 
+
 #### [Multipass](https://multipass.run/) 설치
 
 - [Choco로 Multipass 설치하기](https://community.chocolatey.org/packages/multipass)
@@ -50,9 +59,9 @@ ssh-keygen -C ubuntu -f multipass-ssh-key
 touch cloud-init.yaml
 ~~~
 
-~~~console
-code cloud-init.yaml
+- code(editor) cloud-init.yaml
 
+~~~console
 users:
   - default
   - name: vmuser
@@ -116,6 +125,10 @@ sudo snap get microstack config.credentials.keystone-password
 
 ![openstack_dashboard.png](/assets/img/blog/openstack_dashboard.png)
 
+- [오픈스택 이미지 다운로드 (.qcow2; for KVM)](https://docs.openstack.org/image-guide/obtain-images.html)
+
+---
+
 ### Cirros VM Creation w/Openstack
 
 ~~~console
@@ -123,5 +136,28 @@ microstack launch cirros --name test
 ssh -i /home/ubuntu/snap/microstack/common/.ssh/id_microstack cirros@10.20.20.167
 
 계정 : cirros
-암호 : gocubsgo
+암호 : gocubsgo or cubswin:)
+~~~
+
+#### Build Cirros Simple Web Server
+
+- 웹 서버 생성
+  
+~~~console
+nohup sh -c "while true; do echo -e 'HTTP/1.0 200 OK\r\n\r\nserver' | sudo nc -l -p 80 ; done" & 
+~~~
+
+- 웹 서버 테스트
+
+~~~console
+curl 127.0.0.1
+~~~
+
+- 추가 볼륨 생성 및 붙이기 (OpenStack에서 볼륨 생성 후 연결)
+
+~~~console
+lsblk
+df -h
+sudo mkfs -t ext4 /dev/vdb
+sudo mount /dev/vdb /mnt
 ~~~
