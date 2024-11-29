@@ -15,15 +15,16 @@ hide_image: true
 
 #### [Chocolatey (choco)](https://chocolatey.org/) 설치
 
-- Window Powershell 관리자 권환으로 실행
+- Run the following command from the command line or from PowerShell
+
 ~~~command
 Get-ExecutionPolicy
+(Restricted가 아닐 경우)  Set-ExecutionPolicy AllSigned 실행 후 Y 입력
 ~~~
 
-- Restricted가 아닐 경우,  Set-ExecutionPolicy AllSigned 실행 후 Y 입력
 
 ~~~command
-Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityPro
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 ~~~
 
 ~~~command
