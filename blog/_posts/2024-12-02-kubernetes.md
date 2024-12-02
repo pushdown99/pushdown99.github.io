@@ -9,19 +9,86 @@ image: /assets/img/blog/kubernetes.png.png
 hide_image: true
 ---
 
-## 쿠버네티스 (Kubernetes)
+## [쿠버네티스 (Kubernetes)](https://kubernetes.io/docs/home/)
 
 ### [Kubernetes Documentation](https://kubernetes.io/docs/home/)
 
-- Understand Kubernetes
-- Try Kubernetes
-- Set up a K8s cluster
-- Learn how to use Kubernetes
-- Look up reference information
-- Contribute to Kubernetes
-- Training
-- Download Kubernetes
-- About the documentation
+- [Understand Kubernetes](https://kubernetes.io/docs/concepts/)
+  
+  Learn about Kubernetes and its fundamental concepts.
+  - Why Kubernetes?
+  - Components of a cluster
+  - The Kubernetes API
+  - Objects In Kubernetes
+  - Containers
+  - Workloads and Pods
+  
+- [Try Kubernetes](https://kubernetes.io/docs/tutorials/)
+  
+  Follow tutorials to learn how to deploy applications in Kubernetes.
+  
+  - Hello Minikube
+  - Walkthrough the basics
+  - Stateless Example: PHP Guestbook with Redis
+  - Stateful Example: Wordpress with Persistent Volumes
+  
+- [Set up a K8s cluster](https://kubernetes.io/docs/setup/)
+  
+  Get Kubernetes running based on your resources and needs.
+
+  - Learning environment
+  - Production environment
+  - Install the kubeadm setup tool
+  - Securing a cluster
+  - kubeadm command reference
+  
+- [Learn how to use Kubernetes](https://kubernetes.io/docs/tasks/)
+  
+  Look up common tasks and how to perform them using a short sequence of steps.
+  
+  - kubectl Quick Reference
+  - Install kubectl
+  - Configure access to clusters
+  - Use the Web UI Dashboard
+  - Configure a Pod to Use a ConfigMap
+  - Getting help
+
+- [Look up reference information](https://kubernetes.io/docs/reference/)
+  
+  Browse terminology, command line syntax, API resource types, and setup tool documentation.
+  
+  - Glossary
+  - kubectl command line tool
+  - Labels, annotations and taints
+  - Kubernetes API reference
+  - Overview of API
+  - Feature Gates
+
+- [Contribute to Kubernetes](https://kubernetes.io/docs/contribute/)
+  
+  Find out how you can help make Kubernetes better.
+  
+  - Contribute to Kubernetes
+  - Contribute to documentation
+  - Suggest content improvements
+  - Opening a pull request
+  - Documenting a feature for a release
+  - Localizing the docs
+  - Participating in SIG Docs
+  - Viewing Site Analytics
+  
+- [Training](https://kubernetes.io/training/)
+  
+  Get certified in Kubernetes and make your cloud native projects successful!
+  
+- [Download Kubernetes](https://kubernetes.io/releases/download/)
+  
+  Install Kubernetes or upgrade to the newest version.
+  
+- [About the documentation](https://kubernetes.io/docs/home/supported-doc-versions/)
+  
+  This website contains documentation for the current and previous 4 versions of Kubernetes.
+  
 
 ### [Getting started](https://kubernetes.io/docs/setup/)
 
@@ -97,6 +164,17 @@ hide_image: true
   5|**Does not provide nor mandate a configuration language/system (for example, Jsonnet).** It provides a declarative API that may be targeted by arbitrary forms of declarative specifications.
   6|**Does not provide nor adopt any comprehensive machine configuration, maintenance, management, or self-healing systems.**
   7|Additionally, **Kubernetes is not a mere orchestration system. In fact, it eliminates the need for orchestration.** The technical definition of orchestration is execution of a defined workflow: first do A, then B, then C. In contrast, Kubernetes comprises a set of independent, composable control processes that continuously drive the current state towards the provided desired state. It shouldn't matter how you get from A to C. Centralized control is also not required. This results in a system that is easier to use and more powerful, robust, resilient, and extensible.
+
+  Historical context for Kubernetes
+
+  ![](/assets/img/blog/historical_context_for_kebernetes.png)
+  
+  history|hescriptions
+  ---|---
+  Traditional deployment|Early on, organizations ran applications on physical servers. There was no way to define resource boundaries for applications in a physical server, and this caused resource allocation issues. For example, if multiple applications run on a physical server, there can be instances where one application would take up most of the resources, and as a result, the other applications would underperform. A solution for this would be to run each application on a different physical server. But this did not scale as resources were underutilized, and it was expensive for organizations to maintain many physical servers.
+  Virtualized deployment|As a solution, virtualization was introduced. It allows you to run multiple Virtual Machines (VMs) on a single physical server's CPU. Virtualization allows applications to be isolated between VMs and provides a level of security as the information of one application cannot be freely accessed by another application.</br></br>Virtualization allows better utilization of resources in a physical server and allows better scalability because an application can be added or updated easily, reduces hardware costs, and much more. With virtualization you can present a set of physical resources as a cluster of disposable virtual machines.</br></br>Each VM is a full machine running all the components, including its own operating system, on top of the virtualized hardware.
+  Container deployment|Containers are similar to VMs, but they have relaxed isolation properties to share the Operating System (OS) among the applications. Therefore, containers are considered lightweight. Similar to a VM, a container has its own filesystem, share of CPU, memory, process space, and more. As they are decoupled from the underlying infrastructure, they are portable across clouds and OS distributions.</br></br>Containers have become popular because they provide extra benefits, such as:</br></br>- Agile application creation and deployment: increased ease and efficiency of container image creation compared to VM image use.</br>- Continuous development, integration, and deployment: provides for reliable and frequent container image build and deployment with quick and efficient rollbacks (due to image immutability).</br>- Dev and Ops separation of concerns: create application container images at build/release time rather than deployment time, thereby decoupling applications from infrastructure.</br>- Observability: not only surfaces OS-level information and metrics, but also application health and other signals.</br>- Environmental consistency across development, testing, and production: runs the same on a laptop as it does in the cloud.</br>- Cloud and OS distribution portability: runs on Ubuntu, RHEL, CoreOS, on-premises, on major public clouds, and anywhere else.</br>- Application-centric management: raises the level of abstraction from running an OS on virtual hardware to running an application on an OS using logical resources.</br>- Loosely coupled, distributed, elastic, liberated micro-services: applications are broken into smaller, independent pieces and can be deployed and managed dynamically – not a monolithic stack running on one big single-purpose machine.</br>- Resource isolation: predictable application performance.</br>- Resource utilization: high efficiency and density
+
 
   - Kubernetes Components
   - Objects In Kubernetes
