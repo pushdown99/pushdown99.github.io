@@ -15,7 +15,7 @@ hide_image: true
 
 #### [Chocolatey (choco)](https://chocolatey.org/) 설치
 
-- Run the following command from the command line or from PowerShell
+- Run the following command from the command line or from PowerShell.
 
 ~~~command
 Get-ExecutionPolicy
