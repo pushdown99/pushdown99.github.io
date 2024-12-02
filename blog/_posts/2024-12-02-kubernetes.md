@@ -181,7 +181,55 @@ hide_image: true
 
 
   - Kubernetes Components
+  
+    An overview of the key components that make up a Kubernetes cluster.
+    
+    ![](/assets/img/blog/kubernetes_components.png)
+
+    Core Components
+
+    A Kubernetes cluster consists of a control plane and one or more worker nodes. Here's a brief overview of the main components:
+
+    - Control Plane Components
+
+      Manage the overall state of the cluster:
+
+      components|descriptions
+      ---|---
+      [kube-apiserver](https://kubernetes.io/docs/concepts/architecture/#kube-apiserver)|The core component server that exposes the Kubernetes HTTP API
+      [etcd](https://kubernetes.io/docs/concepts/architecture/#etcd)|Consistent and highly-available key value store for all API server data
+      [kube-scheduler](https://kubernetes.io/docs/concepts/architecture/#kube-scheduler)|Looks for Pods not yet bound to a node, and assigns each Pod to a suitable node.
+      [kube-controller-manager](https://kubernetes.io/docs/concepts/architecture/#kube-controller-manager)|Runs controllers to implement Kubernetes API behavior.
+      [cloud-controller-manager](https://kubernetes.io/docs/concepts/architecture/#cloud-controller-manager) (optional)|Integrates with underlying cloud provider(s)
+
+    - Node Components
+
+      Run on every node, maintaining running pods and providing the Kubernetes runtime environment:
+
+      components|descriptions
+      ---|---
+      [kubelet](https://kubernetes.io/docs/concepts/architecture/#kubelet)|Ensures that Pods are running, including their containers.
+      [kube-proxy](https://kubernetes.io/docs/concepts/architecture/#kube-proxy) (optional)|Maintains network rules on nodes to implement Services.
+      [Container runtime](https://kubernetes.io/docs/concepts/architecture/#container-runtime)|Software responsible for running containers. Read [Container Runtimes](https://kubernetes.io/docs/setup/production-environment/container-runtimes/) to learn more.
+
+    - Addons
+
+      Addons extend the functionality of Kubernetes. A few important examples include:
+
+      components|descriptions
+      ---|---
+      [DNS](https://kubernetes.io/docs/concepts/architecture/#dns)|For cluster-wide DNS resolution
+      [Web UI](https://kubernetes.io/docs/concepts/architecture/#web-ui-dashboard) (Dashboard)|For cluster management via a web interface
+      [Container Resource Monitoring](https://kubernetes.io/docs/concepts/architecture/#container-resource-monitoring)|For collecting and storing container metrics
+      [Cluster-level Logging](https://kubernetes.io/docs/concepts/architecture/#cluster-level-logging)|For saving container logs to a central log store
+
   - Objects In Kubernetes
+
+    Kubernetes objects are persistent entities in the Kubernetes system. Kubernetes uses these entities to represent the state of your cluster. Learn about the Kubernetes object model and how to work with these objects.
+    This page explains how Kubernetes objects are represented in the Kubernetes API, and how you can express them in `.yaml` format.
+
+    #### Understanding Kubernetes objects
+    
     - Kubernetes Object Management
     - Object Names and IDs
     - Labels and Selectors
