@@ -193,55 +193,63 @@ hide_image: true
 ### [Tasks](https://kubernetes.io/docs/tasks/)
 
 - Install Tools
-  - Install and Set Up kubectl on Linux
-  - Install and Set Up kubectl on macOS
-  - Install and Set Up kubectl on Windows
+
+  Tools|Descriptions
+  ---|---
+  [kubectl](https://kubernetes.io/docs/reference/kubectl/kubectl/)|The Kubernetes command-line tool, kubectl, allows you to run commands against Kubernetes clusters. You can use kubectl to deploy applications, inspect and manage cluster resources, and view logs
+  [kind](https://kind.sigs.k8s.io/)|kind lets you run Kubernetes on your local computer. This tool requires that you have either Docker or Podman installed. [view](https://kind.sigs.k8s.io/docs/user/quick-start/)
+  [minikube](https://minikube.sigs.k8s.io/)|Like kind, minikube is a tool that lets you run Kubernetes locally. minikube runs an all-in-one or a multi-node local Kubernetes cluster on your personal computer (including Windows, macOS and Linux PCs) so that you can try out Kubernetes, or for daily development work. [view](https://minikube.sigs.k8s.io/docs/start/)
+  [kubeadm](https://kubernetes.io/docs/reference/setup-tools/kubeadm/)|You can use the kubeadm tool to create and manage Kubernetes clusters. It performs the actions necessary to get a minimum viable, secure cluster up and running in a user friendly way. [view](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/)
+
+  - [Install and Set Up kubectl on Linux](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/)
+  - [Install and Set Up kubectl on macOS](https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/)
+  - [Install and Set Up kubectl on Windows](https://kubernetes.io/docs/tasks/tools/install-kubectl-windows/)
 - Administer a Cluster
-  - Administration with kubeadm
-  - Overprovision Node Capacity For A Cluster
-  - Migrating from dockershim
-  - Generate Certificates Manually
-  - Manage Memory, CPU, and API Resources
-  - Install a Network Policy Provider
-  - Access Clusters Using the Kubernetes API
-  - Advertise Extended Resources for a Node
-  - Autoscale the DNS Service in a Cluster
-  - Change the Access Mode of a PersistentVolume to ReadWriteOncePod
-  - Change the default StorageClass
-  - Switching from Polling to CRI Event-based Updates to Container Status
-  - Change the Reclaim Policy of a PersistentVolume
-  - Cloud Controller Manager Administration
-  - Configure a kubelet image credential provider
-  - Configure Quotas for API Objects
-  - Control CPU Management Policies on the Node
-  - Control Topology Management Policies on a node
-  - Customizing DNS Service
-  - Debugging DNS Resolution
-  - Declare Network Policy
-  - Developing Cloud Controller Manager
-  - Enable Or Disable A Kubernetes API
-  - Encrypting Confidential Data at Rest
-  - Decrypt Confidential Data that is Already Encrypted at Rest
-  - Guaranteed Scheduling For Critical Add-On Pods
-  - IP Masquerade Agent User Guide
-  - Limit Storage Consumption
-  - Migrate Replicated Control Plane To Use Cloud Controller Manager
-  - Namespaces Walkthrough
-  - Operating etcd clusters for Kubernetes
-  - Reserve Compute Resources for System Daemons
-  - Running Kubernetes Node Components as a Non-root User
-  - Safely Drain a Node
-  - Securing a Cluster
-  - Set Kubelet Parameters Via A Configuration File
-  - Share a Cluster with Namespaces
-  - Upgrade A Cluster
-  - Use Cascading Deletion in a Cluster
-  - Using a KMS provider for data encryption
-  - Using CoreDNS for Service Discovery
-  - Using NodeLocal DNSCache in Kubernetes Clusters
-  - Using sysctls in a Kubernetes Cluster
-  - Utilizing the NUMA-aware Memory Manager
-  - Verify Signed Kubernetes Artifacts
+  - [Administration with kubeadm](https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/)
+  - [Overprovision Node Capacity For A Cluster](https://kubernetes.io/docs/tasks/administer-cluster/node-overprovisioning/)
+  - [Migrating from dockershim](https://kubernetes.io/docs/tasks/administer-cluster/migrating-from-dockershim/)
+  - [Generate Certificates Manually](https://kubernetes.io/docs/tasks/administer-cluster/certificates/)
+  - [Manage Memory, CPU, and API Resources](https://kubernetes.io/docs/tasks/administer-cluster/manage-resources/)
+  - [Install a Network Policy Provider](https://kubernetes.io/docs/tasks/administer-cluster/network-policy-provider/)
+  - [Access Clusters Using the Kubernetes API](https://kubernetes.io/docs/tasks/administer-cluster/access-cluster-api/)
+  - [Advertise Extended Resources for a Node](https://kubernetes.io/docs/tasks/administer-cluster/extended-resource-node/)
+  - [Autoscale the DNS Service in a Cluster](https://kubernetes.io/docs/tasks/administer-cluster/dns-horizontal-autoscaling/)
+  - [Change the Access Mode of a PersistentVolume to ReadWriteOncePod](https://kubernetes.io/docs/tasks/administer-cluster/change-pv-access-mode-readwriteoncepod/)
+  - [Change the default StorageClass](https://kubernetes.io/docs/tasks/administer-cluster/change-default-storage-class/)
+  - [Switching from Polling to CRI Event-based Updates to Container Status](https://kubernetes.io/docs/tasks/administer-cluster/switch-to-evented-pleg/)
+  - [Change the Reclaim Policy of a PersistentVolume](https://kubernetes.io/docs/tasks/administer-cluster/change-pv-reclaim-policy/)
+  - [Cloud Controller Manager Administration](https://kubernetes.io/docs/tasks/administer-cluster/running-cloud-controller/)
+  - [Configure a kubelet image credential provider](https://kubernetes.io/docs/tasks/administer-cluster/kubelet-credential-provider/)
+  - [Configure Quotas for API Objects](https://kubernetes.io/docs/tasks/administer-cluster/quota-api-object/)
+  - [Control CPU Management Policies on the Node](https://kubernetes.io/docs/tasks/administer-cluster/cpu-management-policies/)
+  - [Control Topology Management Policies on a node](https://kubernetes.io/docs/tasks/administer-cluster/topology-manager/)
+  - [Customizing DNS Service](https://kubernetes.io/docs/tasks/administer-cluster/dns-custom-nameservers/)
+  - [Debugging DNS Resolution](https://kubernetes.io/docs/tasks/administer-cluster/dns-debugging-resolution/)
+  - [Declare Network Policy](https://kubernetes.io/docs/tasks/administer-cluster/declare-network-policy/)
+  - [Developing Cloud Controller Manager](https://kubernetes.io/docs/tasks/administer-cluster/developing-cloud-controller-manager/)
+  - [Enable Or Disable A Kubernetes API](https://kubernetes.io/docs/tasks/administer-cluster/enable-disable-api/)
+  - [Encrypting Confidential Data at Rest](https://kubernetes.io/docs/tasks/administer-cluster/encrypt-data/)
+  - [Decrypt Confidential Data that is Already Encrypted at Rest](https://kubernetes.io/docs/tasks/administer-cluster/decrypt-data/)
+  - [Guaranteed Scheduling For Critical Add-On Pods](https://kubernetes.io/docs/tasks/administer-cluster/guaranteed-scheduling-critical-addon-pods/)
+  - [IP Masquerade Agent User Guide](https://kubernetes.io/docs/tasks/administer-cluster/ip-masq-agent/)
+  - [Limit Storage Consumption](https://kubernetes.io/docs/tasks/administer-cluster/limit-storage-consumption/)
+  - [Migrate Replicated Control Plane To Use Cloud Controller Manager](https://kubernetes.io/docs/tasks/administer-cluster/controller-manager-leader-migration/)
+  - [Namespaces Walkthrough](https://kubernetes.io/docs/tasks/administer-cluster/namespaces-walkthrough/)
+  - [Operating etcd clusters for Kubernetes](https://kubernetes.io/docs/tasks/administer-cluster/configure-upgrade-etcd/)
+  - [Reserve Compute Resources for System Daemons](https://kubernetes.io/docs/tasks/administer-cluster/reserve-compute-resources/)
+  - [Running Kubernetes Node Components as a Non-root User](https://kubernetes.io/docs/tasks/administer-cluster/kubelet-in-userns/)
+  - [Safely Drain a Node](https://kubernetes.io/docs/tasks/administer-cluster/safely-drain-node/)
+  - [Securing a Cluster](https://kubernetes.io/docs/tasks/administer-cluster/securing-a-cluster/)
+  - [Set Kubelet Parameters Via A Configuration File](https://kubernetes.io/docs/tasks/administer-cluster/kubelet-config-file/)
+  - [Share a Cluster with Namespaces](https://kubernetes.io/docs/tasks/administer-cluster/namespaces/)
+  - [Upgrade A Cluster](https://kubernetes.io/docs/tasks/administer-cluster/cluster-upgrade/)
+  - [Use Cascading Deletion in a Cluster](https://kubernetes.io/docs/tasks/administer-cluster/use-cascading-deletion/)
+  - [Using a KMS provider for data encryption](https://kubernetes.io/docs/tasks/administer-cluster/kms-provider/)
+  - [Using CoreDNS for Service Discovery](https://kubernetes.io/docs/tasks/administer-cluster/coredns/)
+  - [Using NodeLocal DNSCache in Kubernetes Clusters](https://kubernetes.io/docs/tasks/administer-cluster/nodelocaldns/)
+  - [Using sysctls in a Kubernetes Cluster](https://kubernetes.io/docs/tasks/administer-cluster/sysctl-cluster/)
+  - [Utilizing the NUMA-aware Memory Manager](https://kubernetes.io/docs/tasks/administer-cluster/memory-manager/)
+  - [Verify Signed Kubernetes Artifacts](https://kubernetes.io/docs/tasks/administer-cluster/verify-signed-artifacts/)
 - Configure Pods and Containers
   - Assign Memory Resources to Containers and Pods
   - Assign CPU Resources to Containers and Pods
