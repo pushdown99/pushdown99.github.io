@@ -33,9 +33,21 @@ hide_image: true
   - Select a [container runtime](https://kubernetes.io/docs/setup/production-environment/container-runtimes/) for your new cluster
   - Learn about [best practices](https://kubernetes.io/docs/setup/best-practices/) for cluster setup
   
-  - Container Runtimes
+  Kubernetes is designed for its control plane to run on Linux. Within your cluster you can run applications on Linux or other operating systems, including Windows.
+  - Learn to set up clusters with Windows nodes
+  
+
+  - [Container Runtimes](https://kubernetes.io/docs/setup/production-environment/container-runtimes/)
   - Installing Kubernetes with deployment tools
-    - Bootstrapping clusters with kubeadm
+
+    tools|descriptions
+    ---|---
+    [kubeadm](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/)|
+    [Cluster API](https://cluster-api.sigs.k8s.io/)|A Kubernetes sub-project focused on providing declarative APIs and tooling to simplify provisioning, upgrading, and operating multiple Kubernetes clusters.
+    [kops](https://kops.sigs.k8s.io/)|An automated cluster provisioning tool. For tutorials, best practices, configuration options and information on reaching out to the community, please check the `kOps` [website](https://kops.sigs.k8s.io/) for details.
+    [jubespray](https://kubespray.io/)|A composition of Ansible playbooks, inventory, provisioning tools, and domain knowledge for generic OS/Kubernetes clusters configuration management tasks.
+
+    - [Bootstrapping clusters with kubeadm](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/)
       - Installing kubeadm
       - Troubleshooting kubeadm
       - Creating a cluster with kubeadm
@@ -45,17 +57,47 @@ hide_image: true
       - Set up a High Availability etcd Cluster with kubeadm
       - Configuring each kubelet in your cluster using kubeadm
       - Dual-stack support with kubeadm
-  - Turnkey Cloud Solutions
-- Best practices
-  - Considerations for large clusters
-  - Running in multiple zones
-  - Validate node setup
-  - Enforcing Pod Security Standards
-  - PKI certificates and requirements
+  - [Turnkey Cloud Solutions](https://kubernetes.io/docs/setup/production-environment/turnkey-solutions/)
+- [Best practices](https://kubernetes.io/docs/setup/best-practices/)
+  - [Considerations for large clusters](https://kubernetes.io/docs/setup/best-practices/cluster-large/)
+  - [Running in multiple zones](https://kubernetes.io/docs/setup/best-practices/multiple-zones/)
+  - [Validate node setup](https://kubernetes.io/docs/setup/best-practices/node-conformance/)
+  - [Enforcing Pod Security Standards](https://kubernetes.io/docs/setup/best-practices/enforcing-pod-security-standards/)
+  - [PKI certificates and requirements](https://kubernetes.io/docs/setup/best-practices/certificates/)
 
 ### [Concepts](https://kubernetes.io/docs/concepts/)
 
 - [Overview](https://kubernetes.io/docs/concepts/overview/)
+  
+  Kubernetes is a portable, extensible, open source platform for managing containerized workloads and services, that facilitates both declarative configuration and automation. It has a large, rapidly growing ecosystem. Kubernetes services, support, and tools are widely available.
+
+  Why you need Kubernetes and what it can do.
+
+  Features|Descriptions
+  ---|---
+  Service discovery and load balancing|Kubernetes can expose a container using the DNS name or using their own IP address. If traffic to a container is high, Kubernetes is able to load balance and distribute the network traffic so that the deployment is stable.
+  Storage orchestration|Kubernetes allows you to automatically mount a storage system of your choice, such as local storages, public cloud providers, and more.
+  Automated rollouts and rollbacks|You can describe the desired state for your deployed containers using Kubernetes, and it can change the actual state to the desired state at a controlled rate. For example, you can automate Kubernetes to create new containers for your deployment, remove existing containers and adopt all their resources to the new container.
+  Automatic bin packing| You provide Kubernetes with a cluster of nodes that it can use to run containerized tasks. You tell Kubernetes how much CPU and memory (RAM) each container needs. Kubernetes can fit containers onto your nodes to make the best use of your resources.
+  Self-healing|Kubernetes restarts containers that fail, replaces containers, kills containers that don't respond to your user-defined health check, and doesn't advertise them to clients until they are ready to serve.
+  Secret and configuration management|Kubernetes lets you store and manage sensitive information, such as passwords, OAuth tokens, and SSH keys. You can deploy and update secrets and application configuration without rebuilding your container images, and without exposing secrets in your stack configuration.
+  Batch execution|In addition to services, Kubernetes can manage your batch and CI workloads, replacing containers that fail, if desired.
+  Horizontal scaling|Scale your application up and down with a simple command, with a UI, or automatically based on CPU usage.
+  IPv4/IPv6 dual-stack|Allocation of IPv4 and IPv6 addresses to Pods and Services
+  Designed for extensibility|Add features to your Kubernetes cluster without changing upstream source code.
+
+  What Kubernetes is not 
+
+  #|Kubernetes:
+  ---|---
+  1|**Does not limit the types of applications supported.** Kubernetes aims to support an extremely diverse variety of workloads, including stateless, stateful, and data-processing workloads. If an application can run in a container, it should run great on Kubernetes.
+  2|**Does not deploy source code and does not build your application.** Continuous Integration, Delivery, and Deployment (CI/CD) workflows are determined by organization cultures and preferences as well as technical requirements.
+  3|**Does not provide application-level services, such as middleware (for example, message buses), data-processing frameworks (for example, Spark), databases (for example, MySQL), caches, nor cluster storage systems (for example, Ceph) as built-in services.** Such components can run on Kubernetes, and/or can be accessed by applications running on Kubernetes through portable mechanisms, such as the Open Service Broker.
+  4|**Does not dictate logging, monitoring, or alerting solutions.** It provides some integrations as proof of concept, and mechanisms to collect and export metrics.
+  5|**Does not provide nor mandate a configuration language/system (for example, Jsonnet).** It provides a declarative API that may be targeted by arbitrary forms of declarative specifications.
+  6|**Does not provide nor adopt any comprehensive machine configuration, maintenance, management, or self-healing systems.**
+  7|Additionally, **Kubernetes is not a mere orchestration system. In fact, it eliminates the need for orchestration.** The technical definition of orchestration is execution of a defined workflow: first do A, then B, then C. In contrast, Kubernetes comprises a set of independent, composable control processes that continuously drive the current state towards the provided desired state. It shouldn't matter how you get from A to C. Centralized control is also not required. This results in a system that is easier to use and more powerful, robust, resilient, and extensible.
+
   - Kubernetes Components
   - Objects In Kubernetes
     - Kubernetes Object Management
