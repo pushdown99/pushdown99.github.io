@@ -11,16 +11,19 @@ hide_image: true
 
 ## 쿠버네티스 (Kubernetes)
 
-### 문서
+### [Kubernetes Documentation](https://kubernetes.io/docs/home/)
 
-- 쿠버네티스 이해하기
-- 쿠버네티스 사용해보기
-- K8s 클러스터 구축하기
-- 쿠버네티스 사용법 배우기
-- 교육
-- 레퍼런스 정보 찾기
+- Understand Kubernetes
+- Try Kubernetes
+- Set up a K8s cluster
+- Learn how to use Kubernetes
+- Look up reference information
+- Contribute to Kubernetes
+- Training
+- Download Kubernetes
+- About the documentation
 
-### Getting started
+### [Getting started](https://kubernetes.io/docs/setup/)
 
 - Learning environment
 - Production environment
@@ -44,7 +47,7 @@ hide_image: true
   - Enforcing Pod Security Standards
   - PKI certificates and requirements
 
-### 개념
+### [Concepts](https://kubernetes.io/docs/concepts/)
 
 - Overview
   - Kubernetes Components
@@ -187,7 +190,7 @@ hide_image: true
   - Operator pattern
 
 
-### Tasks
+### [Tasks](https://kubernetes.io/docs/tasks/)
 
 - Install Tools
   - Install and Set Up kubectl on Linux
@@ -419,3 +422,34 @@ hide_image: true
 
 ### [Contribute to Kubernetes](https://kubernetes.io/docs/contribute/)
 
+- Contribute to Kubernetes Documentation
+- Suggesting content improvements
+- Contributing new content
+  - Opening a pull request
+  - Documenting for a release
+  - Blogs and case studies
+- Reviewing changes
+  - Reviewing pull requests
+  - For approvers and reviewers
+- Localizing Kubernetes documentation
+- Participating in SIG Docs
+  - Roles and responsibilities
+  - Issue Wranglers
+  - PR wranglers
+- Documentation style overview
+  - Content guide
+  - Style guide
+  - Diagram guide
+  - Writing a new topic
+  - Page content types
+  - Content organization
+  - Custom Hugo Shortcodes
+- Updating Reference Documentation
+  - Quickstart
+  - Contributing to the Upstream Kubernetes Code
+  - Generating Reference Documentation for the Kubernetes API
+  - Generating Reference Documentation for kubectl Commands
+  - Generating Reference Documentation for Metrics
+  - Generating Reference Pages for Kubernetes Components and Tools
+- Advanced contributing
+- Viewing Site Analytics
