@@ -228,10 +228,163 @@ hide_image: true
     Kubernetes objects are persistent entities in the Kubernetes system. Kubernetes uses these entities to represent the state of your cluster. Learn about the Kubernetes object model and how to work with these objects.
     This page explains how Kubernetes objects are represented in the Kubernetes API, and how you can express them in `.yaml` format.
 
-    #### Understanding Kubernetes objects
+    Understanding Kubernetes objects
+
+      Kubernetes objects are persistent entities in the Kubernetes system. Kubernetes uses these entities to represent the state of your cluster. Specifically, they can describe:
+
+        - What containerized applications are running (and on which nodes)
+        - The resources available to those applications
+        - The policies around how those applications behave, such as restart policies, upgrades, and fault-tolerance
+
+      Object spec and status
+
+        Almost every Kubernetes object includes two nested object fields that govern the object's configuration: the object `spec` and the object `status`. For objects that have a `spec`, you have to set this when you create the object, providing a description of the characteristics you want the resource to have: its desired `state`.
+
+      Describing a Kubernetes object
+
+        When you create an object in Kubernetes, you must provide the object spec that describes its desired state, as well as some basic information about the object (such as a name). When you use the Kubernetes API to create the object (either directly or via kubectl), that API request must include that information as JSON in the request body.
+
+        Here's an example manifest that shows the required fields and object spec for a Kubernetes Deployment:
+
+      ~~~yml
+      apiVersion: apps/v1
+      kind: Deployment
+      metadata:
+        name: nginx-deployment
+      spec:
+        selector:
+          matchLabels:
+            app: nginx
+        replicas: 2 # tells deployment to run 2 pods matching the template
+        template:
+          metadata:
+            labels:
+              app: nginx
+          spec:
+            containers:
+            - name: nginx
+              image: nginx:1.14.2
+              ports:
+              - containerPort: 80
+      ~~~
+
+      ~~~console
+      kubectl apply -f https://k8s.io/examples/application/deployment.yaml
+
+      deployment.apps/nginx-deployment created
+      ~~~
     
+    Required fields
+
+      In the manifest (YAML or JSON file) for the Kubernetes object you want to create, you'll need to set values for the following fields:
+
+      fields|descriptions
+      ---|---
+      `apiVersion`|Which version of the Kubernetes API you're using to create this object
+      `kind`|What kind of object you want to create
+      `metadata`|Data that helps uniquely identify the object, including a `name` string, UID, and optional `namespace`
+      `spec`|What state you desire for the object
+
+    Server side field validation
+
+      Starting with Kubernetes v1.25, the API server offers server side field validation that detects unrecognized or duplicate fields in an object. It provides all the functionality of `kubectl --validate` on the server side.
+
+      fields|descriptions
+      ---|---
+      Strict|Strict field validation, errors on validation failure
+      Warn|Field validation is performed, but errors are exposed as warnings rather than failing the request
+      Ignore|No server side field validation is performed
+
     - Kubernetes Object Management
+      - Imperative object configuration: In imperative object configuration, the kubectl command specifies the operation (create, replace, etc.), optional flags and at least one file name. The file specified must contain a full definition of the object in YAML or JSON format. [`API reference`](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.31/)
+
+      object configuration|descriptions
+      ---|---
+      Create the objects defined in a configuration file|kubectl create -f nginx.yaml
+      Delete the objects defined in two configuration files|kubectl delete -f nginx.yaml -f redis.yaml
+      Update the objects defined in a configuration file by overwriting the live configuration|kubectl replace -f nginx.yaml
+
+      - Declarative object configuration: When using declarative object configuration, a user operates on object configuration files stored locally, however the user does not define the operations to be taken on the files. Create, update, and delete operations are automatically detected per-object by `kubectl`. This enables working on directories, where different operations might be needed for different objects.
+
+      Examples
+  
+        Process all object configuration files in the configs directory, and create or patch the live objects. You can first diff to see what changes are going to be made, and then apply:
+
+        ~~~console
+        kubectl diff -f configs/
+        kubectl apply -f configs/
+        ~~~
+
+        Recursively process directories:
+
+        ~~~console
+        kubectl diff -R -f configs/
+        kubectl apply -R -f configs/
+        ~~~
+
     - Object Names and IDs
+
+      Each object in your cluster has a Name that is unique for that type of resource. Every Kubernetes object also has a UID that is unique across your whole cluster.
+
+      For example, you can only have one Pod named `myapp-1234` within the same namespace, but you can have one Pod and one Deployment that are each named `myapp-1234`.
+
+      - Names
+
+        A client-provided string that refers to an object in a resource URL, such as `/api/v1/pods/some-name`.
+        Only one object of a given kind can have a given name at a time. However, if you delete the object, you can make a new object with the same name.
+
+        Names must be unique across all API versions of the same resource. API resources are distinguished by their API group, resource type, namespace (for namespaced resources), and name. In other words, API version is irrelevant in this context.
+
+        - DNS Subdomain Names
+
+          Most resource types require a name that can be used as a DNS subdomain name as defined in RFC 1123. This means the name must:
+
+          - contain no more than 253 characters
+          - contain only lowercase alphanumeric characters, '-' or '.'
+          - start with an alphanumeric character
+          - end with an alphanumeric character
+
+        - [RFC 1123](https://tools.ietf.org/html/rfc1123) Label Names
+
+          Some resource types require their names to follow the DNS label standard as defined in RFC 1123. This means the name must:
+
+          - contain at most 63 characters
+          - contain only lowercase alphanumeric characters or '-'
+          - start with an alphanumeric character
+          - end with an alphanumeric character
+
+        - [RFC 1035](https://tools.ietf.org/html/rfc1035) Label Names
+
+          Some resource types require their names to follow the DNS label standard as defined in RFC 1035. This means the name must:
+
+          - contain at most 63 characters
+          - contain only lowercase alphanumeric characters or '-'
+          - start with an alphabetic character
+          - end with an alphanumeric character
+
+        - Path Segment Names
+
+          Some resource types require their names to be able to be safely encoded as a path segment. In other words, the name may not be "." or ".." and the name may not contain "/" or "%".
+
+          ~~~yaml
+          apiVersion: v1
+          kind: Pod
+          metadata:
+            name: nginx-demo
+          spec:
+            containers:
+            - name: nginx
+              image: nginx:1.14.2
+              ports:
+              - containerPort: 80
+          ~~~
+
+      - UIDs
+
+        A Kubernetes systems-generated string to uniquely identify objects.
+        Every object created over the whole lifetime of a Kubernetes cluster has a distinct UID. It is intended to distinguish between historical occurrences of similar entities.
+        Kubernetes UIDs are universally unique identifiers (also known as UUIDs). UUIDs are standardized as ISO/IEC 9834-8 and as ITU-T X.667.
+
     - Labels and Selectors
     - Namespaces
     - Annotations
