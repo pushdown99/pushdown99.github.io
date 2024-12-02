@@ -25,8 +25,14 @@ hide_image: true
 
 ### [Getting started](https://kubernetes.io/docs/setup/)
 
-- Learning environment
-- Production environment
+- [Learning environment](https://kubernetes.io/docs/setup/#learning-environment)
+- [Production environment](https://kubernetes.io/docs/setup/#production-environment)
+- [What's next](https://kubernetes.io/docs/setup/#what-s-next)
+  - [Download Kubernetes](https://kubernetes.io/releases/download/)
+  - Download and [install tools](https://kubernetes.io/docs/tasks/tools/) including `kubectl`
+  - Select a [container runtime](https://kubernetes.io/docs/setup/production-environment/container-runtimes/) for your new cluster
+  - Learn about [best practices](https://kubernetes.io/docs/setup/best-practices/) for cluster setup
+  
   - Container Runtimes
   - Installing Kubernetes with deployment tools
     - Bootstrapping clusters with kubeadm
@@ -49,7 +55,7 @@ hide_image: true
 
 ### [Concepts](https://kubernetes.io/docs/concepts/)
 
-- Overview
+- [Overview](https://kubernetes.io/docs/concepts/overview/)
   - Kubernetes Components
   - Objects In Kubernetes
     - Kubernetes Object Management
@@ -62,7 +68,7 @@ hide_image: true
     - Owners and Dependents
     - Recommended Labels
   - The Kubernetes API
-- Cluster Architecture
+- [Cluster Architecture](https://kubernetes.io/docs/concepts/architecture/)
   - Nodes
   - Communication between Nodes and the Control Plane
   - Controllers
@@ -72,12 +78,12 @@ hide_image: true
   - Container Runtime Interface (CRI)
   - Garbage Collection
   - Mixed Version Proxy
-- Containers
+- [Containers](https://kubernetes.io/docs/concepts/containers/)
   - Images
   - Container Environment
   - Runtime Class
   - Container Lifecycle Hooks
-- Workloads
+- [Workloads](https://kubernetes.io/docs/concepts/workloads/)
   - Pods
     - Pod Lifecycle
     - Init Containers
@@ -97,7 +103,7 @@ hide_image: true
     - ReplicationController
   - Autoscaling Workloads
   - Managing Workloads
-- Services, Load Balancing, and Networking
+- [Services, Load Balancing, and Networking](https://kubernetes.io/docs/concepts/services-networking/)
   - Service
   - Ingress
   - Ingress Controllers
@@ -110,7 +116,7 @@ hide_image: true
   - Networking on Windows
   - Service ClusterIP allocation
   - Service Internal Traffic Policy
-- Storage
+- [Storage](https://kubernetes.io/docs/concepts/storage/)
   - Volumes
   - Persistent Volumes
   - Projected Volumes
@@ -125,7 +131,7 @@ hide_image: true
   - Node-specific Volume Limits
   - Volume Health Monitoring
   - Windows Storage
-- Configuration
+- [Configuration](https://kubernetes.io/docs/concepts/configuration/)
   - Configuration Best Practices
   - ConfigMaps
   - Secrets
@@ -133,7 +139,7 @@ hide_image: true
   - Resource Management for Pods and Containers
   - Organizing Cluster Access Using kubeconfig Files
   - Resource Management for Windows nodes
-- Security
+- [Security](https://kubernetes.io/docs/concepts/security/)
   - Cloud Native Security and Kubernetes
   - Pod Security Standards
   - Pod Security Admission
@@ -149,12 +155,12 @@ hide_image: true
   - Linux kernel security constraints for Pods and containers
   - Security Checklist
   - Application Security Checklist
-- Policies
+- [Policies](https://kubernetes.io/docs/concepts/policy/)
   - Limit Ranges
   - Resource Quotas
   - Process ID Limits And Reservations
   - Node Resource Managers
-- Scheduling, Preemption and Eviction
+- [Scheduling, Preemption and Eviction](https://kubernetes.io/docs/concepts/scheduling-eviction/)
   - Kubernetes Scheduler
   - Assigning Pods to Nodes
   - Pod Overhead
@@ -167,7 +173,7 @@ hide_image: true
   - Pod Priority and Preemption
   - Node-pressure Eviction
   - API-initiated Eviction
-- Cluster Administration
+- [Cluster Administration](https://kubernetes.io/docs/concepts/cluster-administration/)
   - Node Shutdowns
   - Certificates
   - Cluster Networking
@@ -181,10 +187,10 @@ hide_image: true
   - Cluster Autoscaling
   - Installing Addons
   - Coordinated Leader Election
-- Windows in Kubernetes
+- [Windows in Kubernetes](https://kubernetes.io/docs/concepts/windows/)
   - Windows containers in Kubernetes
   - Guide for Running Windows Containers in Kubernetes
-- Extending Kubernetes
+- [Extending Kubernetes](https://kubernetes.io/docs/concepts/extend-kubernetes/)
   - Compute, Storage, and Networking Extensions
   - Extending the Kubernetes API
   - Operator pattern
@@ -206,11 +212,38 @@ hide_image: true
   - [Install and Set Up kubectl on Windows](https://kubernetes.io/docs/tasks/tools/install-kubectl-windows/)
 - Administer a Cluster
   - [Administration with kubeadm](https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/)
+    - Adding Linux worker nodes
+    - Adding Windows worker nodes
+    - Upgrading kubeadm clusters
+    - Upgrading Linux nodes
+    - Upgrading Windows nodes
+    - Configuring a cgroup driver
+    - Certificate Management with kubeadm
+    - Reconfiguring a kubeadm cluster
+    - Changing The Kubernetes Package Repository
   - [Overprovision Node Capacity For A Cluster](https://kubernetes.io/docs/tasks/administer-cluster/node-overprovisioning/)
   - [Migrating from dockershim](https://kubernetes.io/docs/tasks/administer-cluster/migrating-from-dockershim/)
+    - Changing the Container Runtime on a Node from Docker Engine to containerd
+    - Migrate Docker Engine nodes from dockershim to cri-dockerd
+    - Find Out What Container Runtime is Used on a Node
+    - Troubleshooting CNI plugin-related errors
+    - Check whether dockershim removal affects you
+    - Migrating telemetry and security agents from dockershim
   - [Generate Certificates Manually](https://kubernetes.io/docs/tasks/administer-cluster/certificates/)
   - [Manage Memory, CPU, and API Resources](https://kubernetes.io/docs/tasks/administer-cluster/manage-resources/)
+    - Configure Default Memory Requests and Limits for a Namespace
+    - Configure Default CPU Requests and Limits for a Namespace
+    - Configure Minimum and Maximum Memory Constraints for a Namespace
+    - Configure Minimum and Maximum CPU Constraints for a Namespace
+    - Configure Memory and CPU Quotas for a Namespace
+    - Configure a Pod Quota for a Namespace
   - [Install a Network Policy Provider](https://kubernetes.io/docs/tasks/administer-cluster/network-policy-provider/)
+    - Use Antrea for NetworkPolicy
+    - Use Calico for NetworkPolicy
+    - Use Cilium for NetworkPolicy
+    - Use Kube-router for NetworkPolicy
+    - Romana for NetworkPolicy
+    - Weave Net for NetworkPolicy
   - [Access Clusters Using the Kubernetes API](https://kubernetes.io/docs/tasks/administer-cluster/access-cluster-api/)
   - [Advertise Extended Resources for a Node](https://kubernetes.io/docs/tasks/administer-cluster/extended-resource-node/)
   - [Autoscale the DNS Service in a Cluster](https://kubernetes.io/docs/tasks/administer-cluster/dns-horizontal-autoscaling/)
