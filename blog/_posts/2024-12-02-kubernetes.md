@@ -9,6 +9,10 @@ image: /assets/img/blog/kubernetes.png.png
 hide_image: true
 ---
 
+{:.no_toc}
+1. this unordered seed list will be replaced by toc as unordered list
+{:toc}
+
 ## [쿠버네티스 (Kubernetes)](https://kubernetes.io/docs/home/)
 
 ### [Kubernetes Documentation](https://kubernetes.io/docs/home/)
