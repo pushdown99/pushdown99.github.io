@@ -115,7 +115,7 @@ hide_image: true
     ---|---
     [kubeadm](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/)|
     [Cluster API](https://cluster-api.sigs.k8s.io/)|A Kubernetes sub-project focused on providing declarative APIs and tooling to simplify provisioning, upgrading, and operating multiple Kubernetes clusters.
-    [kops](https://kops.sigs.k8s.io/)|An automated cluster provisioning tool. For tutorials, best practices, configuration options and information on reaching out to the community, please check the `kOps` [website](https://kops.sigs.k8s.io/) for details.
+    [kOps](https://kops.sigs.k8s.io/)|An automated cluster provisioning tool. For tutorials, best practices, configuration options and information on reaching out to the community, please check the `kOps` [website](https://kops.sigs.k8s.io/) for details.
     [jubespray](https://kubespray.io/)|A composition of Ansible playbooks, inventory, provisioning tools, and domain knowledge for generic OS/Kubernetes clusters configuration management tasks.
 
     - [Bootstrapping clusters with kubeadm](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/)
@@ -223,7 +223,7 @@ hide_image: true
       [Container Resource Monitoring](https://kubernetes.io/docs/concepts/architecture/#container-resource-monitoring)|For collecting and storing container metrics
       [Cluster-level Logging](https://kubernetes.io/docs/concepts/architecture/#cluster-level-logging)|For saving container logs to a central log store
 
-  - Objects In Kubernetes
+  - [Objects In Kubernetes](https://kubernetes.io/docs/concepts/overview/working-with-objects/)
 
     Kubernetes objects are persistent entities in the Kubernetes system. Kubernetes uses these entities to represent the state of your cluster. Learn about the Kubernetes object model and how to work with these objects.
     This page explains how Kubernetes objects are represented in the Kubernetes API, and how you can express them in `.yaml` format.
@@ -295,7 +295,7 @@ hide_image: true
       Warn|Field validation is performed, but errors are exposed as warnings rather than failing the request
       Ignore|No server side field validation is performed
 
-    - Kubernetes Object Management
+    - [Kubernetes Object Management](https://kubernetes.io/docs/concepts/overview/working-with-objects/object-management/)
       - Imperative object configuration: In imperative object configuration, the kubectl command specifies the operation (create, replace, etc.), optional flags and at least one file name. The file specified must contain a full definition of the object in YAML or JSON format. [`API reference`](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.31/)
 
       object configuration|descriptions
@@ -322,7 +322,7 @@ hide_image: true
         kubectl apply -R -f configs/
         ~~~
 
-    - Object Names and IDs
+    - [Object Names and IDs](https://kubernetes.io/docs/concepts/overview/working-with-objects/names/)
 
       Each object in your cluster has a Name that is unique for that type of resource. Every Kubernetes object also has a UID that is unique across your whole cluster.
 
