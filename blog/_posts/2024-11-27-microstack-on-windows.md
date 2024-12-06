@@ -73,7 +73,7 @@ users:
 - Ubuntu VM Creation w/ multipass (Using Hyper-V; Windows Hypervisor)
   
 ~~~console
-multipass launch --name microstack --cpus 4 --memory 8G --disk 30G jammy --cloud-init cloud-init.yaml
+multipass launch --name microstack --cpus 4 --memory 8G --disk 30G jammy --cloud-init cloud-init.yaml --mount D:\ssh:/home/ubuntu/ssh
 ~~~
 
 - Hyper-V 관리자
@@ -90,7 +90,7 @@ multipass shell microstack
   
 ~~~console
 sudo snap install microstack --devmode --beta
-udo microstack init --auto --control --setup-loop-based-cinder-lvm-backend --loop-device-file-size 10
+sudo microstack init --auto --control --setup-loop-based-cinder-lvm-backend --loop-device-file-size 10
 
 sudo tee /var/snap/microstack/common/etc/cinder/cinder.conf.d/glance.conf <<EOF
 [DEFAULT]
