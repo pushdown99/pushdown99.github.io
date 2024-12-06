@@ -73,6 +73,7 @@ users:
 - Ubuntu VM Creation w/ multipass (Using Hyper-V; Windows Hypervisor)
   
 ~~~console
+multipass set local.privileged-mounts=true
 multipass launch --name microstack --cpus 4 --memory 8G --disk 30G jammy --cloud-init cloud-init.yaml --mount D:\ssh:/home/ubuntu/ssh
 ~~~
 
