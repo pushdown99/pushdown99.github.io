@@ -61,6 +61,7 @@ touch cloud-init.yaml
 
 - code(editor) cloud-init.yaml
 
+
 ~~~console
 users:
   - default
