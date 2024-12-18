@@ -71,6 +71,8 @@ users:
     - <content of YOUR public key> 
 ~~~
 
+---
+
 - Ubuntu VM Creation w/ multipass (Using Hyper-V; Windows Hypervisor)
   
 ~~~console
