@@ -22,7 +22,6 @@ Get-ExecutionPolicy
 (Restricted가 아닐 경우)  Set-ExecutionPolicy AllSigned 실행 후 Y 입력
 ~~~
 
-
 ~~~command
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 ~~~
@@ -41,7 +40,7 @@ Please run 'choco -?' or 'choco <command> -?' for help menu.
 
 ~~~console
 multipass set local.driver=hyperv
-~~~ 
+~~~
 
 #### [Multipass](https://multipass.run/) 설치
 
@@ -72,8 +71,6 @@ users:
 ~~~
 
 - Ubuntu VM Creation w/ multipass (Using Hyper-V; Windows Hypervisor)
-  
-
   
 ~~~console
 multipass launch --name microk8s --cpus 4 --memory 8G --disk 30G jammy --cloud-init cloud-init.yaml
@@ -142,8 +139,6 @@ sudo microk8s enable dns
 Infer repository core for addon dns
 Addon core/dns is already enabled
 ~~~
-
-
 
 ~~~console
 sudo microk8s enable storage
