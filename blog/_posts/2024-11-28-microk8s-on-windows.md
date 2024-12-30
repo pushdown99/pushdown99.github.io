@@ -9,7 +9,6 @@ image: /assets/img/blog/wordsmith.png
 hide_image: true
 ---
 
----
 ## Microstack Installation on Windows 11
 
 ### Installation
