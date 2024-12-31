@@ -10,7 +10,9 @@ hide_image: true
 ---
 
 {:.no_toc}
+
 1. this unordered seed list will be replaced by toc as unordered list
+
 {:toc}
 
 ## [Jitsi-Meet](https://jitsi.github.io/handbook/docs/dev-guide/dev-guide-web-jitsi-meet/)
@@ -54,4 +56,3 @@ make dev
 
 [!NOTE]
 Information the user should notice even if skimming.
-
