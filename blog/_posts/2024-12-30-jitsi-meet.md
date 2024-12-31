@@ -51,3 +51,7 @@ sudo apt install debhelper
 dpkg-buildpackage -A -rfakeroot -us -uc -tc
 make dev
 ~~~
+
+[!NOTE]
+Information the user should notice even if skimming.
+
