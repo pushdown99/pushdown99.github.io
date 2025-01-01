@@ -23,6 +23,7 @@ function envConfig() {
         plugins: [new BannerPlugin({ banner, raw: true }), new EnvironmentPlugin({ DEBUG: false })],
       };
 
+      
     default:
       return {
         devtool: "source-map",
