@@ -32,6 +32,23 @@ kubectl get crd gateways.gateway.networking.k8s.io &> /dev/null || \
   { kubectl apply -f https://github.com/kubernetes-sigs/gateway-api/releases/download/v1.2.0/standard-install.yaml; }
 ~~~
 
+~~~console
+kubectl apply -f https://github.com/kubernetes-sigs/gateway-api/releases/download/v1.2.0/standard-install.yaml
+
+customresourcedefinition.apiextensions.k8s.io/gatewayclasses.gateway.networking.k8s.io created
+customresourcedefinition.apiextensions.k8s.io/gateways.gateway.networking.k8s.io created
+customresourcedefinition.apiextensions.k8s.io/grpcroutes.gateway.networking.k8s.io created
+customresourcedefinition.apiextensions.k8s.io/httproutes.gateway.networking.k8s.io created
+customresourcedefinition.apiextensions.k8s.io/referencegrants.gateway.networking.k8s.io created
+~~~
+
+~~~console
+kubectl get crd gateways.gateway.networking.k8s.io
+
+NAME                                 CREATED AT
+gateways.gateway.networking.k8s.io   2025-01-07T06:27:37Z
+~~~
+
 ---
 
 ### Deploying the application
@@ -42,13 +59,38 @@ kubectl get crd gateways.gateway.networking.k8s.io &> /dev/null || \
 
 #### Start the application services
 
+Change directory to the root of the Istio installation.
+
+The default Istio installation uses automatic sidecar injection. Label the namespace that will host the application with istio-injection=enabled:
+
 ~~~console
 kubectl label namespace default istio-injection=enabled
+
+namespace/default labeled
 ~~~
+
+Deploy your application using the `kubectl` command:
 
 ~~~console
 kubectl apply -f samples/bookinfo/platform/kube/bookinfo.yaml
+
+service/details created
+serviceaccount/bookinfo-details created
+deployment.apps/details-v1 created
+service/ratings created
+serviceaccount/bookinfo-ratings created
+deployment.apps/ratings-v1 created
+service/reviews created
+serviceaccount/bookinfo-reviews created
+deployment.apps/reviews-v1 created
+deployment.apps/reviews-v2 created
+deployment.apps/reviews-v3 created
+service/productpage created
+serviceaccount/bookinfo-productpage created
+deployment.apps/productpage-v1 created
 ~~~
+
+Confirm all services and pods are correctly defined and running:
 
 ~~~console
 kubectl get services
@@ -75,13 +117,16 @@ reviews-v2-1343845940-b34q5      2/2       Running   0          6m
 reviews-v3-1813607990-8ch52      2/2       Running   0          6m
 ~~~
 
+To confirm that the Bookinfo application is running, send a request to it by a curl command from some pod, for example from ratings:
 ~~~console
 kubectl exec "$(kubectl get pod -l app=ratings -o jsonpath='{.items[0].metadata.name}')" -c ratings -- curl -sS productpage:9080/productpage | grep -o "<title>.*</title>"
+
+<title>Simple Bookstore App</title>
 ~~~
 
 #### Determine the ingress IP and port
 
-1. Create a gateway for the Bookinfo application:
+Create a gateway for the Bookinfo application: (Istio API)
 
 ~~~console
 kubectl apply -f samples/bookinfo/networking/bookinfo-gateway.yaml
