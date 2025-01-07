@@ -23,6 +23,7 @@ The end-to-end architecture of the application is shown below.
 ![bookinfo application without istio](/assets/img/blog/bookinfo_without_istio.png)
 
 ---
+---
 
 ### Before you begin
 
