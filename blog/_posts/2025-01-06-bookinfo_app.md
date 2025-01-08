@@ -124,6 +124,8 @@ kubectl exec "$(kubectl get pod -l app=ratings -o jsonpath='{.items[0].metadata.
 <title>Simple Bookstore App</title>
 ~~~
 
+---
+
 #### Determine the ingress IP and port
 
 Create a gateway for the Bookinfo application: (Istio API)
