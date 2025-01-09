@@ -162,6 +162,7 @@ Istio APIs
 kubectl apply -f samples/bookinfo/networking/destination-rule-all.yaml
 ~~~
 
+
 ---
 
 ~~~console
