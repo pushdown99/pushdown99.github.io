@@ -18,6 +18,8 @@ hide_image: true
 
 ## CI/CD with Minikube
 
+---
+
 ### ArgoCD Installation
 
 ~~~console
