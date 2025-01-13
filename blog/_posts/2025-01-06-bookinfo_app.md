@@ -152,8 +152,6 @@ bookinfo-gateway   32s
 export GATEWAY_URL=$INGRESS_HOST:$INGRESS_PORT
 ~~~
 
----
-
 ### Confirm the app is accessible from outside the cluste
 
 To confirm that the Bookinfo application is accessible from outside the cluster, run the following `curl` command:
