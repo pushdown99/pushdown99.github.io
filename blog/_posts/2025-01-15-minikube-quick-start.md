@@ -27,7 +27,7 @@ minikube dashboard
 
 ---
 
-## argocd
+## ArgoCD
 
 #### Installation / Dashboard
 
@@ -46,7 +46,7 @@ argocd admin initial-password -n argocd
 
 ----
 
-## harbor
+## Harbor
 
 #### add repo
 
@@ -181,7 +181,40 @@ spec:
 
 4. `Create`
 5. `SYNC`
-6. `kubectl`
+6. `kubectl` commands
+
+~~~console
+kubectl get svc
+
+NAME         TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)                         AGE
+kubernetes   ClusterIP   10.96.0.1       <none>        443/TCP                         35m
+minio        NodePort    10.98.171.143   <none>        9000:30333/TCP,9001:30334/TCP   64s
+
+kubectl port-forward svc/minio 9000:9000 9001:9001
+~~~
+
+7. browse to [`http://127.0.0.1:9000`](http://127.0.0.1:9000)
+
+    id: `minio`, password: `minio123`
+
+## CI/CD with ArgoCD
+
+#### Sample Application with ArgoCD
+
+1. Login to ArgoCD
+2. Applications > `+ New APP`
+3. Fill-in
+
+    - (GENERAL) Application Name: `myweb`
+    - (GENERAL) Project Name: `default`
+    - (SOURCE) Repository URL: [`https://github.com/pushdown99/cicd-node.git`](https://github.com/pushdown99/cicd-node.git)
+    - (SOURCE) Path: `app`
+    - (DESTINATION) Cluster URL: `https://kubernetes.default.svc`
+    - (DESTINATION) Namespace: `default`
+
+4. `Create`
+5. `SYNC`
+6. `kubectl` commands
 
 ~~~console
 kubectl get svc
