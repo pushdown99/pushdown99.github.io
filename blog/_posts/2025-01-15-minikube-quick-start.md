@@ -322,13 +322,62 @@ kubectl port-forward svc/myweb-service 3000:3000
 
 ## Jenkins
 
+#### Jenkins Installation with ArgoCD
+
 ~~~console
-helm repo add jenkinsci https://charts.jenkins.io
-helm repo update
-helm show values jenkinsci/jenkins > values.yaml
-kubectl create namespace jenkins
-helm install jenkins jenkinsci/jenkins -f values.yaml -n jenkins
+https://github.com/pushdown99/argo-jenkins.git
 ~~~
+
+HOW-TO
+
+1. Login to ArgoCD
+2. Applications > `+ New APP`
+3. Fill-in
+
+    - (GENERAL) Application Name: `jenkins`
+    - (GENERAL) Project Name: `default`
+    - (SOURCE) Repository URL: [`https://github.com/pushdown99/argo-jenkins.git`](https://github.com/pushdown99/argo-jenkins.git)
+    - (SOURCE) Path: `app`
+    - (DESTINATION) Cluster URL: `https://kubernetes.default.svc`
+    - (DESTINATION) Namespace: `default`
+
+4. `Create`
+5. `SYNC`
+6. `kubectl` commands
+
+~~~console
+minikube service jenkins-service -n jenkins
+
+|-----------|-----------------|-------------|---------------------------|
+| NAMESPACE |      NAME       | TARGET PORT |            URL            |
+|-----------|-----------------|-------------|---------------------------|
+| jenkins   | jenkins-service |        8080 | http://192.168.49.2:32000 |
+|-----------|-----------------|-------------|---------------------------|
+🏃  jenkins-service 서비스의 터널을 시작하는 중
+|-----------|-----------------|-------------|------------------------|
+| NAMESPACE |      NAME       | TARGET PORT |          URL           |
+|-----------|-----------------|-------------|------------------------|
+| jenkins   | jenkins-service |             | http://127.0.0.1:44853 |
+|-----------|-----------------|-------------|------------------------|
+🎉  Opening service jenkins/jenkins-service in default browser...
+❗  windows 에서 Docker 드라이버를 사용하고 있기 때문에, 터미널을 열어야 실행할 수 있습니다
+~~~
+
+Find password for access page [`http://127.0.0.1:44853`](http://127.0.0.1:44853) 
+
+~~~console
+kubectl get pod -n jenkins
+
+NAME                       READY   STATUS    RESTARTS   AGE
+jenkins-6846f7864d-957b8   1/1     Running   0          2m8s
+
+kubectl -n jenkins exec -it jenkins-6846f7864d-957b8 -- /bin/bash
+
+jenkins@jenkins-6846f7864d-957b8:/$ cat /var/jenkins_home/secrets/initialAdminPassword
+~~~
+
+7. browse to [`http://127.0.0.1:44853`](http://127.0.0.1:44853)
+
 
 ## Top
 
