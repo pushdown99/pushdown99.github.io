@@ -25,8 +25,6 @@ minikube start
 minikube dashboard
 ~~~
 
----
-
 ## ArgoCD
 
 #### Installation / Dashboard
@@ -43,8 +41,6 @@ minikube service argocd-server -n argocd
 ~~~console
 argocd admin initial-password -n argocd
 ~~~
-
-----
 
 ## Harbor
 
