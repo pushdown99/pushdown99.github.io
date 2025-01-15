@@ -379,6 +379,64 @@ jenkins@jenkins-6846f7864d-957b8:/$ cat /var/jenkins_home/secrets/initialAdminPa
 7. browse to [`http://127.0.0.1:44853`](http://127.0.0.1:44853)
 
 
+## Nexus
+
+#### Nexus Installation with ArgoCD
+
+~~~console
+https://github.com/pushdown99/argo-nexus.git
+~~~
+
+HOW-TO
+
+1. Login to ArgoCD
+2. Applications > `+ New APP`
+3. Fill-in
+
+    - (GENERAL) Application Name: `nexus`
+    - (GENERAL) Project Name: `default`
+    - (SOURCE) Repository URL: [`https://github.com/pushdown99/argo-nexus.git`](https://github.com/pushdown99/argo-nexus.git)
+    - (SOURCE) Path: `app`
+    - (DESTINATION) Cluster URL: `https://kubernetes.default.svc`
+    - (DESTINATION) Namespace: `default`
+
+4. `Create`
+5. `SYNC`
+6. `kubectl` commands
+
+~~~console
+minikube service nexus-service -n nexus
+
+|-----------|---------------|-------------|---------------------------|
+| NAMESPACE |     NAME      | TARGET PORT |            URL            |
+|-----------|---------------|-------------|---------------------------|
+| nexus     | nexus-service |        8081 | http://192.168.49.2:30100 |
+|-----------|---------------|-------------|---------------------------|
+🏃  nexus-service 서비스의 터널을 시작하는 중
+|-----------|---------------|-------------|------------------------|
+| NAMESPACE |     NAME      | TARGET PORT |          URL           |
+|-----------|---------------|-------------|------------------------|
+| nexus     | nexus-service |             | http://127.0.0.1:60009 |
+|-----------|---------------|-------------|------------------------|
+🎉  Opening service nexus/nexus-service in default browser...
+❗  windows 에서 Docker 드라이버를 사용하고 있기 때문에, 터미널을 열어야 실행할 수 있습니다
+~~~
+
+Find password for access page [`http://127.0.0.1:60009`](http://127.0.0.1:60009) 
+
+~~~console
+kubectl get pod -n nexus
+
+NAME                     READY   STATUS    RESTARTS   AGE
+nexus-65b596bb55-rv47v   1/1     Running   0          5m34s
+
+kubectl -n nexus exec -it nexus-65b596bb55-rv47v -- /bin/bash
+
+bash-5.1$ cat /nexus-data/admin.password
+~~~
+
+7. browse to [`http://127.0.0.1:60009`](http://127.0.0.1:60009)
+
 ## Top
 
 ~~~console
