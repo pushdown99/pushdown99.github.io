@@ -318,3 +318,22 @@ kubectl port-forward svc/myweb-service 3000:3000
 ~~~
 
 7. browse to [`http://127.0.0.1:3000`](http://127.0.0.1:3000)
+
+
+## Jenkins
+
+~~~console
+helm repo add jenkinsci https://charts.jenkins.io
+helm repo update
+helm show values jenkinsci/jenkins > values.yaml
+kubectl create namespace jenkins
+helm install jenkins jenkinsci/jenkins -f values.yaml -n jenkins
+~~~
+
+## Top
+
+~~~console
+kubectl top node
+
+kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
+~~~
