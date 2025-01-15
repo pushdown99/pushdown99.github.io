@@ -247,7 +247,50 @@ kubectl port-forward svc/minio 9000:9000 9001:9001
 
 #### Sample Application with ArgoCD
 
+~~~console
+https://github.com/pushdown99/cicd-node.git
+~~~
+
+app/`k8s-deployment.yaml`
+
+~~~yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myweb
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: myweb
+  template:
+    metadata:
+      labels:
+        app: myweb
+    spec:
+      containers:
+      - name: myweb
+        image: pushdown99/myweb:latest
+        ports:
+        - containerPort: 3000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: myweb-service
+spec:
+  type: NodePort
+  selector:
+    app: myweb
+  ports:
+  - protocol: TCP
+    port: 3000
+    targetPort: 3000
+    nodePort: 30000
+~~~
+
 HOW-TO
+
 1. Login to ArgoCD
 2. Applications > `+ New APP`
 3. Fill-in
