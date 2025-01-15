@@ -168,6 +168,52 @@ spec:
 
 #### MinIO Application creation with ArgoCD
 
+#### `git` repositories
+
+~~~console
+https://github.com/pushdown99/argo-minio.git
+~~~
+
+app/k8s-deployment.yaml
+
+~~~yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myweb
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: myweb
+  template:
+    metadata:
+      labels:
+        app: myweb
+    spec:
+      containers:
+      - name: myweb
+        image: pushdown99/myweb:latest
+        ports:
+        - containerPort: 3000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: myweb-service
+spec:
+  type: NodePort
+  selector:
+    app: myweb
+  ports:
+  - protocol: TCP
+    port: 3000
+    targetPort: 3000
+    nodePort: 30000
+~~~
+
+#### HOW-TO
+
 1. Login to ArgoCD
 2. Applications > `+ New APP`
 3. Fill-in
@@ -201,6 +247,7 @@ kubectl port-forward svc/minio 9000:9000 9001:9001
 
 #### Sample Application with ArgoCD
 
+HOW-TO
 1. Login to ArgoCD
 2. Applications > `+ New APP`
 3. Fill-in
@@ -219,13 +266,12 @@ kubectl port-forward svc/minio 9000:9000 9001:9001
 ~~~console
 kubectl get svc
 
-NAME         TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)                         AGE
-kubernetes   ClusterIP   10.96.0.1       <none>        443/TCP                         35m
-minio        NodePort    10.98.171.143   <none>        9000:30333/TCP,9001:30334/TCP   64s
+NAME            TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)                         AGE
+kubernetes      ClusterIP   10.96.0.1        <none>        443/TCP                         54m
+minio           NodePort    10.98.171.143    <none>        9000:30333/TCP,9001:30334/TCP   20m
+myweb-service   NodePort    10.104.220.233   <none>        3000:30000/TCP                  14m
 
-kubectl port-forward svc/minio 9000:9000 9001:9001
+kubectl port-forward svc/myweb-service 3000:3000
 ~~~
 
-7. browse to [`http://127.0.0.1:9000`](http://127.0.0.1:9000)
-
-    id: `minio`, password: `minio123`
+7. browse to [`http://127.0.0.1:3000`](http://127.0.0.1:3000)
