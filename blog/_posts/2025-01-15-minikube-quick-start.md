@@ -25,6 +25,8 @@ minikube start
 minikube dashboard
 ~~~
 
+---
+
 ## ArgoCD
 
 #### Installation / Dashboard
