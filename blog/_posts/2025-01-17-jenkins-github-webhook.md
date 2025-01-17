@@ -76,7 +76,34 @@ github_jenkins  github_jenkins.pub
 
 5. Register SSH key (private key) to Jenkins Credentials
 
-    - 
+    - Goto Jenkins dashboard (ex: http://127.0.0.1:4377)
+    - Dashboard > `+ New Item` => New Item / Name: `github_jenkins` Type: `Freestyle project`
+    - Dashboard > Name: `github_jenkins` => Source code management => Git/Repository URL: `git@github.com:pushdown99/jenkins-test.git`, Credentials/ Add: `Jenkins` => Kind: `SSH Username with private key`, Username: `github_jenkins`, Private key/Enterdirectly: (cat ithub_jenkins) => [`Add`]
+
+6. Build Trigger
+
+    - Build Trigger / [`v`] Github hook trigger for GITScm polling
+
+7. Plugin Installation
+
+    - Jenkins Management > Plugins > Available plugins > `GitHub Integration Plugin` : Install
+
+
+8. Ngrok Installation (optional: localhost)
+
+~~~powershell
+choco install ngrok
+ngrok config add-authtoken 46WbJVNrQ1pdq1mkbHAxT_ (API secret)
+ngrok http 4377
+
+Forwarding  https://4895-220-76-193-80.ngrok-free.app -> http://localhost:4377            
+~~~
+
+9. Setting for Github Repository Webhook
+
+    - Goto github repositories ([https://github.com/pushdown99/jenkins-test](https://github.com/pushdown99/jenkins-test))
+    - Settings > General/Code and automation/Webhooks => Payload URL: `https://4895-220-76-193-80.ngrok-free.app`/github-webhook/, Conntent type: `application/json`, [`v`] Just the push event, [`v`] Active => []`Update webhook`]
+
 
 #### ngrok
 
