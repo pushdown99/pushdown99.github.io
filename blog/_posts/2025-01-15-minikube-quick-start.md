@@ -322,6 +322,8 @@ kubectl port-forward svc/myweb-service 3000:3000
 7. browse to [`http://127.0.0.1:3000`](http://127.0.0.1:3000)
 
 
+---
+
 ## Jenkins
 
 #### Jenkins Installation with ArgoCD
