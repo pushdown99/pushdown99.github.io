@@ -25,6 +25,7 @@ minikube start
 minikube dashboard
 ~~~
 
+---
 
 ## ArgoCD
 
