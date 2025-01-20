@@ -57,8 +57,6 @@ helm repo add harbor https://helm.goharbor.io
 helm repo list
 ~~~
 
----
-
 #### fetch & unzip chart
 
 ~~~console
