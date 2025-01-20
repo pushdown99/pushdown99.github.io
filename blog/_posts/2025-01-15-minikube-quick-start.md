@@ -46,6 +46,8 @@ minikube service argocd-server -n argocd
 argocd admin initial-password -n argocd
 ~~~
 
+---
+
 ## Harbor
 
 #### add repo
