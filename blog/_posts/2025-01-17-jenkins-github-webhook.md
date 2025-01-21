@@ -30,8 +30,6 @@ NAME                       READY   STATUS    RESTARTS      AGE
 jenkins-6846f7864d-s92t8   1/1     Running   1 (22m ago)   41m
 ~~~
 
----
-
 2. Login to jenkins pod
 
 ~~~bash
