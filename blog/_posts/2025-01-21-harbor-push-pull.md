@@ -18,8 +18,14 @@ hide_image: true
 
 ## Harbor Installation, Push, Pull
 
-expose.type: loadBalancer
-expose.tls.enabled: false
+#### Installation
+
+Download: [`values.yaml`](/assets/doc/values.yaml) 
+
+Using 
+- expose.type: loadBalancer
+- expose.tls.enabled: false
+- externalURL: http://core.harbor.localhost
 
 ~~~yaml
 expose:
@@ -38,8 +44,12 @@ helm install harbor -f values.yaml . -n hb
 minikube tunnel
 ~~~
 
+#### Login
+
 browse to `http://localhost`
 id: `admin`, password: `Harbor12345`
+
+#### Image Push
 
 ~~~console
 docker login core.harbor.localhost
