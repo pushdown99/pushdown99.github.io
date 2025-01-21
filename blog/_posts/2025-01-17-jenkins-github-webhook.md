@@ -72,7 +72,7 @@ github_jenkins  github_jenkins.pub
 
     - Goto github repositories ([https://github.com/pushdown99/jenkins-test](https://github.com/pushdown99/jenkins-test))
     - Settings > General/Security/Deploy keys => [`Add deploy key`]
-    - Deploy keys/Add new => Title: github_jenkins, Key: (cat ithub_jenkins.pub) => [`Add key`]
+    - Deploy keys/Add new => Title: github_jenkins, Key: (cat github_jenkins.pub) => [`Add key`]
 
 5. Register SSH key (private key) to Jenkins Credentials
 
