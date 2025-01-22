@@ -38,8 +38,6 @@ minikube tunnel
 minikube service argocd-server -n argocd
 ~~~
 
----
-
 #### Get password (User: `admin`)
 
 ~~~console
