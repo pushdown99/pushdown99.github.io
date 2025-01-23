@@ -19,7 +19,7 @@ hide_image: true
 ## Jenkins + Kaniko
 
 [https://seokbin.tistory.com/10](https://seokbin.tistory.com/10)
-
+[https://velog.io/@seokbin/Docker-Build-%EC%84%9C%EB%B2%84-%EA%B5%AC%EC%B6%95%ED%95%98%EA%B8%B0docker-%EC%9B%90%EA%B2%A9%EC%A0%91%EC%86%8D-kaniko](https://velog.io/@seokbin/Docker-Build-%EC%84%9C%EB%B2%84-%EA%B5%AC%EC%B6%95%ED%95%98%EA%B8%B0docker-%EC%9B%90%EA%B2%A9%EC%A0%91%EC%86%8D-kaniko)
 ~~~console
 podTemplate(yaml: '''
               kind: Pod
