@@ -1,3 +1,20 @@
+---
+layout: post
+title: 'Network Bridge' 
+author: haeyeon.hwang
+tags: [k8s, kubernetes]
+description: >
+  Jitsi-Meet 
+image: /assets/img/blog/kubernetes.png.png
+hide_image: true
+---
+
+{:.no_toc}
+
+1. this unordered seed list will be replaced by toc as unordered list
+
+{:toc}
+
 
 ~~~console
 netsh bridge show adapter

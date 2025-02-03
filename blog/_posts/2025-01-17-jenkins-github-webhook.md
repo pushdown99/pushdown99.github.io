@@ -41,9 +41,9 @@ kubectl -n jenkins exec -it jenkins-6846f7864d-s92t8 -- /bin/bash
 ~~~bash
 jenkins@jenkins-6846f7864d-s92t8:/$
 jenkins@jenkins-6846f7864d-s92t8:/$ cd /var/jenkins_home
-jenkins@jenkins-6846f7864d-s92t8:/$ mkdir .ssh
-jenkins@jenkins-6846f7864d-s92t8:/$ cd .ssh
-jenkins@jenkins-6846f7864d-s92t8:/$ ssh-keygen -t rsa -b 4096 -C test-key -f github_jenkins
+jenkins@jenkins-6846f7864d-s92t8:~$ mkdir .ssh
+jenkins@jenkins-6846f7864d-s92t8:.ssh$ cd .ssh
+jenkins@jenkins-6846f7864d-s92t8:.ssh$ ssh-keygen -t rsa -b 4096 -C test-key -f github_jenkins
 Generating public/private rsa key pair.
 Enter passphrase (empty for no passphrase):
 Enter same passphrase again:
@@ -78,7 +78,7 @@ github_jenkins  github_jenkins.pub
 
     - Goto Jenkins dashboard (ex: http://127.0.0.1:4377)
     - Dashboard > `+ New Item` => New Item / Name: `github_jenkins` Type: `Freestyle project`
-    - Dashboard > Name: `github_jenkins` => Source code management => Git/Repository URL: `git@github.com:pushdown99/jenkins-test.git`, Credentials/ Add: `Jenkins` => Kind: `SSH Username with private key`, Username: `github_jenkins`, Private key/Enterdirectly: (cat ithub_jenkins) => [`Add`]
+    - Dashboard > Name: `github_jenkins` => Source code management => Git/Repository URL: `git@github.com:pushdown99/jenkins-test.git`, Credentials/ Add: `Jenkins` => Kind: `SSH Username with private key`, Username: `github_jenkins`, Private key/Enterdirectly: (cat github_jenkins) => [`Add`]
 
 6. Build Trigger
 

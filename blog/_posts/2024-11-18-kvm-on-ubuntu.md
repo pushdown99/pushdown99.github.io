@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'vagrant' 
+title: 'KVM on Ubuntu' 
 author: haeyeon.hwang
 tags: [Ubuntu, KVM]
 description: >
