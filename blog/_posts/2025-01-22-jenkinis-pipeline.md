@@ -47,7 +47,7 @@ jenkins@jenkins-7c6f896bf4-h44rq:/$
 ~~~
 
 ~~~console
-jenkins@jenkins-7c6f896bf4-h44rq:~$ cd workspace
+jenkins@jenkins-7c6f896bf4-h44rq:~$ cd /var/jenkins_home/workspace
 jenkins@jenkins-7c6f896bf4-h44rq:~/workspace$ cd hello-world
 jenkins@jenkins-7c6f896bf4-h44rq:~/workspace/hello-world$ ls
 

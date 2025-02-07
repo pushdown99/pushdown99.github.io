@@ -242,6 +242,5 @@ github_jenkins  github_jenkins.pub
 
     - Jenkins Management > Plugins > Available plugins > `GitHub Integration Plugin` : Install
 
-
 8. Ngrok Installation (optional: localhost)
 
