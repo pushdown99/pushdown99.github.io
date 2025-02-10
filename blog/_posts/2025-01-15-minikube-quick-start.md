@@ -369,6 +369,7 @@ minikube service jenkins-service -n jenkins
 
 Find password for access page [`http://127.0.0.1:44853`](http://127.0.0.1:44853) 
 
+
 ~~~console
 kubectl get pod -n jenkins
 
