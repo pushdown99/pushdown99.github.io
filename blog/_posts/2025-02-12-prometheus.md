@@ -1,10 +1,10 @@
 ---
 layout: post
-title: 'Quick Start, Minikube Jenkins' 
+title: 'Prometheus' 
 author: haeyeon.hwang
 tags: [jenkins, github, pipeline, kaniko]
 description: >
-  Jenkins Kaniko 
+  Prometheus 
 image: /assets/img/blog/argocd.png
 hide_image: true
 ---
@@ -37,6 +37,7 @@ helm install prometheus . -n monitoring -f values.yaml
 minikube service  prometheus-grafana -n monitoring
 ~~~
 
+---
 Timezone
 
 Profile > Timezone > Asia/Seoul
