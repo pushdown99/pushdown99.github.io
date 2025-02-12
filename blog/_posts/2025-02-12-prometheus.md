@@ -36,3 +36,7 @@ adminPassword:
 helm install prometheus . -n monitoring -f values.yaml
 minikube service  prometheus-grafana -n monitoring
 ~~~
+
+Timezone
+
+Profile > Timezone > Asia/Seoul
