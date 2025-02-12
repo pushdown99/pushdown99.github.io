@@ -42,6 +42,7 @@ minikube service argocd-server -n argocd
 
 ~~~console
 argocd admin initial-password -n argocd
+6GfPnv25ygYy7tKu
 ~~~
 
 ---
@@ -332,7 +333,9 @@ kubectl port-forward svc/myweb-service 3000:3000
 https://github.com/pushdown99/argo-jenkins.git
 ~~~
 
+
 HOW-TO
+
 
 1. Login to ArgoCD
 2. Applications > `+ New APP`
