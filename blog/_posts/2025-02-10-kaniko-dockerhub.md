@@ -1,10 +1,10 @@
 ---
 layout: post
-title: 'Quick Start, Minikube Jenkins' 
+title: 'Kaniko DockerHub' 
 author: haeyeon.hwang
 tags: [jenkins, github, pipeline, kaniko]
 description: >
-  Jenkins Kaniko 
+  Kaniko DockerHub
 image: /assets/img/blog/argocd.png
 hide_image: true
 ---
