@@ -32,7 +32,9 @@ adminPassword:
 ~~~
 
 ~~~console
-helm install prometheus . -n monitoring -f values.yaml
+kubectl create ns monitoring
+#helm install prometheus . -n monitoring -f values.yaml
+helm install prometheus prometheus-community/kube-prometheus-stack -n monitoring -f values.yaml
 minikube service  prometheus-grafana -n monitoring
 ~~~
 
