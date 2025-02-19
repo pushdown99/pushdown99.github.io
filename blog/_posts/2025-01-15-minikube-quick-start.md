@@ -36,6 +36,7 @@ kubectl create namespace argocd
 kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
 minikube tunnel
 minikube service argocd-server -n argocd
+#kubectl port-forward service/argocd-server --address 0.0.0.0 31111:80 -n argocd
 ~~~
 
 #### Get password (User: `admin`)
